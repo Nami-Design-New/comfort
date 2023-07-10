@@ -48,3 +48,20 @@ let swiper = new Swiper(".mySwiper", {
     }
   }
 });
+//about swiper
+let aboutSwiper = new swiper(".about-swiper", {
+  spaceBetween: 50,
+  slidesPerView: 1,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  },
+  loop: true,
+  pagination: {
+    clickable: true
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  }
+});
