@@ -969,6 +969,222 @@ button {
       }
     }
   }
+  //********shop section********//
+  .shop {
+    padding: 60px;
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    .open_filter {
+      position: fixed;
+      bottom: 12px;
+      left: 12px;
+      z-index: 200;
+      background-color: $maincolor;
+      color: $white;
+      width: 80px;
+      height: 34px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      font-weight: 400;
+      font-size: 16px;
+    }
+    aside {
+      .side-head {
+        display: flex;
+        justify-content: space-between;
+        button {
+          display: none;
+          background: none;
+          border: none;
+          outline: none;
+          width: 30px;
+          height: 30px;
+          i {
+            color: $maincolor;
+            font-size: 20px;
+          }
+        }
+      }
+      h3 {
+        font-family: "Jost", sans-serif;
+        color: $maincolor;
+        font-size: 32px;
+        font-weight: 400;
+        margin-bottom: 24px;
+      }
+      width: 30%;
+      .accordion {
+        .accordion-button {
+          background-color: $background1;
+          font-weight: 600;
+          font-size: 16px;
+          color: $maincolor;
+          font-family: "Jost", sans-serif;
+        }
+        .accordion-item {
+          border: 1px solid $border1;
+          border-top: none;
+          &:first-child {
+            border: 1px solid $border1;
+          }
+        }
+        .accordion-body {
+          padding: 20px 24px;
+          background-color: $background1;
+          ul li {
+            margin-top: 5px;
+            span {
+              font-size: 14px;
+              cursor: pointer;
+              color: $maincolor;
+              i {
+                color: $maincolor;
+                font-size: 13px;
+                width: 0;
+                overflow: hidden;
+                margin-right: 0;
+              }
+              &:hover i {
+                margin-right: 4px;
+                width: 14px;
+                transition: $mainTransation;
+              }
+            }
+          }
+        }
+      }
+    }
+    main {
+      width: 80%;
+      h2 {
+        font-family: "Jost", sans-serif;
+        color: $maincolor;
+        font-size: 32px;
+        font-weight: 400;
+        margin-bottom: 8px;
+      }
+      .pro_card {
+        .inner_card {
+          border: 0;
+          padding: 0 !important;
+          .img_wraper {
+            position: relative;
+            background: #d8d6d6;
+            img {
+              max-width: 100%;
+            }
+            .menu {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              background: none !important;
+              border: 1px solid transparent;
+              display: flex;
+              align-items: flex-end;
+              gap: 0;
+              span {
+                height: 0;
+                overflow: hidden;
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #dbd9d9;
+                font-size: 14px;
+                cursor: pointer;
+                a {
+                  color: #000;
+                }
+                i {
+                  font-size: 13px;
+                  margin-right: 0px;
+                  width: 0;
+                  overflow: hidden;
+                }
+                &:hover {
+                  i {
+                    width: 15px;
+                    margin-right: 2px;
+                    transition: 0.3s ease-in-out;
+                  }
+                }
+                &:nth-child(1) {
+                  border-right: 1px solid $border1;
+                }
+              }
+            }
+          }
+          .img_caption {
+            margin-top: 16px;
+          }
+          .add_cart {
+            overflow: hidden;
+            width: 100%;
+            height: 25px;
+            position: relative;
+            span {
+              position: absolute;
+              top: 0;
+              left: 0;
+              opacity: 1;
+              font-weight: bold;
+              color: $maincolor;
+              font-size: 16px;
+            }
+            .link {
+              position: absolute;
+              top: 100%;
+              left: 0;
+              opacity: 0;
+              cursor: pointer;
+              a {
+                color: $maincolor;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+        &:hover {
+          .img_wraper .menu {
+            border-color: $border1;
+          }
+          .inner_card .img_wraper .menu span {
+            height: 36px;
+            border-top: 1px solid $border1;
+          }
+          .inner_card .add_cart span {
+            top: 100%;
+            opacity: 0;
+          }
+          .inner_card .add_cart .link {
+            top: 0;
+            opacity: 1;
+          }
+        }
+      }
+      .load-more {
+        margin: 40px auto;
+        width: 160px;
+        height: 40px;
+        background: none;
+        outline: none;
+        color: $maincolor;
+        border: 1px solid $maincolor;
+        font-size: 16px;
+        font-weight: 500;
+        &:hover {
+          background-color: $maincolor;
+          color: $white;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 768px) {
   .main_entire {
@@ -1040,6 +1256,40 @@ button {
         }
         .right_news .swiper {
           height: 50vh !important;
+        }
+      }
+    }
+    .shop {
+      padding: 32px 24px;
+      .open_filter {
+        display: flex;
+      }
+      aside {
+        &.open {
+          left: 0;
+        }
+        .side-head {
+          button {
+            display: block;
+          }
+        }
+        padding: 48px 32px;
+        position: fixed;
+        overflow-y: scroll;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: $background1;
+        z-index: 9999999999999;
+        h3 {
+          margin-bottom: 32px;
+        }
+      }
+      main {
+        width: 100%;
+        h2 {
+          font-size: 30px;
         }
       }
     }

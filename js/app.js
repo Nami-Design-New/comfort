@@ -53,10 +53,20 @@ let aboutSwiper = new Swiper(".aboutSwiper", {
   spaceBetween: 50,
   slidesPerView: 1,
   grabCursor: true,
-  pagination:true,
+  pagination: true,
   loop: true,
   pagination: {
     el: ".aboutSwiperPagination",
     clickable: true
-  },
+  }
+});
+//categories open - close
+let openFilter = document.querySelector(".open_filter");
+let closeFilter = document.querySelector(".close-filter");
+let sideBar = document.querySelector(".catBar");
+openFilter.addEventListener("click", () => {
+  sideBar.classList.toggle("open");
+});
+closeFilter.addEventListener("click", () => {
+  sideBar.classList.remove("open");
 });
