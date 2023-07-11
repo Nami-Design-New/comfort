@@ -659,7 +659,7 @@ button {
 }
 .main_entire .newsletter form {
   margin-top: 20px;
-  height: 60px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -691,6 +691,7 @@ button {
   font-size: 16px;
   border-radius: 42px;
   background: #e6e4e4;
+  color: #000;
 }
 .main_entire .newsletter form button i {
   margin-left: 4px;
@@ -874,8 +875,82 @@ button {
   width: 50%;
   padding: 4% 6%;
 }
+.main_entire .about .new .right_news .swiper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.main_entire .about .new .right_news .swiper .client {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main_entire .about .new .right_news .swiper .client h6 {
+  margin-top: 25px;
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+}
+.main_entire .about .new .right_news .swiper .client .review {
+  width: 100%;
+  margin-top: 30px;
+}
+.main_entire .about .new .right_news .swiper .client .review p {
+  text-align: center;
+  color: #000;
+  font-style: italic;
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+}
+.main_entire .about .new .right_news .swiper .client .client_img {
+  width: 30%;
+  border-radius: 50%;
+  border: #ccc;
+}
+.main_entire .about .new .right_news .swiper .client .client_img img {
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.main_entire .about .new .right_news .swiper .swiper-horizontal > .swiper-pagination-bullets,
+.main_entire .about .new .right_news .swiper .swiper-pagination-bullets.swiper-pagination-horizontal,
+.main_entire .about .new .right_news .swiper .swiper-pagination-custom,
+.main_entire .about .new .right_news .swiper .swiper-pagination-fraction {
+  bottom: -2px !important;
+}
+.main_entire .about .new .right_news .swiper .swiper-pagination-bullet {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  position: relative;
+  background: #787878;
+  margin-left: 15px !important;
+}
+.main_entire .about .new .right_news .swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #000;
+}
+.main_entire .about .new .right_news .swiper .swiper-pagination-bullet::after {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: -4px;
+  border: 1px solid #000;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
 
 @media (max-width: 768px) {
+  .main_entire .GetInspired .row {
+    gap: 28px;
+  }
+  .main_entire .go_back {
+    padding: 0 28px;
+  }
   .main_entire .mainSlider .mainSliderContainer .swiper-slide .info {
     padding: 0 32px;
   }
@@ -885,9 +960,9 @@ button {
   }
   .main_entire .quality {
     padding: 60px 120px;
-    gap: 0;
   }
   .main_entire .quality .quality-cards {
+    gap: 0;
     grid-template-columns: repeat(1, 1fr);
   }
   .main_entire .newsletter {
@@ -905,8 +980,45 @@ button {
   .main_entire .follow-us .head {
     gap: 20px;
   }
+  .main_entire .about .about_store {
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: column;
+    padding: 0 28px;
+  }
+  .main_entire .about .about_store .left_wrapper {
+    width: 100%;
+    padding-right: 0;
+  }
+  .main_entire .about .about_store .left_wrapper .career {
+    margin-top: 20px;
+    height: 40px;
+  }
+  .main_entire .about .about_store .right_wrapper {
+    width: 100%;
+    margin-top: 20px;
+    height: 50vh;
+  }
+  .main_entire .about .new {
+    flex-direction: column;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0 28px;
+    margin: 40px 0;
+  }
+  .main_entire .about .new .left_news,
+  .main_entire .about .new .right_news {
+    width: 100%;
+    padding: 15% 6%;
+  }
+  .main_entire .about .new .right_news .swiper {
+    height: 50vh !important;
+  }
 }
 @media (max-width: 576px) {
+  .main_entire .about .about_store .left_wrapper .text p {
+    font-size: 15px;
+  }
   .main_entire .departments {
     padding: 32px 24px;
   }
@@ -930,7 +1042,34 @@ button {
     left: 0;
   }
   .main_entire .GetInspired .row .col-12 .info p {
-    font-size: 24px;
+    font-size: 18px;
+  }
+  .main_entire .GetInspired .row .col-12 .info a {
+    font-size: 14px;
+  }
+  .main_entire .GetInspired .row .col-12 .info a i {
+    font-size: 12px;
+  }
+  .main_entire .mainSlider .mainSliderContainer .swiper-slide .info {
+    padding: 0 48px;
+  }
+  .main_entire .mainSlider .swiperControl .swiper-button-prev,
+  .main_entire .mainSlider .swiperControl .swiper-button-next {
+    width: 30px;
+    height: 30px;
+  }
+  .main_entire .mainSlider .swiperControl .swiper-button-prev::after,
+  .main_entire .mainSlider .swiperControl .swiper-button-next::after {
+    font-size: 14;
+  }
+  .main_entire .mainSlider .swiperControl .swiper-button-prev {
+    left: 12px;
+  }
+  .main_entire .mainSlider .swiperControl .swiper-button-prev::after {
+    font-size: 14px;
+  }
+  .main_entire .mainSlider .swiperControl .swiper-button-next {
+    right: 12px;
   }
 }
 .footer {

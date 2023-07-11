@@ -684,7 +684,7 @@ button {
     }
     form {
       margin-top: 20px;
-      height: 60px;
+      height: 50px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -711,6 +711,7 @@ button {
         font-size: 16px;
         border-radius: 42px;
         background: $background1;
+        color: $maincolor;
         i {
           margin-left: 4px;
         }
@@ -897,12 +898,86 @@ button {
       .right_news {
         width: 50%;
         padding: 4% 6%;
+        .swiper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          .client {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h6 {
+              margin-top: 25px;
+              font-size: 20px;
+              color: #000;
+              font-weight: 500;
+              font-family: "Jost", sans-serif;
+            }
+            .review {
+              width: 100%;
+              margin-top: 30px;
+              p {
+                text-align: center;
+                color: #000;
+                font-style: italic;
+                font-size: 16px;
+                font-family: "Jost", sans-serif;
+              }
+            }
+            .client_img {
+              width: 30%;
+              border-radius: 50%;
+              border: #ccc;
+              img {
+                max-width: 100%;
+                overflow: hidden;
+                border-radius: 50%;
+              }
+            }
+          }
+          .swiper-horizontal > .swiper-pagination-bullets,
+          .swiper-pagination-bullets.swiper-pagination-horizontal,
+          .swiper-pagination-custom,
+          .swiper-pagination-fraction {
+            bottom: -2px !important;
+          }
+          .swiper-pagination-bullet {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            position: relative;
+            background: #787878;
+            margin-left: 15px !important;
+          }
+          .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background: #000;
+          }
+          .swiper-pagination-bullet::after {
+            position: absolute;
+            content: "";
+            top: -4px;
+            left: -4px;
+            border: 1px solid #000;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+          }
+        }
       }
     }
   }
 }
 @media (max-width: 768px) {
   .main_entire {
+    .GetInspired .row {
+      gap: 28px;
+    }
+    .go_back {
+      padding: 0 28px;
+    }
     .mainSlider .mainSliderContainer .swiper-slide .info {
       padding: 0 32px;
     }
@@ -912,8 +987,8 @@ button {
     }
     .quality {
       padding: 60px 120px;
-      gap: 0;
       .quality-cards {
+        gap: 0;
         grid-template-columns: repeat(1, 1fr);
       }
     }
@@ -934,10 +1009,47 @@ button {
         gap: 20px;
       }
     }
+    .about {
+      .about_store {
+        height: fit-content;
+        flex-direction: column;
+        padding: 0 28px;
+        .left_wrapper {
+          width: 100%;
+          padding-right: 0;
+          .career {
+            margin-top: 20px;
+            height: 40px;
+          }
+        }
+        .right_wrapper {
+          width: 100%;
+          margin-top: 20px;
+          height: 50vh;
+        }
+      }
+      .new {
+        flex-direction: column;
+        height: fit-content;
+        padding: 0 28px;
+        margin: 40px 0;
+        .left_news,
+        .right_news {
+          width: 100%;
+          padding: 15% 6%;
+        }
+        .right_news .swiper {
+          height: 50vh !important;
+        }
+      }
+    }
   }
 }
 @media (max-width: 576px) {
   .main_entire {
+    .about .about_store .left_wrapper .text p {
+      font-size: 15px;
+    }
     .departments {
       padding: 32px 24px;
     }
@@ -962,7 +1074,37 @@ button {
     .GetInspired .row .col-12 .info {
       left: 0;
       p {
-        font-size: 24px;
+        font-size: 18px;
+      }
+      a {
+        font-size: 14px;
+        i {
+          font-size: 12px;
+        }
+      }
+    }
+    .mainSlider {
+      .mainSliderContainer .swiper-slide .info {
+        padding: 0 48px;
+      }
+      .swiperControl {
+        .swiper-button-prev,
+        .swiper-button-next {
+          width: 30px;
+          height: 30px;
+          &::after {
+            font-size: 14;
+          }
+        }
+        .swiper-button-prev {
+          left: 12px;
+          &::after {
+            font-size: 14px;
+          }
+        }
+        .swiper-button-next {
+          right: 12px;
+        }
       }
     }
   }
@@ -1074,78 +1216,3 @@ button {
   }
 }
 //******** end footer ****************//
-// .serv_outer {
-//   width: 100%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   flex-direction: column;
-//   padding: 100px 0;
-// }
-// .serv_inner {
-//   width: 58%;
-// }
-// .serv_inner h3 {
-//   text-align: center;
-//   color: #000;
-// }
-// .slider {
-//   width: 90%;
-//   display: grid;
-//   grid-template-columns: repeat(6, 1fr);
-//   padding-top: 70px;
-// }
-// .slider .slide {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   flex-direction: column;
-//   gap: 15px;
-//   cursor: pointer;
-// }
-// .slider .slide img {
-//   max-width: 70px;
-// }
-// .slider .slide h6 {
-//   text-align: center;
-// }
-
-// @media (max-width: 576px) {
-//   .about .about_store {
-//     height: 100%;
-//     flex-direction: column;
-//     padding: 0;
-//   }
-//   .about .about_store .left_wrapper {
-//     width: 100%;
-//     padding-right: 0;
-//   }
-//   .career {
-//     margin-top: 20px;
-//     height: 40px;
-//   }
-//   .about .about_store .right_wrapper {
-//     width: 100%;
-//     margin-top: 20px;
-//   }
-//   .about .new {
-//     flex-direction: column;
-//     height: 100%;
-//   }
-//   .left_news,
-//   .right_news {
-//     width: 100%;
-//     padding: 15% 6%;
-//   }
-//   .right_news .swiper {
-//     height: 50vh !important;
-//   }
-//   .serv_inner {
-//     width: 100%;
-//   }
-//   .slider {
-//     width: 100%;
-//     grid-gap: 25px;
-//     grid-template-columns: repeat(2, 1fr);
-//   }
-// }

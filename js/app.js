@@ -49,19 +49,14 @@ let swiper = new Swiper(".mySwiper", {
   }
 });
 //about swiper
-let aboutSwiper = new swiper(".about-swiper", {
+let aboutSwiper = new Swiper(".aboutSwiper", {
   spaceBetween: 50,
   slidesPerView: 1,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false
-  },
+  grabCursor: true,
+  pagination:true,
   loop: true,
   pagination: {
+    el: ".aboutSwiperPagination",
     clickable: true
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
 });
