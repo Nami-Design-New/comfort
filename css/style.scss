@@ -1425,6 +1425,98 @@ button {
       }
     }
   }
+  //*********Login*************//
+  .Login {
+    width: 100%;
+    height: 100vh;
+    h3 {
+      color: $maincolor;
+      text-align: center;
+      font-weight: 400;
+      font-size: 40px;
+      margin: 25px 0;
+      font-family: "Jost", sans-serif;
+    }
+    .form_wrap {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      form {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 25px;
+        .form_field {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          margin: 15px 0;
+          label {
+            color: $maincolor;
+            font-weight: 500;
+            padding: 5px 0;
+          }
+          input {
+            width: 100%;
+            height: 60px;
+            padding: 20px;
+            font-size: 18px;
+            color: $maincolor;
+            font-weight: 500;
+            border: 1px solid $gray2;
+            background: none;
+            outline: none;
+          }
+        }
+        .sign_link {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          padding: 10px 0;
+          span {
+            color: $maincolor;
+            font-weight: 500;
+            font-size: 15px;
+            a {
+              color: $maincolor;
+              font-weight: 500;
+              font-size: 15px;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        .submit {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 10px 0;
+          button {
+            width: 120px;
+            height: 40px;
+            background-color: $maincolor;
+            color: $white;
+            font-size: 16px;
+            letter-spacing: 1px;
+            outline: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .link2 {
+      margin-left: 5px;
+    }
+  }
 }
 @media (max-width: 992px) {
   .main_entire .product-details {
@@ -1435,6 +1527,11 @@ button {
       .pro-info {
         padding: 0 20px;
       }
+    }
+  }
+  .main_entire .Login{
+    .form_wrap form{
+      width: 70%;
     }
   }
 }
@@ -1584,6 +1681,9 @@ button {
         }
       }
     }
+    .Login{
+      padding: 0 28px;
+    }
   }
 }
 @media (max-width: 576px) {
@@ -1663,6 +1763,15 @@ button {
     .contact .info_container .infos .info-field .icon {
       width: 40px;
       height: 40px;
+    }
+    .Login h3{
+      font-size: 32px;
+    }
+    .Login .form_wrap form {
+      width: 100%;
+    }
+    .Login .form_wrap form .submit {
+      padding: 15px 0;
     }
   }
 }
