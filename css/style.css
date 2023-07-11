@@ -1150,6 +1150,149 @@ button {
   background-color: #000;
   color: #fff;
 }
+.main_entire .contact {
+  padding: 60px;
+  display: flex;
+}
+.main_entire .contact .info_container {
+  width: 50%;
+}
+.main_entire .contact .info_container h2 {
+  font-size: 32px;
+  color: #000;
+  font-family: "Jost", sans-serif;
+  margin-bottom: 22px;
+}
+.main_entire .contact .info_container p {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  color: #000;
+  padding-right: 100px;
+}
+.main_entire .contact .info_container .infos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  gap: 20px;
+}
+.main_entire .contact .info_container .infos .info-field {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main_entire .contact .info_container .infos .info-field a,
+.main_entire .contact .info_container .infos .info-field p {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  color: #888;
+}
+.main_entire .contact .info_container .infos .info-field a:hover,
+.main_entire .contact .info_container .infos .info-field p:hover {
+  color: #000;
+  text-decoration: underline !important;
+}
+.main_entire .contact .info_container .infos .info-field .icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_entire .contact .info_container .infos .info-field i {
+  color: #000;
+  font-size: 20px;
+}
+.main_entire .contact .info_container .follow {
+  display: flex;
+  gap: 48px;
+  margin-top: 48px;
+}
+.main_entire .contact .info_container .follow h5 {
+  font-family: "Jost", sans-serif;
+  color: #000;
+  font-size: 20px;
+}
+.main_entire .contact .info_container .follow .social {
+  display: flex;
+  gap: 20px;
+}
+.main_entire .contact .info_container .follow .social i {
+  color: #000;
+  font-size: 20px;
+}
+.main_entire .contact .form_container {
+  width: 50%;
+  padding: 0 28px;
+}
+.main_entire .contact .form_container form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main_entire .contact .form_container form .form-group .input-field {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 16px;
+}
+.main_entire .contact .form_container form .form-group .input-field input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  color: #000;
+}
+.main_entire .contact .form_container form .form-group .input-field input::-moz-placeholder {
+  color: #787878;
+}
+.main_entire .contact .form_container form .form-group .input-field input::placeholder {
+  color: #787878;
+}
+.main_entire .contact .form_container form .message-field {
+  border: 1px solid #cccccc;
+  margin-top: 16px;
+  padding: 16px;
+}
+.main_entire .contact .form_container form .message-field textarea {
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+}
+.main_entire .contact .form_container form button {
+  margin-top: 16px;
+  float: right;
+  width: 160px;
+  border: 1px solid #000;
+  height: 40px;
+  background: none;
+  outline: none;
+  font-size: 16px;
+}
+.main_entire .contact .form_container form button i {
+  font-size: 14px;
+}
+.main_entire .contact .form_container form button:hover {
+  background: #000;
+  color: #fff;
+}
+.main_entire .map {
+  width: 100%;
+  padding: 0 60px 30px;
+  height: 380px;
+}
+.main_entire .map iframe {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+}
 
 @media (max-width: 768px) {
   .main_entire .GetInspired .row {
@@ -1253,6 +1396,19 @@ button {
   .main_entire .shop main h2 {
     font-size: 30px;
   }
+  .main_entire .contact {
+    flex-direction: column;
+    padding: 60px 28px;
+    gap: 40px;
+  }
+  .main_entire .contact .info_container,
+  .main_entire .contact .form_container {
+    width: 100%;
+    padding: 0;
+  }
+  .main_entire .map {
+    padding: 0 28px 30px;
+  }
 }
 @media (max-width: 576px) {
   .main_entire .about .about_store .left_wrapper .text p {
@@ -1309,6 +1465,22 @@ button {
   }
   .main_entire .mainSlider .swiperControl .swiper-button-next {
     right: 12px;
+  }
+  .main_entire .contact .info_container p {
+    padding: 0;
+  }
+  .main_entire .contact .info_container .infos .info-field a {
+    font-size: 16px;
+  }
+  .main_entire .contact .info_container .infos .info-field p {
+    font-size: 16px;
+  }
+  .main_entire .contact .info_container .infos .info-field i {
+    font-size: 18px;
+  }
+  .main_entire .contact .info_container .infos .info-field .icon {
+    width: 40px;
+    height: 40px;
   }
 }
 .footer {

@@ -300,7 +300,6 @@ button {
 }
 //*********end header & nav**************//
 
-//**********start main-entire***********//
 .main_entire {
   //******main slider hero section******//
   .mainSlider {
@@ -1185,6 +1184,149 @@ button {
       }
     }
   }
+  //********contact section*****//
+  .contact {
+    padding: 60px;
+    display: flex;
+    .info_container {
+      width: 50%;
+      h2 {
+        font-size: 32px;
+        color: $maincolor;
+        font-family: "Jost", sans-serif;
+        margin-bottom: 22px;
+      }
+      p {
+        font-family: "Jost", sans-serif;
+        font-size: 18px;
+        color: $maincolor;
+        padding-right: 100px;
+      }
+      .infos {
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px;
+        gap: 20px;
+        .info-field {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          a,
+          p {
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            color: $gray;
+            &:hover {
+              color: $maincolor;
+              text-decoration: underline !important;
+            }
+          }
+          .icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 1px solid $border1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          i {
+            color: $maincolor;
+            font-size: 20px;
+          }
+        }
+      }
+      .follow {
+        display: flex;
+        gap: 48px;
+        margin-top: 48px;
+        h5 {
+          font-family: "Jost", sans-serif;
+          color: $maincolor;
+          font-size: 20px;
+        }
+        .social {
+          display: flex;
+          gap: 20px;
+          i {
+            color: $maincolor;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .form_container {
+      width: 50%;
+      padding: 0 28px;
+      form {
+        .form-group {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          .input-field {
+            width: 100%;
+            height: 50px;
+            border: 1px solid $border1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4px 16px;
+            input {
+              width: 100%;
+              height: 100%;
+              background: none;
+              outline: none;
+              border: none;
+              color: $maincolor;
+              &::placeholder {
+                color: $gray2;
+              }
+            }
+          }
+        }
+        .message-field {
+          border: 1px solid $border1;
+          margin-top: 16px;
+          padding: 16px;
+          textarea {
+            width: 100%;
+            background: none;
+            outline: none;
+            border: none;
+          }
+        }
+        button {
+          margin-top: 16px;
+          float: right;
+          width: 160px;
+          border: 1px solid $maincolor;
+          height: 40px;
+          background: none;
+          outline: none;
+          font-size: 16px;
+          i {
+            font-size: 14px;
+          }
+          &:hover {
+            background: $maincolor;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  //**********map area*********//
+  .map {
+    width: 100%;
+    padding: 0 60px 30px;
+    height: 380px;
+    iframe {
+      width: 100%;
+      height: 100%;
+      filter: grayscale(1);
+    }
+  }
 }
 @media (max-width: 768px) {
   .main_entire {
@@ -1293,6 +1435,19 @@ button {
         }
       }
     }
+    .contact {
+      flex-direction: column;
+      padding: 60px 28px;
+      gap: 40px;
+      .info_container,
+      .form_container {
+        width: 100%;
+        padding: 0;
+      }
+    }
+    .map {
+      padding: 0 28px 30px;
+    }
   }
 }
 @media (max-width: 576px) {
@@ -1356,6 +1511,22 @@ button {
           right: 12px;
         }
       }
+    }
+    .contact .info_container p {
+      padding: 0;
+    }
+    .contact .info_container .infos .info-field a {
+      font-size: 16px;
+    }
+    .contact .info_container .infos .info-field p {
+      font-size: 16px;
+    }
+    .contact .info_container .infos .info-field i {
+      font-size: 18px;
+    }
+    .contact .info_container .infos .info-field .icon {
+      width: 40px;
+      height: 40px;
     }
   }
 }
