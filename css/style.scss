@@ -1523,23 +1523,26 @@ button {
     padding: 40px 60px 100px;
     h2 {
       width: 100%;
-      text-align: center;
       font-size: 32px;
       color: $maincolor;
       font-family: "Jost", sans-serif;
-      margin-bottom: 40px;
+      margin: 50px 0 30px;
       font-weight: 500;
+      &:first-child {
+        margin-top: 0;
+      }
     }
-    .cate-cards {
+    .category-cards {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 32px;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 20px;
       .category-card {
         width: 100%;
         max-height: 240px;
         position: relative;
         img {
           width: 100%;
+          object-fit: cover;
           height: 100%;
         }
         .layer {
@@ -1594,8 +1597,8 @@ button {
       width: 70%;
     }
   }
-  .main_entire .categories .cate-cards {
-    grid-template-columns: repeat(3, 1fr);
+  .main_entire .categories .category-cards {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media (max-width: 768px) {
@@ -1749,9 +1752,9 @@ button {
     }
     .categories {
       padding: 40px 28px;
-    }
-    .cate-cards {
-      grid-template-columns: repeat(2, 1fr);
+      .category-cards {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
   }
 }
@@ -1842,8 +1845,8 @@ button {
     .Login .form_wrap form .submit {
       padding: 15px 0;
     }
-    .categories .cate-cards {
-      grid-template-columns: repeat(1, 1fr);
+    .categories .category-cards {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }

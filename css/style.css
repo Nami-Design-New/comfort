@@ -1488,28 +1488,32 @@ button {
 }
 .main_entire .categories h2 {
   width: 100%;
-  text-align: center;
   font-size: 32px;
   color: #000;
   font-family: "Jost", sans-serif;
-  margin-bottom: 40px;
+  margin: 50px 0 30px;
   font-weight: 500;
 }
-.main_entire .categories .cate-cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
+.main_entire .categories h2:first-child {
+  margin-top: 0;
 }
-.main_entire .categories .cate-cards .category-card {
+.main_entire .categories .category-cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+.main_entire .categories .category-cards .category-card {
   width: 100%;
   max-height: 240px;
   position: relative;
 }
-.main_entire .categories .cate-cards .category-card img {
+.main_entire .categories .category-cards .category-card img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
 }
-.main_entire .categories .cate-cards .category-card .layer {
+.main_entire .categories .category-cards .category-card .layer {
   position: absolute;
   content: "";
   top: 0;
@@ -1524,19 +1528,19 @@ button {
   padding-bottom: 6%;
   padding-left: 10%;
 }
-.main_entire .categories .cate-cards .category-card .layer h5 {
+.main_entire .categories .category-cards .category-card .layer h5 {
   margin: 0;
   color: #fff;
   font-size: 18px;
   font-family: "Jost", sans-serif;
 }
-.main_entire .categories .cate-cards .category-card .layer h5 i {
+.main_entire .categories .category-cards .category-card .layer h5 i {
   font-size: 16px;
 }
-.main_entire .categories .cate-cards .category-card:hover .layer {
+.main_entire .categories .category-cards .category-card:hover .layer {
   opacity: 1;
 }
-.main_entire .categories .cate-cards .category-card:hover h5 i {
+.main_entire .categories .category-cards .category-card:hover h5 i {
   margin-left: 4px;
 }
 
@@ -1550,8 +1554,8 @@ button {
   .main_entire .Login .form_wrap form {
     width: 70%;
   }
-  .main_entire .categories .cate-cards {
-    grid-template-columns: repeat(3, 1fr);
+  .main_entire .categories .category-cards {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media (max-width: 768px) {
@@ -1701,8 +1705,8 @@ button {
   .main_entire .categories {
     padding: 40px 28px;
   }
-  .main_entire .cate-cards {
-    grid-template-columns: repeat(2, 1fr);
+  .main_entire .categories .category-cards {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 576px) {
@@ -1786,8 +1790,8 @@ button {
   .main_entire .Login .form_wrap form .submit {
     padding: 15px 0;
   }
-  .main_entire .categories .cate-cards {
-    grid-template-columns: repeat(1, 1fr);
+  .main_entire .categories .category-cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .footer {
