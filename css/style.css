@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #e6e4e4 !important;
+  background-color: #fff !important;
   overflow-x: hidden !important;
   font-family: "Jost", sans-serif;
 }
@@ -50,12 +50,12 @@ p {
 }
 
 ::-moz-selection {
-  background: #000;
+  background: #1b355e;
   color: #fff;
 }
 
 ::selection {
-  background: #000;
+  background: #1b355e;
   color: #fff;
 }
 
@@ -70,7 +70,7 @@ button {
   flex-direction: column;
   position: sticky;
   top: 0;
-  background-color: #e6e4e4;
+  background-color: #fff;
   z-index: 999;
 }
 .navigation .nav_header {
@@ -90,7 +90,7 @@ button {
 }
 .navigation .nav_header .left_head span {
   font-size: 14px;
-  color: #000;
+  color: #1b355e;
 }
 .navigation .nav_header .right_head .social-lang {
   display: flex;
@@ -99,7 +99,7 @@ button {
   gap: 24px;
 }
 .navigation .nav_header .right_head .social-lang a {
-  color: #000;
+  color: #1b355e;
 }
 .navigation .nav_header .right_head .social-lang span {
   cursor: pointer;
@@ -162,7 +162,7 @@ button {
   gap: 32px;
 }
 .navigation nav .left_sup_nav ul a {
-  color: #000;
+  color: #1b355e;
   font-size: 16px;
   text-transform: uppercase;
   position: relative;
@@ -174,7 +174,7 @@ button {
   transform: translateX(-50%);
   content: "";
   height: 1px;
-  background-color: #000;
+  background-color: #1b355e;
   width: 0;
 }
 .navigation nav .left_sup_nav ul a.active::after {
@@ -197,7 +197,7 @@ button {
 }
 .navigation nav .right_sup_nav ul li {
   position: relative;
-  color: #000;
+  color: #1b355e;
   font-size: 16px;
   cursor: pointer;
 }
@@ -205,18 +205,18 @@ button {
   margin-right: 5px;
 }
 .navigation nav .right_sup_nav ul li a {
-  color: #000;
+  color: #1b355e;
   font-size: 16px;
 }
 .navigation nav .right_sup_nav ul li small {
-  color: #000;
+  color: #1b355e;
   font-size: 16px;
 }
 .navigation nav .right_sup_nav ul li .count {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background-color: #000;
+  background-color: #1b355e;
   color: #fff;
   font-size: 10px;
   display: flex;
@@ -249,7 +249,7 @@ button {
     width: 350px;
     height: calc(100vh - 130px);
     flex-direction: column;
-    background-color: #e6e4e4;
+    background-color: #fff;
     transition: 0.4s ease-in-out;
     border-left: 1px solid #cccccc;
   }
@@ -445,10 +445,10 @@ button {
 .main_entire .departments .cards .dcard .info h3 {
   font-family: "Jost", sans-serif;
   font-size: 28px;
-  color: #000;
+  color: #1b355e;
 }
 .main_entire .departments .cards .dcard .info a {
-  color: #000;
+  color: #1b355e;
 }
 .main_entire .departments .cards .dcard .info a i {
   font-size: 12px;
@@ -490,13 +490,13 @@ button {
   transform: translateY(-50%);
 }
 .main_entire .GetInspired .row .col-12 .info p {
-  color: #000;
+  color: #1b355e;
   font-size: 32px;
   font-weight: 600;
   line-height: 1.2;
 }
 .main_entire .GetInspired .row .col-12 .info a {
-  color: #000;
+  color: #1b355e;
   font-size: 16px;
 }
 .main_entire .GetInspired .row .col-12 .info a i {
@@ -510,7 +510,7 @@ button {
 }
 .main_entire .quality {
   width: 100%;
-  background-color: #000;
+  background-color: #1b355e;
   padding: 60px;
 }
 .main_entire .quality .quality-cards {
@@ -558,7 +558,7 @@ button {
 }
 .main_entire .trending .col-12 h2 {
   font-weight: 500;
-  color: #000;
+  color: #1b355e;
   font-size: 40px;
   font-family: "Jost", sans-serif;
 }
@@ -596,7 +596,7 @@ button {
 }
 .main_entire .trending .pro_card .img_wraper .menu span i {
   font-size: 20px;
-  color: #000;
+  color: #1b355e;
   cursor: pointer;
 }
 .main_entire .trending .pro_card .add_cart {
@@ -611,7 +611,7 @@ button {
   left: 0;
   opacity: 1;
   font-weight: bold;
-  color: #000;
+  color: #1b355e;
   font-size: 16px;
 }
 .main_entire .trending .pro_card .add_cart .link {
@@ -622,7 +622,7 @@ button {
   cursor: pointer;
 }
 .main_entire .trending .pro_card .add_cart .link a {
-  color: #000;
+  color: #1b355e;
   font-size: 18px;
 }
 .main_entire .trending .pro_card:hover .img_wraper .menu {
@@ -640,7 +640,7 @@ button {
 }
 .main_entire .newsletter {
   width: 100%;
-  background-color: #000;
+  background-color: #1b355e;
   padding: 60px;
   display: flex;
   align-items: center;
@@ -691,8 +691,8 @@ button {
   width: 25%;
   font-size: 16px;
   border-radius: 42px;
-  background: #e6e4e4;
-  color: #000;
+  background: #fff;
+  color: #1b355e;
 }
 .main_entire .newsletter form button i {
   margin-left: 4px;
@@ -714,7 +714,7 @@ button {
 .main_entire .follow-us .head span {
   width: 60px;
   height: 2px;
-  background: #000;
+  background: #1b355e;
 }
 .main_entire .follow-us .head h3 {
   text-align: center;
@@ -740,7 +740,7 @@ button {
 .main_entire .follow-us .swiper .swiper-button-next {
   width: 40px;
   height: 40px;
-  border: 1px solid #000;
+  border: 1px solid #1b355e;
   border-radius: 50%;
 }
 .main_entire .follow-us .swiper .swiper-button-prev::after,
@@ -750,11 +750,11 @@ button {
   left: 55%;
   top: 50%;
   transform: translate(-50%, -50%);
-  color: #000;
+  color: #1b355e;
 }
 .main_entire .follow-us .swiper .swiper-button-prev:hover,
 .main_entire .follow-us .swiper .swiper-button-next:hover {
-  background-color: #000;
+  background-color: #1b355e;
 }
 .main_entire .follow-us .swiper .swiper-button-prev:hover::after,
 .main_entire .follow-us .swiper .swiper-button-next:hover::after {
@@ -773,10 +773,11 @@ button {
   align-items: center;
   font-style: italic;
   font-weight: 600;
+  color: #1b355e;
   padding: 0 60px;
 }
 .main_entire .go_back a {
-  color: #000;
+  color: #1b355e;
   margin-right: 5px;
 }
 .main_entire .go_back a:hover {
@@ -808,7 +809,7 @@ button {
   flex-direction: column;
 }
 .main_entire .about .about_store .left_wrapper .ab_head h1 {
-  color: #000;
+  color: #1b355e;
   font-weight: 400;
   font-family: "Jost", sans-serif;
 }
@@ -826,12 +827,12 @@ button {
   margin-top: 20px;
 }
 .main_entire .about .about_store .left_wrapper .career a {
-  color: #000;
-  border: 1px solid #000;
+  color: #1b355e;
+  border: 1px solid #1b355e;
   padding: 8px 10px;
 }
 .main_entire .about .about_store .left_wrapper .career a:hover {
-  background-color: #000;
+  background-color: #1b355e;
   color: #fff;
   transition: 0.3s ease-in-out;
 }
@@ -849,7 +850,7 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #d8d8d8;
+  background-color: #e6e4e4;
 }
 .main_entire .about .new .left_news h4 {
   font-family: "vujahday script", sans-serif;
@@ -862,14 +863,14 @@ button {
   margin-top: 10px;
   font-size: 32px;
   line-height: 1.3;
-  color: #000;
+  color: #1b355e;
   font-family: "Jost", sans-serif;
   font-weight: 500;
 }
 .main_entire .about .new .left_news p {
   text-align: center;
   font-size: 16px;
-  color: #000;
+  color: #1b355e;
   margin-top: 25px;
 }
 .main_entire .about .new .right_news {
@@ -892,7 +893,7 @@ button {
 .main_entire .about .new .right_news .swiper .client h6 {
   margin-top: 25px;
   font-size: 20px;
-  color: #000;
+  color: #1b355e;
   font-weight: 500;
   font-family: "Jost", sans-serif;
 }
@@ -902,7 +903,7 @@ button {
 }
 .main_entire .about .new .right_news .swiper .client .review p {
   text-align: center;
-  color: #000;
+  color: #1b355e;
   font-style: italic;
   font-size: 16px;
   font-family: "Jost", sans-serif;
@@ -932,14 +933,14 @@ button {
   margin-left: 15px !important;
 }
 .main_entire .about .new .right_news .swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #000;
+  background: #1b355e;
 }
 .main_entire .about .new .right_news .swiper .swiper-pagination-bullet::after {
   position: absolute;
   content: "";
   top: -4px;
   left: -4px;
-  border: 1px solid #000;
+  border: 1px solid #1b355e;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -955,7 +956,7 @@ button {
   bottom: 12px;
   left: 12px;
   z-index: 200;
-  background-color: #000;
+  background-color: #1b355e;
   color: #fff;
   width: 80px;
   height: 34px;
@@ -982,21 +983,21 @@ button {
   height: 30px;
 }
 .main_entire .shop aside .side-head button i {
-  color: #000;
+  color: #1b355e;
   font-size: 20px;
 }
 .main_entire .shop aside h3 {
   font-family: "Jost", sans-serif;
-  color: #000;
+  color: #1b355e;
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 24px;
 }
 .main_entire .shop aside .accordion .accordion-button {
-  background-color: #e6e4e4;
+  background-color: #fff;
   font-weight: 600;
   font-size: 16px;
-  color: #000;
+  color: #1b355e;
   font-family: "Jost", sans-serif;
 }
 .main_entire .shop aside .accordion .accordion-item {
@@ -1008,18 +1009,18 @@ button {
 }
 .main_entire .shop aside .accordion .accordion-body {
   padding: 20px 24px;
-  background-color: #e6e4e4;
+  background-color: #fff;
 }
 .main_entire .shop aside .accordion .accordion-body ul li {
-  margin-top: 5px;
+  margin-top: 12px;
 }
 .main_entire .shop aside .accordion .accordion-body ul li span {
   font-size: 14px;
   cursor: pointer;
-  color: #000;
+  color: #1b355e;
 }
 .main_entire .shop aside .accordion .accordion-body ul li span i {
-  color: #000;
+  color: #1b355e;
   font-size: 13px;
   width: 0;
   overflow: hidden;
@@ -1035,7 +1036,7 @@ button {
 }
 .main_entire .shop main h2 {
   font-family: "Jost", sans-serif;
-  color: #000;
+  color: #1b355e;
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 8px;
@@ -1076,7 +1077,7 @@ button {
   cursor: pointer;
 }
 .main_entire .shop main .pro_card .inner_card .img_wraper .menu span a {
-  color: #000;
+  color: #1b355e;
 }
 .main_entire .shop main .pro_card .inner_card .img_wraper .menu span i {
   font-size: 13px;
@@ -1107,7 +1108,7 @@ button {
   left: 0;
   opacity: 1;
   font-weight: bold;
-  color: #000;
+  color: #1b355e;
   font-size: 16px;
 }
 .main_entire .shop main .pro_card .inner_card .add_cart .link {
@@ -1118,7 +1119,7 @@ button {
   cursor: pointer;
 }
 .main_entire .shop main .pro_card .inner_card .add_cart .link a {
-  color: #000;
+  color: #1b355e;
   font-size: 18px;
 }
 .main_entire .shop main .pro_card:hover .img_wraper .menu {
@@ -1142,13 +1143,13 @@ button {
   height: 40px;
   background: none;
   outline: none;
-  color: #000;
-  border: 1px solid #000;
+  color: #1b355e;
+  border: 1px solid #1b355e;
   font-size: 16px;
   font-weight: 500;
 }
 .main_entire .shop main .load-more:hover {
-  background-color: #000;
+  background-color: #1b355e;
   color: #fff;
 }
 .main_entire .contact {
@@ -1160,14 +1161,14 @@ button {
 }
 .main_entire .contact .info_container h2 {
   font-size: 32px;
-  color: #000;
+  color: #1b355e;
   font-family: "Jost", sans-serif;
   margin-bottom: 22px;
 }
 .main_entire .contact .info_container p {
   font-family: "Jost", sans-serif;
   font-size: 18px;
-  color: #000;
+  color: #1b355e;
   padding-right: 100px;
 }
 .main_entire .contact .info_container .infos {
@@ -1190,7 +1191,7 @@ button {
 }
 .main_entire .contact .info_container .infos .info-field a:hover,
 .main_entire .contact .info_container .infos .info-field p:hover {
-  color: #000;
+  color: #1b355e;
   text-decoration: underline !important;
 }
 .main_entire .contact .info_container .infos .info-field .icon {
@@ -1203,7 +1204,7 @@ button {
   justify-content: center;
 }
 .main_entire .contact .info_container .infos .info-field i {
-  color: #000;
+  color: #1b355e;
   font-size: 20px;
 }
 .main_entire .contact .info_container .follow {
@@ -1213,7 +1214,7 @@ button {
 }
 .main_entire .contact .info_container .follow h5 {
   font-family: "Jost", sans-serif;
-  color: #000;
+  color: #1b355e;
   font-size: 20px;
 }
 .main_entire .contact .info_container .follow .social {
@@ -1221,7 +1222,7 @@ button {
   gap: 20px;
 }
 .main_entire .contact .info_container .follow .social i {
-  color: #000;
+  color: #1b355e;
   font-size: 20px;
 }
 .main_entire .contact .form_container {
@@ -1248,7 +1249,7 @@ button {
   background: none;
   outline: none;
   border: none;
-  color: #000;
+  color: #1b355e;
 }
 .main_entire .contact .form_container form .form-group .input-field input::-moz-placeholder {
   color: #787878;
@@ -1271,18 +1272,18 @@ button {
   margin-top: 16px;
   float: right;
   width: 160px;
-  border: 1px solid #000;
+  border: 1px solid #1b355e;
   height: 40px;
   background: none;
   outline: none;
   font-size: 16px;
-  color: #000;
+  color: #1b355e;
 }
 .main_entire .contact .form_container form button i {
   font-size: 14px;
 }
 .main_entire .contact .form_container form button:hover {
-  background: #000;
+  background: #1b355e;
   color: #fff;
 }
 .main_entire .map {
@@ -1293,7 +1294,6 @@ button {
 .main_entire .map iframe {
   width: 100%;
   height: 100%;
-  filter: grayscale(1);
 }
 .main_entire .product-details {
   padding: 60px;
@@ -1323,7 +1323,7 @@ button {
   width: 100%;
   font-weight: 500;
   font-size: 30px;
-  color: #000;
+  color: #1b355e;
   line-height: 1.5;
   font-family: "Jost", sans-serif;
   margin-bottom: 32px;
@@ -1331,7 +1331,7 @@ button {
 .main_entire .product-details .pro-row .pro-info .price {
   font-size: 26px;
   font-weight: 500;
-  color: #000;
+  color: #1b355e;
 }
 .main_entire .product-details .pro-row .pro-info .add {
   width: 100%;
@@ -1342,7 +1342,7 @@ button {
 .main_entire .product-details .pro-row .pro-info .add .count {
   width: 100px;
   height: 40px;
-  border: 1px solid #000;
+  border: 1px solid #1b355e;
   display: flex;
 }
 .main_entire .product-details .pro-row .pro-info .add .count button {
@@ -1353,21 +1353,21 @@ button {
 }
 .main_entire .product-details .pro-row .pro-info .add .count button i {
   font-size: 14px;
-  color: #000;
+  color: #1b355e;
 }
 .main_entire .product-details .pro-row .pro-info .add .count span {
   width: 40px;
   font-size: 16px;
   font-weight: 600;
   display: flex;
-  color: #000;
+  color: #1b355e;
   align-items: center;
   justify-content: center;
 }
 .main_entire .product-details .pro-row .pro-info .add .add_btn {
   width: 150px;
   height: 40px;
-  background-color: #000;
+  background-color: #1b355e;
   color: #fff;
   margin-left: 10%;
 }
@@ -1376,7 +1376,7 @@ button {
   font-size: 15px;
 }
 .main_entire .product-details .pro-row .pro-info .favs span {
-  color: #000;
+  color: #1b355e;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -1386,7 +1386,7 @@ button {
   display: flex;
 }
 .main_entire .product-details .pro-row .pro-info .suk p {
-  color: #000;
+  color: #1b355e;
   font-size: 16px;
 }
 .main_entire .product-details .pro-row .pro-info .suk span {
@@ -1399,7 +1399,7 @@ button {
 .main_entire .categories h2 {
   width: 100%;
   font-size: 32px;
-  color: #000;
+  color: #1b355e;
   font-family: "Jost", sans-serif;
   margin: 50px 0 30px;
   font-weight: 500;
@@ -1460,7 +1460,7 @@ button {
 .main_entire .categories .category-cards .swiper-button-next {
   width: 28px;
   height: 28px;
-  border: 1px solid #000;
+  border: 1px solid #1b355e;
   border-radius: 50%;
   position: absolute;
   top: 65%;
@@ -1473,11 +1473,11 @@ button {
   left: 55%;
   top: 50%;
   transform: translate(-50%, -50%);
-  color: #000;
+  color: #1b355e;
 }
 .main_entire .categories .category-cards .swiper-button-prev:hover,
 .main_entire .categories .category-cards .swiper-button-next:hover {
-  background-color: #000;
+  background-color: #1b355e;
 }
 .main_entire .categories .category-cards .swiper-button-prev:hover::after,
 .main_entire .categories .category-cards .swiper-button-next:hover::after {
@@ -1589,7 +1589,7 @@ button {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #e6e4e4;
+    background: #fff;
     z-index: 9999999999999;
   }
   .main_entire .shop aside.open {
@@ -1752,7 +1752,7 @@ button {
 }
 .footer .inner_footer h5 {
   font-family: "Jost", sans-serif;
-  color: #000;
+  color: #1b355e;
   font-weight: 500;
   font-size: 17px;
   margin-bottom: 24px;
@@ -1768,7 +1768,7 @@ button {
 }
 .footer .inner_footer ul li a {
   font-family: "Jost", sans-serif;
-  color: #000;
+  color: #1b355e;
 }
 .footer .inner_footer ul li a i {
   font-size: 12px;
@@ -1806,7 +1806,7 @@ button {
 }
 .footer .sub_footer .right_sub i {
   font-size: 24px;
-  color: #000;
+  color: #1b355e;
 }
 
 @media (max-width: 992px) {
