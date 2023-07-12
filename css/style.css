@@ -1798,6 +1798,13 @@ button {
   .main_entire .product-details .pro-row .pro-img .productSlider2 {
     height: auto;
   }
+  .main_entire .product-details .pro-row .pro-info .suk {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .main_entire .product-details .pro-row .pro-info .suk span {
+    margin: 0;
+  }
 }
 .footer {
   width: 100%;

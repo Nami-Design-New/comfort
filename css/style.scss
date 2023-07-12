@@ -1850,6 +1850,13 @@ button {
       }
     }
   }
+  .main_entire .product-details .pro-row .pro-info .suk {
+    flex-direction: column;
+    gap: 16px;
+    span {
+      margin: 0;
+    }
+  }
 }
 //**********end main-entire************//
 
