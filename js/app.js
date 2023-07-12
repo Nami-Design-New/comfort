@@ -62,7 +62,7 @@ let aboutSwiper = new Swiper(".aboutSwiper", {
 });
 //products slider
 let categorySlider = new Swiper(".category-cards", {
-  spaceBetween: 20,
+  spaceBetween: 12,
   slidesPerView: 5,
   grabCursor: true,
   loop: true,

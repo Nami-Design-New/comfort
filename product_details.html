@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESKIL</title>
     <link rel="icon" href="img/fav-icon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper.css">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -94,7 +94,62 @@
         <section class="product-details">
             <div class="pro-row">
                 <div class="pro-img">
-                    <img src="img/img-f-5.png" alt="">
+                    <!-- main slide -->
+                    <div class="swiper productSlider2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <!-- img -->
+                                <a data-fancybox="galleryImages" data-title="Title Here" data-caption="Description Here"
+                                    href="img/dslide2.webp">
+                                    <img src="img/dslide2.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- img -->
+                                <a data-fancybox="galleryImages" data-title="Title Here" data-caption="Description Here"
+                                    href="img/dslide3.webp">
+                                    <img src="img/dslide3.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- img -->
+                                <a data-fancybox="galleryImages" data-title="Title Here" data-caption="Description Here"
+                                    href="img/dslide4.webp">
+                                    <img src="img/dslide4.webp" alt="">
+                                </a>
+                            </div>
+                            <div class=" swiper-slide">
+                                <!-- img -->
+                                <a data-fancybox="galleryImages" data-title="Title Here" data-caption="Description Here"
+                                    href="img/dslide5.webp">
+                                    <img src="img/dslide5.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiperControl">
+                            <div class="swiperBtns">
+                                <div class="productSliderNext swiper-button-next"></div>
+                                <div class="productSliderPrev swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- thumb slider -->
+                    <div thumbsSlider="" class="swiper productSlider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/dslide2.webp" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/dslide3.webp" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/dslide4.webp" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/dslide5.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="pro-info">
                     <h2>HYGGER SOFT CUSHION ARMCHAIR, GREY COTTON & PLYWOOD LEGS</h2>
@@ -116,15 +171,10 @@
                             </a>
                         </button>
                     </div>
-                    <div class="favs">
-                        <span>
-                            <i class="fa-regular fa-heart"></i>
-                            add wishlist
-                        </span>
-                    </div>
                     <div class="suk">
                         <p>SKU: 8</p>
                         <span>Category: Chars</span>
+                        <span>Availability : In Stock</span>
                     </div>
                 </div>
             </div>
@@ -272,10 +322,32 @@
             counter.innerHTML = count;
         });
     </script>
-    <script src="js/swiper.js"></script>
-    <script src="js/app.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var swiper = new Swiper(".productSlider", {
+                loop: true,
+                spaceBetween: 10,
+                slidesPerView: 4,
+                freeMode: true,
+                watchSlidesProgress: true,
+            });
+            var swiper2 = new Swiper(".productSlider2", {
+                loop: true,
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: ".productSliderNext",
+                    prevEl: ".productSliderPrev",
+                },
+                thumbs: {
+                    swiper: swiper,
+                },
+            });
+        });
+
+    </script>
+    <!-- <script src="js/app.js"></script> -->
 </body>
 
 </html>

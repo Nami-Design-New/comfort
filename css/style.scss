@@ -342,14 +342,18 @@ button {
           gap: 12px;
           h1 {
             text-align: center;
+            font-size: 36px;
+            font-family: "Jost", sans-serif;
+          }
+          h4 {
+            font-family: "Jost", sans-serif;
           }
           a {
             color: $white;
+            font-family: "Jost", sans-serif;
           }
           .sliderTitle {
             color: $white;
-            font-weight: bold;
-            font-size: 45px !important;
             @media (max-width: 768px) {
               font-size: 32px !important;
             }
@@ -528,7 +532,10 @@ button {
   //*********Quality section**********//
   .quality {
     width: 100%;
-    background-color: $maincolor;
+    background-image: linear-gradient(45deg, #1b355ec8, #1b355eef),
+      url(../img/slide3.webp);
+    background-size: cover;
+    background-position: center;
     padding: 60px;
     .quality-cards {
       display: grid;
@@ -549,7 +556,7 @@ button {
         h4 {
           font-size: 16px;
           margin: 0;
-          padding: 28px 0 16px 0;
+          padding: 38px 0 16px 0;
         }
         p {
           font-size: 14px;
@@ -557,8 +564,10 @@ button {
           height: 90px;
         }
         .icon {
-          height: 50px;
-          width: 100%;
+          height: 80px;
+          width: 80px;
+          background-color: $maincolor;
+          border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -600,25 +609,6 @@ button {
           max-width: 100%;
           mix-blend-mode: multiply;
         }
-        .menu {
-          transition: $mainTransation;
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 0;
-          overflow: hidden;
-          background-color: rgba(204, 204, 204, 0.5);
-          display: flex;
-          gap: 20px;
-          justify-content: center;
-          align-items: center;
-          span i {
-            font-size: 20px;
-            color: $maincolor;
-            cursor: pointer;
-          }
-        }
       }
       .add_cart {
         overflow: hidden;
@@ -642,7 +632,7 @@ button {
           cursor: pointer;
           a {
             color: $maincolor;
-            font-size: 18px;
+            font-size: 16px;
           }
         }
       }
@@ -666,8 +656,9 @@ button {
   //*********newsletter section*****//
   .newsletter {
     width: 100%;
-    background-color: $maincolor;
-    padding: 60px;
+    background-image: linear-gradient(45deg, #1b355ee5, #1b355e),
+      url(../img/slide2.webp);
+    padding: 80px 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -684,7 +675,7 @@ button {
       margin-top: 20px;
     }
     form {
-      margin-top: 20px;
+      margin-top: 32px;
       height: 50px;
       display: flex;
       align-items: center;
@@ -808,7 +799,6 @@ button {
   //********about section********//
   .about {
     .about_store {
-      height: calc(100vh - 180px);
       display: flex;
       padding: 0 60px;
       border-bottom: 1px solid $border1;
@@ -818,9 +808,9 @@ button {
         align-items: center;
         justify-content: center;
         img {
+          width: 100%;
           height: 100%;
           object-fit: cover;
-          mix-blend-mode: darken;
         }
       }
       .left_wrapper {
@@ -848,10 +838,12 @@ button {
         }
         .career {
           margin-top: 20px;
+          display: contents;
           a {
+            width: fit-content;
             color: $maincolor;
             border: 1px solid $maincolor;
-            padding: 8px 10px;
+            padding: 8px 12px;
             &:hover {
               background-color: $maincolor;
               color: $white;
@@ -1075,51 +1067,9 @@ button {
           .img_wraper {
             position: relative;
             background: #d8d6d6;
+            display: block;
             img {
               max-width: 100%;
-            }
-            .menu {
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              overflow: hidden;
-              background: none !important;
-              border: 1px solid transparent;
-              display: flex;
-              align-items: flex-end;
-              gap: 0;
-              span {
-                height: 0;
-                overflow: hidden;
-                width: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: #dbd9d9;
-                font-size: 14px;
-                cursor: pointer;
-                a {
-                  color: $maincolor;
-                }
-                i {
-                  font-size: 13px;
-                  margin-right: 0px;
-                  width: 0;
-                  overflow: hidden;
-                }
-                &:hover {
-                  i {
-                    width: 15px;
-                    margin-right: 2px;
-                    transition: 0.3s ease-in-out;
-                  }
-                }
-                &:nth-child(1) {
-                  border-right: 1px solid $border1;
-                }
-              }
             }
           }
           .img_caption {
@@ -1147,7 +1097,7 @@ button {
               cursor: pointer;
               a {
                 color: $maincolor;
-                font-size: 18px;
+                font-size: 16px;
               }
             }
           }
@@ -1340,13 +1290,106 @@ button {
         width: 50%;
       }
       .pro-img {
-        max-height: 60vh;
-        padding: 0 34px;
-        img {
-          background: #dbd9d9;
+        padding: 0 16px;
+        .swiper-slide img {
+          display: block;
           width: 100%;
+          border-radius: 8px;
           height: 100%;
-          object-fit: contain;
+          object-fit: cover;
+        }
+        .swiperControl {
+          position: absolute;
+          bottom: 10px;
+          left: 10px;
+          padding: 20px;
+          display: flex;
+          gap: 24px;
+          align-items: center;
+          .swiperBtns {
+            display: flex;
+            gap: 8px;
+            .swiper-button-next,
+            .swiper-button-prev {
+              transform: scaleX(-1);
+              position: relative;
+              right: unset;
+              left: unset;
+              top: unset;
+              bottom: unset;
+              margin: unset;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: $white;
+              width: 40px;
+              height: 40px;
+              border: 1px solid $white;
+              border-radius: 100%;
+              opacity: 0.8;
+              &::after {
+                font-size: 32px;
+                font-family: "Font Awesome 6 Pro";
+                font-weight: 200;
+                @media (max-width: 768px) {
+                  font-size: 20px;
+                }
+              }
+              &:hover {
+                opacity: 1;
+                background-color: $white;
+                color: $maincolor;
+              }
+            }
+            .swiper-button-next {
+              right: unset;
+              &::after {
+                content: "\f105" !important;
+              }
+            }
+            .swiper-button-prev {
+              &::after {
+                content: "\f105" !important;
+                transform: scaleX(-1);
+              }
+            }
+          }
+          .swiper-pagination {
+            position: relative;
+            right: unset;
+            left: unset;
+            top: unset;
+            bottom: unset;
+            margin: unset;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .swiper-pagination-bullet {
+              background-color: $white;
+              border-radius: 16px;
+              &.swiper-pagination-bullet-active {
+                width: 16px;
+                height: 16px;
+              }
+            }
+          }
+        }
+        .productSlider {
+          margin-top: 10px;
+          height: 120px;
+          .swiper-slide {
+            width: 25%;
+            opacity: 0.5;
+            &.swiper-slide-thumb-active {
+              opacity: 1;
+            }
+          }
+          width: 100%;
+          overflow: hidden;
+        }
+        .productSlider2 {
+          height: 380px;
         }
       }
       .pro-info {
@@ -1358,7 +1401,7 @@ button {
           color: $maincolor;
           line-height: 1.5;
           font-family: "Jost", sans-serif;
-          margin-bottom: 32px;
+          margin-bottom: 2rem;
         }
         .price {
           font-size: 26px;
@@ -1367,7 +1410,7 @@ button {
         }
         .add {
           width: 100%;
-          padding: 40px 0;
+          padding: 3rem 0;
           display: flex;
           align-items: center;
           .count {
@@ -1396,11 +1439,11 @@ button {
             }
           }
           .add_btn {
-            width: 150px;
+            width: 120px;
             height: 40px;
             background-color: $maincolor;
             color: $white;
-            margin-left: 10%;
+            margin-left: 1.5rem;
             a {
               color: $white;
               font-size: 15px;
@@ -1414,7 +1457,6 @@ button {
           cursor: pointer;
         }
         .suk {
-          margin-top: 25px;
           display: flex;
           p {
             color: $maincolor;
@@ -1428,104 +1470,12 @@ button {
       }
     }
   }
-  //*********Login*************//
-  // .Login {
-  //   width: 100%;
-  //   height: 100vh;
-  //   h3 {
-  //     color: $maincolor;
-  //     text-align: center;
-  //     font-weight: 400;
-  //     font-size: 40px;
-  //     margin: 25px 0;
-  //     font-family: "Jost", sans-serif;
-  //   }
-  //   .form_wrap {
-  //     width: 100%;
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: center;
-  //     form {
-  //       width: 40%;
-  //       display: flex;
-  //       align-items: center;
-  //       justify-content: center;
-  //       flex-direction: column;
-  //       margin-top: 25px;
-  //       .form_field {
-  //         display: flex;
-  //         flex-direction: column;
-  //         width: 100%;
-  //         margin: 15px 0;
-  //         label {
-  //           color: $maincolor;
-  //           font-weight: 500;
-  //           padding: 5px 0;
-  //         }
-  //         input {
-  //           width: 100%;
-  //           height: 60px;
-  //           padding: 20px;
-  //           font-size: 18px;
-  //           color: $maincolor;
-  //           font-weight: 500;
-  //           border: 1px solid $gray2;
-  //           background: none;
-  //           outline: none;
-  //         }
-  //       }
-  //       .sign_link {
-  //         width: 100%;
-  //         display: flex;
-  //         align-items: center;
-  //         justify-content: flex-end;
-  //         padding: 10px 0;
-  //         span {
-  //           color: $maincolor;
-  //           font-weight: 500;
-  //           font-size: 15px;
-  //           a {
-  //             color: $maincolor;
-  //             font-weight: 500;
-  //             font-size: 15px;
-  //             &:hover {
-  //               text-decoration: underline;
-  //             }
-  //           }
-  //         }
-  //       }
-  //       .submit {
-  //         width: 100%;
-  //         display: flex;
-  //         align-items: center;
-  //         justify-content: flex-start;
-  //         padding: 10px 0;
-  //         button {
-  //           width: 120px;
-  //           height: 40px;
-  //           background-color: $maincolor;
-  //           color: $white;
-  //           font-size: 16px;
-  //           letter-spacing: 1px;
-  //           outline: none;
-  //           border: none;
-  //           display: flex;
-  //           align-items: center;
-  //           justify-content: center;
-  //         }
-  //       }
-  //     }
-  //   }
-  //   .link2 {
-  //     margin-left: 5px;
-  //   }
-  // }
   //*********categories********//
   .categories {
     padding: 40px 60px 100px;
     h2 {
       width: 100%;
-      font-size: 32px;
+      font-size: 38px;
       color: $maincolor;
       font-family: "Jost", sans-serif;
       margin: 50px 0 30px;
@@ -1539,12 +1489,18 @@ button {
       gap: 20px;
       position: relative;
       grid-template-columns: repeat(6, 1fr);
+      .swiper-slide {
+        border-radius: 8px;
+        overflow: hidden;
+      }
       .category-card {
         width: 100%;
         max-height: 240px;
         display: block;
+        background-color: #f3f3f3;
         position: relative;
         img {
+          mix-blend-mode: darken;
           width: 100%;
           object-fit: cover;
           height: 100%;
@@ -1765,7 +1721,6 @@ button {
         flex-direction: column;
         gap: 40px;
         .pro-img {
-          height: 50vh;
           width: 100%;
           padding: 0;
           img {
@@ -1885,6 +1840,14 @@ button {
     }
     .categories .category-cards {
       grid-template-columns: repeat(2, 1fr);
+    }
+    .product-details .pro-row .pro-img {
+      .productSlider {
+        height: auto;
+      }
+      .productSlider2 {
+        height: auto;
+      }
     }
   }
 }
