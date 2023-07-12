@@ -60,3 +60,29 @@ let aboutSwiper = new Swiper(".aboutSwiper", {
     clickable: true
   }
 });
+//products slider
+let categorySlider = new Swiper(".category-cards", {
+  spaceBetween: 20,
+  slidesPerView: 5,
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 6
+    },
+    768: {
+      slidesPerView: 4
+    },
+    350: {
+      slidesPerView: 2
+    }
+  }
+});
