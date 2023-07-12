@@ -102,6 +102,7 @@ button {
   color: #1b355e;
 }
 .navigation .nav_header .right_head .social-lang span {
+  color: #1b355e;
   cursor: pointer;
 }
 .navigation .nav_header .right_head .social-lang span i {
@@ -1797,6 +1798,7 @@ button {
 }
 .footer .sub_footer .left_sub p {
   margin: auto 0 8px 10px;
+  color: #1b355e;
 }
 .footer .sub_footer .right_sub {
   display: flex;
