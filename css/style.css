@@ -1275,6 +1275,7 @@ button {
   background: none;
   outline: none;
   font-size: 16px;
+  color: #000;
 }
 .main_entire .contact .form_container form button i {
   font-size: 14px;
@@ -1482,6 +1483,62 @@ button {
 .main_entire .Login .link2 {
   margin-left: 5px;
 }
+.main_entire .categories {
+  padding: 40px 60px 100px;
+}
+.main_entire .categories h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  color: #000;
+  font-family: "Jost", sans-serif;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+.main_entire .categories .cate-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+.main_entire .categories .cate-cards .category-card {
+  width: 100%;
+  max-height: 240px;
+  position: relative;
+}
+.main_entire .categories .cate-cards .category-card img {
+  width: 100%;
+  height: 100%;
+}
+.main_entire .categories .cate-cards .category-card .layer {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding-bottom: 6%;
+  padding-left: 10%;
+}
+.main_entire .categories .cate-cards .category-card .layer h5 {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+}
+.main_entire .categories .cate-cards .category-card .layer h5 i {
+  font-size: 16px;
+}
+.main_entire .categories .cate-cards .category-card:hover .layer {
+  opacity: 1;
+}
+.main_entire .categories .cate-cards .category-card:hover h5 i {
+  margin-left: 4px;
+}
 
 @media (max-width: 992px) {
   .main_entire .product-details .pro-row .pro-img {
@@ -1492,6 +1549,9 @@ button {
   }
   .main_entire .Login .form_wrap form {
     width: 70%;
+  }
+  .main_entire .categories .cate-cards {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 768px) {
@@ -1638,6 +1698,12 @@ button {
   .main_entire .Login {
     padding: 0 28px;
   }
+  .main_entire .categories {
+    padding: 40px 28px;
+  }
+  .main_entire .cate-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 576px) {
   .main_entire .about .about_store .left_wrapper .text p {
@@ -1719,6 +1785,9 @@ button {
   }
   .main_entire .Login .form_wrap form .submit {
     padding: 15px 0;
+  }
+  .main_entire .categories .cate-cards {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .footer {
