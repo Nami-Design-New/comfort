@@ -4,8 +4,8 @@ let navMenu = document.querySelector(".nav_ul");
 toggler.addEventListener("click", () => {
   navMenu.classList.toggle("show");
   navMenu.classList.contains("show")
-    ? (toggler.querySelector("ion-icon").name = "close-outline")
-    : (toggler.querySelector("ion-icon").name = "menu-outline");
+    ? (toggler.querySelector("i").classList = "fa-sharp fa-regular fa-xmark")
+    : (toggler.querySelector("i").classList = "fa-sharp fa-solid fa-bars");
 });
 //MainSlider
 var mainSlider = new Swiper(".mainSliderContainer", {
