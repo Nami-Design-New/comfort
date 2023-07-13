@@ -2,14 +2,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: all 0.4s ease-in-out;
 }
 
 body {
   background-color: #fff !important;
   overflow-x: hidden !important;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -31,7 +31,7 @@ h6,
 p {
   padding: 0;
   margin: 0;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -342,28 +342,30 @@ button {
 .main_entire .mainSlider .mainSliderContainer .swiper-slide .info h1 {
   text-align: center;
   font-size: 36px;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .main_entire .mainSlider .mainSliderContainer .swiper-slide .info h4 {
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 .main_entire .mainSlider .mainSliderContainer .swiper-slide .info a {
   color: #fff;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin-top: 16px;
+  font-size: 18px;
 }
 .main_entire .mainSlider .mainSliderContainer .swiper-slide .info .sliderTitle {
   color: #fff;
+  max-width: 1000px;
 }
 @media (max-width: 768px) {
   .main_entire .mainSlider .mainSliderContainer .swiper-slide .info .sliderTitle {
-    font-size: 20px !important;
+    font-size: 22px !important;
   }
 }
 .main_entire .mainSlider .mainSliderContainer .swiper-slide .info .hint {
   color: #fff;
-}
-.main_entire .mainSlider .mainSliderContainer .swiper-slide .info a {
-  margin-top: 30px;
 }
 .main_entire .mainSlider .swiper-slide-active .sliderTitle {
   animation: fadeInUp 1s 0.75s both;
@@ -454,7 +456,7 @@ button {
   transform: translateY(-50%);
 }
 .main_entire .departments .cards .dcard .info h3 {
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 28px;
   color: #1b355e;
 }
@@ -474,7 +476,7 @@ button {
   padding: 40px 60px;
 }
 .main_entire .GetInspired h3 {
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   font-size: 32px;
   margin-bottom: 32px;
@@ -541,7 +543,7 @@ button {
 .main_entire .quality .quality-cards .qcard h4,
 .main_entire .quality .quality-cards .qcard p {
   color: #fff;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
 }
 .main_entire .quality .quality-cards .qcard h4 {
@@ -575,10 +577,10 @@ button {
   font-weight: 500;
   color: #1b355e;
   font-size: 40px;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .main_entire .trending .col-12 p {
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #787878;
   font-size: 18px;
 }
@@ -648,7 +650,7 @@ button {
   text-align: center;
   color: #fff;
   font-size: 28px;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .main_entire .newsletter p {
   font-size: 16px;
@@ -715,7 +717,7 @@ button {
 .main_entire .follow-us .head h3 {
   text-align: center;
   margin: 0;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.2;
 }
 .main_entire .follow-us .swiper {
@@ -806,17 +808,17 @@ button {
 .main_entire .about .about_store .left_wrapper .ab_head h1 {
   color: #1b355e;
   font-weight: 400;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .main_entire .about .about_store .left_wrapper .ab_head p {
   font-size: 20px;
   line-height: 28px;
   margin-top: 26px;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .main_entire .about .about_store .left_wrapper .text p {
   font-size: 18px;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .main_entire .about .about_store .left_wrapper .career {
   margin-top: 20px;
@@ -862,7 +864,7 @@ button {
   font-size: 32px;
   line-height: 1.3;
   color: #1b355e;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 .main_entire .about .new .left_news p {
@@ -893,7 +895,7 @@ button {
   font-size: 20px;
   color: #1b355e;
   font-weight: 500;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .main_entire .about .new .right_news .swiper .client .review {
   width: 100%;
@@ -904,7 +906,7 @@ button {
   color: #1b355e;
   font-style: italic;
   font-size: 16px;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .main_entire .about .new .right_news .swiper .client .client_img {
   width: 30%;
@@ -985,7 +987,7 @@ button {
   font-size: 20px;
 }
 .main_entire .shop aside h3 {
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #1b355e;
   font-size: 32px;
   font-weight: 400;
@@ -996,7 +998,7 @@ button {
   font-weight: 600;
   font-size: 16px;
   color: #1b355e;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .main_entire .shop aside .accordion .accordion-item {
   border: 1px solid #ebeaea;
@@ -1033,7 +1035,7 @@ button {
   width: 80%;
 }
 .main_entire .shop main h2 {
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #1b355e;
   font-size: 32px;
   font-weight: 400;
@@ -1120,11 +1122,11 @@ button {
 .main_entire .contact .info_container h2 {
   font-size: 32px;
   color: #1b355e;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 22px;
 }
 .main_entire .contact .info_container p {
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   color: #1b355e;
   padding-right: 100px;
@@ -1171,7 +1173,7 @@ button {
   margin-top: 48px;
 }
 .main_entire .contact .info_container .follow h5 {
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #1b355e;
   font-size: 20px;
 }
@@ -1379,7 +1381,7 @@ button {
   font-size: 30px;
   color: #1b355e;
   line-height: 1.5;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 2rem;
 }
 .main_entire .product-details .pro-row .pro-info .price {
@@ -1453,7 +1455,7 @@ button {
   width: 100%;
   font-size: 38px;
   color: #1b355e;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 50px 0 30px;
   font-weight: 500;
 }
@@ -1503,7 +1505,7 @@ button {
   margin: 0;
   color: #fff;
   font-size: 18px;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
 .main_entire .categories .category-cards .category-card .layer h5 i {
@@ -1822,7 +1824,7 @@ button {
   border-bottom: 1px solid #ebeaea;
 }
 .footer .inner_footer h5 {
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #1b355e;
   font-weight: 500;
   font-size: 17px;
@@ -1838,7 +1840,7 @@ button {
   padding-left: 50px;
 }
 .footer .inner_footer ul li a {
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #1b355e;
 }
 .footer .inner_footer ul li a i {
