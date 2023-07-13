@@ -1604,6 +1604,9 @@ button {
   .main_entire .follow-us .head {
     gap: 20px;
   }
+  .main_entire .follow-us .head h3 {
+    font-size: 18;
+  }
   .main_entire .about .about_store {
     height: -moz-fit-content;
     height: fit-content;
