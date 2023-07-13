@@ -148,7 +148,7 @@ button {
   border-bottom: 1px solid #ebeaea;
 }
 .navigation nav .left_sup_nav {
-  gap: 20%;
+  gap: 24%;
   display: flex;
   width: 100%;
   height: 100%;
@@ -594,6 +594,8 @@ button {
   position: relative;
 }
 .main_entire .trending .pro_card .img_wraper img {
+  transform: scale(0.9);
+  height: 300px;
   max-width: 100%;
   mix-blend-mode: multiply;
 }
@@ -621,10 +623,10 @@ button {
 }
 .main_entire .trending .pro_card .add_cart .link a {
   color: #1b355e;
-  font-size: 16px;
+  font-size: 15px;
 }
-.main_entire .trending .pro_card:hover .img_wraper .menu {
-  height: 90%;
+.main_entire .trending .pro_card:hover .img_wraper img {
+  transform: scale(1);
 }
 .main_entire .trending .pro_card:hover .inner_card .add_cart span {
   top: 100%;
@@ -794,7 +796,7 @@ button {
 }
 .main_entire .about .about_store .right_wrapper img {
   width: 100%;
-  height: 100%;
+  height: 85%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -811,13 +813,13 @@ button {
   font-family: "Poppins", sans-serif;
 }
 .main_entire .about .about_store .left_wrapper .ab_head p {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 28px;
   margin-top: 26px;
   font-family: "Poppins", sans-serif;
 }
 .main_entire .about .about_store .left_wrapper .text p {
-  font-size: 18px;
+  font-size: 14px;
   font-family: "Poppins", sans-serif;
 }
 .main_entire .about .about_store .left_wrapper .career {
@@ -840,7 +842,7 @@ button {
   padding: 0 60px;
   width: 100%;
   height: calc(100vh - 200px);
-  margin-top: 60px;
+  margin: 60px 0;
   display: flex;
 }
 .main_entire .about .new .left_news {
@@ -948,7 +950,7 @@ button {
 .main_entire .shop {
   padding: 60px;
   display: flex;
-  gap: 5%;
+  gap: 2.5%;
   width: 100%;
 }
 .main_entire .shop .open_filter {
@@ -968,7 +970,7 @@ button {
   font-size: 16px;
 }
 .main_entire .shop aside {
-  width: 30%;
+  width: 22.5%;
 }
 .main_entire .shop aside .side-head {
   display: flex;
@@ -1008,11 +1010,11 @@ button {
   border: 1px solid #ebeaea;
 }
 .main_entire .shop aside .accordion .accordion-body {
-  padding: 20px 24px;
+  padding: 20px 0;
   background-color: #fff;
 }
 .main_entire .shop aside .accordion .accordion-body ul li {
-  margin-top: 12px;
+  padding: 8px 20px;
 }
 .main_entire .shop aside .accordion .accordion-body ul li span {
   font-size: 14px;
@@ -1032,7 +1034,7 @@ button {
   transition: 0.4s ease-in-out;
 }
 .main_entire .shop main {
-  width: 80%;
+  width: 75%;
 }
 .main_entire .shop main h2 {
   font-family: "Poppins", sans-serif;
@@ -1051,6 +1053,8 @@ button {
   display: block;
 }
 .main_entire .shop main .pro_card .inner_card .img_wraper img {
+  transform: scale(0.85);
+  height: 330px;
   max-width: 100%;
 }
 .main_entire .shop main .pro_card .inner_card .img_caption {
@@ -1080,10 +1084,10 @@ button {
 }
 .main_entire .shop main .pro_card .inner_card .add_cart .link a {
   color: #1b355e;
-  font-size: 16px;
+  font-size: 15px;
 }
-.main_entire .shop main .pro_card:hover .img_wraper .menu {
-  border-color: #ebeaea;
+.main_entire .shop main .pro_card:hover .img_wraper img {
+  transform: scale(0.95);
 }
 .main_entire .shop main .pro_card:hover .inner_card .img_wraper .menu span {
   height: 36px;
@@ -1256,7 +1260,8 @@ button {
   height: 100%;
 }
 .main_entire .product-details {
-  padding: 60px;
+  padding: 60px 0;
+  max-width: 1260px;
 }
 .main_entire .product-details .pro-row {
   display: flex;
@@ -1370,7 +1375,7 @@ button {
   opacity: 1;
 }
 .main_entire .product-details .pro-row .pro-img .productSlider2 {
-  height: 380px;
+  height: 420px;
 }
 .main_entire .product-details .pro-row .pro-info {
   padding: 0 60px;
@@ -1481,10 +1486,7 @@ button {
 }
 .main_entire .categories .category-cards .category-card img {
   mix-blend-mode: darken;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
+  max-height: 140px;
 }
 .main_entire .categories .category-cards .category-card .layer {
   position: absolute;

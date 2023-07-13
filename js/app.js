@@ -32,6 +32,10 @@ let swiper = new Swiper(".mySwiper", {
   slidesPerView: 5,
   grabCursor: true,
   loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
@@ -66,10 +70,6 @@ let categorySlider = new Swiper(".category-cards", {
   slidesPerView: 5,
   grabCursor: true,
   loop: true,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false
-  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
