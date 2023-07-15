@@ -1806,10 +1806,12 @@ button {
     grid-template-columns: repeat(2, 1fr);
   }
   .main_entire .product-details .pro-row .pro-img .productSlider {
-    height: auto;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .main_entire .product-details .pro-row .pro-img .productSlider2 {
-    height: auto;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .main_entire .product-details .pro-row .pro-info .suk {
     flex-direction: column;
