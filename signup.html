@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMFORT</title>
-    <link rel="icon" href="img/icon3.svg">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <title>ESKIL</title>
+    <link rel="icon" href="img/fav-icon.png">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -159,95 +157,35 @@
     </header>
     <main class="main_entire">
         <div class="go_back">
-            <a href="index.html">Home</a> / Chairs
+            <a href="index.html">Home</a> / Signup
         </div>
-        <!-- product-details -->
-        <section class="product-details container">
-            <div class="pro-row">
-                <div class="pro-img">
-                    <!-- main slide -->
-                    <div class="swiper productSlider2">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <!-- img -->
-                                <a data-fancybox="galleryImages" data-title="Title Here" data-caption="Description Here"
-                                    href="img/dslide2.webp">
-                                    <img src="img/dslide2.webp" alt="">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <!-- img -->
-                                <a data-fancybox="galleryImages" data-title="Title Here" data-caption="Description Here"
-                                    href="img/dslide3.webp">
-                                    <img src="img/dslide3.webp" alt="">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <!-- img -->
-                                <a data-fancybox="galleryImages" data-title="Title Here" data-caption="Description Here"
-                                    href="img/dslide4.webp">
-                                    <img src="img/dslide4.webp" alt="">
-                                </a>
-                            </div>
-                            <div class=" swiper-slide">
-                                <!-- img -->
-                                <a data-fancybox="galleryImages" data-title="Title Here" data-caption="Description Here"
-                                    href="img/dslide5.webp">
-                                    <img src="img/dslide5.webp" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiperControl">
-                            <div class="swiperBtns">
-                                <div class="productSliderNext swiper-button-next"></div>
-                                <div class="productSliderPrev swiper-button-prev"></div>
-                            </div>
-                        </div>
+        <!-- sign-up -->
+        <section class="Login">
+            <h3>Create new account</h3>
+            <div class="form_wrap">
+                <form action="">
+                    <div class="form_field">
+                        <label for="username">USERNAME *</label>
+                        <input name="username" type="text" id="username" required />
                     </div>
-                    <!-- thumb slider -->
-                    <div thumbsSlider="" class="swiper productSlider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="img/dslide2.webp" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/dslide3.webp" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/dslide4.webp" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/dslide5.webp" alt="">
-                            </div>
-                        </div>
+                    <div class="form_field">
+                        <label for="usermail">EMAIL ADDRESS *</label>
+                        <input name="email" type="email" id="usermail" required />
                     </div>
-                </div>
-                <div class="pro-info">
-                    <h2>HYGGER SOFT CUSHION ARMCHAIR, GREY COTTON & PLYWOOD LEGS</h2>
-                    <span class="price">$450.99</span>
-                    <div class="add">
-                        <div class="count">
-                            <button class="minus">
-                                <i class="fa-solid fa-minus"></i>
-                            </button>
-                            <span class="counter"> 0 </span>
-                            <button class="plus">
-                                <i class="fa-solid fa-plus"></i>
-                            </button>
-                        </div>
-                        <button class="add_btn">
-                            <a href="#">
-                                <i class="fab fa-whatsapp"></i>
-                                <b>order</b>
-                            </a>
-                        </button>
+                    <div class="form_field">
+                        <label for="userpass">PASSWORD *</label>
+                        <input name="password" type="password" id="userpass" required />
                     </div>
-                    <div class="suk">
-                        <p>SKU: 8</p>
-                        <span>Category: Chars</span>
-                        <span>Availability : In Stock</span>
+                    <div class="sign_link">
+                        <span>
+                            Already have an account ?
+                            <a href="login.html">Log in</a>
+                        </span>
                     </div>
-                </div>
+                    <div class="submit">
+                        <button type="submit">SIGN UP</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
@@ -375,48 +313,10 @@
             </div>
         </div>
     </footer>
-    <!-- Javascrpt -->
-    <script>
-        //product details counter
-        let plusBtn = document.querySelector(".plus");
-        let minusBtn = document.querySelector(".minus");
-        let counter = document.querySelector(".counter");
-        let count = 0;
-        plusBtn.addEventListener("click", () => {
-            count++;
-            counter.innerHTML = count;
-        });
-        minusBtn.addEventListener("click", () => {
-            if (count > 0) {
-                count--;
-            }
-            counter.innerHTML = count;
-        });
-    </script>
-    <script src="js/main.js"></script>
-    <script>
-        $(document).ready(function () {
-            var swiper = new Swiper(".productSlider", {
-                loop: true,
-                spaceBetween: 10,
-                slidesPerView: 4,
-                freeMode: true,
-                watchSlidesProgress: true,
-            });
-            var swiper2 = new Swiper(".productSlider2", {
-                loop: true,
-                spaceBetween: 10,
-                navigation: {
-                    nextEl: ".productSliderNext",
-                    prevEl: ".productSliderPrev",
-                },
-                thumbs: {
-                    swiper: swiper,
-                },
-            });
-        });
-    </script>
+    <script src="js/swiper.js"></script>
     <script src="js/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

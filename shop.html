@@ -51,7 +51,7 @@
                 </a>
                 <ul class="nav_ul">
                     <li>
-                        <a href="index.html">
+                        <a class="active" href="index.html">
                             HOME
                         </a>
                     </li>
@@ -79,12 +79,81 @@
             </div>
             <div class="right_sup_nav ">
                 <ul>
+                    <li>
+                        <a href="login.html">
+                            <i class="far fa-user"></i>
+                            <small>Account</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                            <small>Wishlist</small>
+                            <span class="count">
+                                0
+                            </span>
+                        </a>
+                    </li>
+                    <li id="cartOpen">
+                        <span class="count">
+                            0
+                        </span>
+                        <ion-icon name="bag-outline"></ion-icon>
+                        <small>
+                            $0.00
+                        </small>
+                    </li>
                     <li class="toggle_nav">
                         <div class="toggler">
                             <i class="fa-sharp fa-solid fa-bars"></i>
                         </div>
                     </li>
                 </ul>
+            </div>
+            <div class="mini_cart">
+                <div class="close">
+                    <i class="fa-light fa-x"></i>
+                </div>
+                <div class="cart_container">
+                    <div class="head">
+                        <h3>Shopping Cart</h3>
+                    </div>
+                    <!-- products container -->
+                    <!-- logic if cart empty "empty cart img" appears else the added products appears instead  -->
+                    <div class="products">
+                        <img src="img/cart.png" alt="">
+                        <!-- product appearance example -->
+                        <!-- <div class="product">
+                            <div class="pro_img">
+                                <img src="https://files.fm/thumb_show.php?i=72my8t2mq" alt="">
+                            </div>
+                            <div class="pro_detail">
+                                <h6>Poliframe tuffed accnet chair 29.1″W, jet black</h6>
+                                <p>count : <span>1</span></p>
+                                <p>258.99</p>
+                            </div>
+                            <div class="del_pro">
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="Total">
+                        <div class="total_inner">
+                            <h4>Total</h4>
+                            <span>$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="Route_links">
+                    <a href="cart.html" class="black_Link">
+                        <i class="far fa-shopping-cart"></i>
+                        <span> VIEW SHOPPING CART</span>
+                    </a>
+                    <a href="checkout.html" class="check">
+                        GO TO CHECKOUT
+                        <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
             </div>
         </nav>
     </header>
@@ -286,38 +355,29 @@
                     <!-- product-card -->
                     <div class=" col-lg-4 col-12 p-3 pro_card">
                         <div class="inner_card">
-                            <a href="product_details.html" class="img_wraper">
-                                <img src="img/sof1.png" alt="product" />
-                            </a>
-                            <div class="img_caption">
-                                <p>HYGGER SOFT CUSHION ARMCHAIR, GREY COTTON & PLYWOOD LEGS</p>
-                            </div>
-                            <div class="add_cart">
-                                <span>$399.99</span>
-                                <div class="link">
-                                    <a href="product_details.html">
-                                        <i class="fa-solid fa-eye"></i>
-                                        <b>view details</b>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- product-card -->
-                    <div class=" col-lg-4 col-12 p-3 pro_card">
-                        <div class="inner_card">
-                            <a href="product_details.html" class="img_wraper">
+                            <div class="img_wraper">
                                 <img src="img/sof2.png" alt="product" />
-                            </a>
+                                <div class="menu">
+                                    <span>
+                                        <a href="product_details.html">
+                                            <i class="fas fa-eye"></i> quick view
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <i class="fa-regular fa-heart"></i>
+                                        add wishlist
+                                    </span>
+                                </div>
+                            </div>
                             <div class="img_caption">
                                 <p>HYGGER SOFT CUSHION ARMCHAIR, GREY COTTON & PLYWOOD LEGS</p>
                             </div>
                             <div class="add_cart">
-                                <span>$399.99</span>
+                                <span>$750.99</span>
                                 <div class="link">
-                                    <a href="product_details.html">
-                                        <i class="fa-solid fa-eye"></i>
-                                        <b>view details</b>
+                                    <a href="#">
+                                        <i class="far fa-shopping-cart"></i>
+                                        <b>Add to cart</b>
                                     </a>
                                 </div>
                             </div>
@@ -326,18 +386,29 @@
                     <!-- product-card -->
                     <div class=" col-lg-4 col-12 p-3 pro_card">
                         <div class="inner_card">
-                            <a href="product_details.html" class="img_wraper">
+                            <div class="img_wraper">
                                 <img src="img/sof7.png" alt="product" />
-                            </a>
+                                <div class="menu">
+                                    <span>
+                                        <a href="product_details.html">
+                                            <i class="fas fa-eye"></i> quick view
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <i class="fa-regular fa-heart"></i>
+                                        add wishlist
+                                    </span>
+                                </div>
+                            </div>
                             <div class="img_caption">
                                 <p>HYGGER SOFT CUSHION ARMCHAIR, GREY COTTON & PLYWOOD LEGS</p>
                             </div>
                             <div class="add_cart">
-                                <span>$399.99</span>
+                                <span>$750.99</span>
                                 <div class="link">
-                                    <a href="product_details.html">
-                                        <i class="fa-solid fa-eye"></i>
-                                        <b>view details</b>
+                                    <a href="#">
+                                        <i class="far fa-shopping-cart"></i>
+                                        <b>Add to cart</b>
                                     </a>
                                 </div>
                             </div>
@@ -346,18 +417,29 @@
                     <!-- product-card -->
                     <div class=" col-lg-4 col-12 p-3 pro_card">
                         <div class="inner_card">
-                            <a href="product_details.html" class="img_wraper">
+                            <div class="img_wraper">
                                 <img src="img/sof6.png" alt="product" />
-                            </a>
+                                <div class="menu">
+                                    <span>
+                                        <a href="product_details.html">
+                                            <i class="fas fa-eye"></i> quick view
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <i class="fa-regular fa-heart"></i>
+                                        add wishlist
+                                    </span>
+                                </div>
+                            </div>
                             <div class="img_caption">
                                 <p>HYGGER SOFT CUSHION ARMCHAIR, GREY COTTON & PLYWOOD LEGS</p>
                             </div>
                             <div class="add_cart">
-                                <span>$399.99</span>
+                                <span>$750.99</span>
                                 <div class="link">
-                                    <a href="product_details.html">
-                                        <i class="fa-solid fa-eye"></i>
-                                        <b>view details</b>
+                                    <a href="#">
+                                        <i class="far fa-shopping-cart"></i>
+                                        <b>Add to cart</b>
                                     </a>
                                 </div>
                             </div>
@@ -366,18 +448,29 @@
                     <!-- product-card -->
                     <div class=" col-lg-4 col-12 p-3 pro_card">
                         <div class="inner_card">
-                            <a href="product_details.html" class="img_wraper">
+                            <div class="img_wraper">
                                 <img src="img/sof4.png" alt="product" />
-                            </a>
+                                <div class="menu">
+                                    <span>
+                                        <a href="product_details.html">
+                                            <i class="fas fa-eye"></i> quick view
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <i class="fa-regular fa-heart"></i>
+                                        add wishlist
+                                    </span>
+                                </div>
+                            </div>
                             <div class="img_caption">
                                 <p>HYGGER SOFT CUSHION ARMCHAIR, GREY COTTON & PLYWOOD LEGS</p>
                             </div>
                             <div class="add_cart">
-                                <span>$399.99</span>
+                                <span>$750.99</span>
                                 <div class="link">
-                                    <a href="product_details.html">
-                                        <i class="fa-solid fa-eye"></i>
-                                        <b>view details</b>
+                                    <a href="#">
+                                        <i class="far fa-shopping-cart"></i>
+                                        <b>Add to cart</b>
                                     </a>
                                 </div>
                             </div>
@@ -386,24 +479,65 @@
                     <!-- product-card -->
                     <div class=" col-lg-4 col-12 p-3 pro_card">
                         <div class="inner_card">
-                            <a href="product_details.html" class="img_wraper">
+                            <div class="img_wraper">
                                 <img src="img/sof3.png" alt="product" />
-                            </a>
+                                <div class="menu">
+                                    <span>
+                                        <a href="product_details.html">
+                                            <i class="fas fa-eye"></i> quick view
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <i class="fa-regular fa-heart"></i>
+                                        add wishlist
+                                    </span>
+                                </div>
+                            </div>
                             <div class="img_caption">
                                 <p>HYGGER SOFT CUSHION ARMCHAIR, GREY COTTON & PLYWOOD LEGS</p>
                             </div>
                             <div class="add_cart">
-                                <span>$399.99</span>
+                                <span>$750.99</span>
                                 <div class="link">
-                                    <a href="product_details.html">
-                                        <i class="fa-solid fa-eye"></i>
-                                        <b>view details</b>
+                                    <a href="#">
+                                        <i class="far fa-shopping-cart"></i>
+                                        <b>Add to cart</b>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <!-- product-card -->
+                    <div class=" col-lg-4 col-12 p-3 pro_card">
+                        <div class="inner_card">
+                            <div class="img_wraper">
+                                <img src="img/sof10.png" alt="product" />
+                                <div class="menu">
+                                    <span>
+                                        <a href="product_details.html">
+                                            <i class="fas fa-eye"></i> quick view
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <i class="fa-regular fa-heart"></i>
+                                        add wishlist
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="img_caption">
+                                <p>HYGGER SOFT CUSHION ARMCHAIR, GREY COTTON & PLYWOOD LEGS</p>
+                            </div>
+                            <div class="add_cart">
+                                <span>$750.99</span>
+                                <div class="link">
+                                    <a href="#">
+                                        <i class="far fa-shopping-cart"></i>
+                                        <b>Add to cart</b>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="row ">
                     <button class="load-more">Load More</button>

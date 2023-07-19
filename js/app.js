@@ -86,3 +86,30 @@ let categorySlider = new Swiper(".category-cards", {
     }
   }
 });
+//paths
+const { pathname } = window.location;
+let navLinks = document.querySelectorAll(".nav_ul li a");
+for (var i = 0; i < navLinks.length; i++) {
+  navLinks[i].classList.remove("active");
+}
+for (var i = 0; i < navLinks.length; i++) {
+  if (
+    navLinks[i].href.substring(navLinks[i].href.lastIndexOf("/") + 1) ===
+    { pathname }.pathname.slice(1)
+  ) {
+    navLinks[i].classList.add("active");
+  }
+  if ({ pathname }.pathname === "/") {
+    navLinks[0].classList.add("active");
+  }
+}
+//cart
+let openCartBtn = document.getElementById("cartOpen");
+let closeCartBtn = document.querySelector(".close");
+let cartmodel = document.querySelector(".mini_cart");
+openCartBtn.addEventListener("click", () => {
+  cartmodel.classList.add("active");
+});
+closeCartBtn.addEventListener("click", () => {
+  cartmodel.classList.remove("active");
+});
