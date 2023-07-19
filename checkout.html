@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESKIL</title>
-    <link rel="icon" href="img/fav-icon.png">
+    <title>COMFORT</title>
+    <link rel="icon" href="img/icon3.svg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
@@ -12,7 +12,9 @@
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -157,34 +159,109 @@
     </header>
     <main class="main_entire">
         <div class="go_back">
-            <a href="index.html">Home</a> / Signup
+            <a href="index.html">Home</a> / Check out
         </div>
-        <!-- sign-up -->
-        <section class="Login">
-            <h3>Create new account</h3>
-            <div class="form_wrap">
-                <form action="">
-                    <div class="form_field">
-                        <label for="username">USERNAME *</label>
-                        <input name="username" type="text" id="username" required />
+        <!-- check out section -->
+        <section class="Checkout">
+            <h3>CHECKOUT</h3>
+            <div class="billing_container">
+                <h4>Billing details</h4>
+                <form class="row">
+                    <div class="field col-lg-6 col-12 pe-lg-4">
+                        <label for="firstName">First name *</label>
+                        <input name="firstName" type="text" id="firstName" />
                     </div>
-                    <div class="form_field">
-                        <label for="usermail">EMAIL ADDRESS *</label>
-                        <input name="email" type="email" id="usermail" required />
+                    <div class="field col-lg-6 col-12 ps-lg-4">
+                        <label for="LastName">Last name *</label>
+                        <input name="LastName" type="text" id="LastName" />
                     </div>
-                    <div class="form_field">
-                        <label for="userpass">PASSWORD *</label>
-                        <input name="password" type="password" id="userpass" required />
+                    <div class="field col-lg-6 col-12 pe-lg-4">
+                        <label for="companyName">Company name (optional)</label>
+                        <input name="companyName" type="text" id="companyName" />
                     </div>
-                    <div class="sign_link">
-                        <span>
-                            Already have an account ?
-                            <a href="login.html">Log in</a>
-                        </span>
+                    <div class="field col-lg-6 col-12 ps-lg-4">
+                        <label for="country">Country / Region *</label>
+                        <input name="country" type="text" id="country" />
                     </div>
-                    <div class="submit">
-                        <button type="submit">SIGN UP</button>
+                    <div class="field col-lg-6 col-12 pe-lg-4">
+                        <label for="street">Street address</label>
+                        <input name="street" type="text" id="street" placeholder="House number and street name" />
                     </div>
+                    <div class="field col-lg-6 col-12 ps-lg-4">
+                        <label for="apartment">Apartment</label>
+                        <input name="apartment" type="text" id="apartment"
+                            placeholder="Apartment, suite, unit, etc. (optional)" />
+                    </div>
+                    <div class="field col-lg-6 col-12 pe-lg-4">
+                        <label for="zip">Postcode / ZIP *</label>
+                        <input name="zip" type="text" id="zip" />
+                    </div>
+                    <div class="field col-lg-6 col-12 ps-lg-4">
+                        <label for="town">Town / City *</label>
+                        <input name="town" type="text" id="town" />
+                    </div>
+                    <div class="field col-lg-6 col-12 pe-lg-4">
+                        <label for="phone">Phone *</label>
+                        <input name="phone" type="text" id="phone" />
+                    </div>
+                    <div class="field col-lg-6 col-12 ps-lg-4">
+                        <label for="email">Email address *</label>
+                        <input name="email" type="text" id="email" />
+                    </div>
+                    <div class="order_details">
+                        <h4>Your order</h4>
+                        <div class="head_order">
+                            <span>PRODUCT</span>
+                            <span>SUBTOTAL</span>
+                        </div>
+                        <div class="head_order">
+                            <span>
+                                Poliframe tuffed accnet chair 29.1″W, jet black<i>× 4</i>
+                            </span>
+                            <span id="total-price">$1900</span>
+                        </div>
+                        <div class="shiping head_order">
+                            <span>SHIPPING</span>
+                            <div>
+                                <div class="ship">
+                                    <input type="radio" value="flatRate" id="flatRate" name="shipping" />
+                                    <label for="flatRate">Flat rate</label>
+                                </div>
+                                <div class="ship">
+                                    <input type="radio" value="freeShipping" id="freeShipping" name="shipping" />
+                                    <label for="freeShipping">Free shipping</label>
+                                </div>
+                                <div class="ship">
+                                    <input type="radio" value="localPickup" id="localPickup" name="shipping" />
+                                    <label for="localPickup">Local pickup</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="head_order">
+                            <span>TOTAL</span>
+                            <b>
+                                $3600
+                            </b>
+                        </div>
+                        <div class="payment">
+                            <input type="radio" value="directTransfer" id="directTransfer" name="payment_method" />
+                            <label for="directTransfer">DIRECT BANK TRANSFER</label>
+                        </div>
+                        <div class="payment">
+                            <input type="radio" value="checkPayment" id="checkPayment" name="payment_method" />
+                            <label for="checkPayment">CHECK PAYMENTS</label>
+                        </div>
+                        <div class="payment">
+                            <input type="radio" value="cachOnDelevery" id="cachOnDelevery" name="payment_method" />
+                            <label for="cachOnDelevery">CASH ON DELIVERY</label>
+                        </div>
+                        <p class="term">
+                            Your personal data will be used to process your order, support
+                            your experience throughout this website, and for other
+                            purposes described in our privacy policy.
+                        </p>
+                    </div>
+                    <button type="submit">PLACE ORDER</button>
                 </form>
             </div>
         </section>
@@ -313,6 +390,7 @@
             </div>
         </div>
     </footer>
+    <!-- Javascript -->
     <script src="js/swiper.js"></script>
     <script src="js/app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

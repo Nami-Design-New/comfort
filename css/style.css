@@ -365,9 +365,14 @@ button {
   align-items: center;
 }
 .navigation nav .mini_cart .cart_container .Total .total_inner h4 {
-  color: #000;
+  color: #1b355e;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
+}
+.navigation nav .mini_cart .cart_container .Total .total_inner span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1b355e;
 }
 .navigation nav .mini_cart .Route_links {
   width: 100%;
@@ -1872,6 +1877,11 @@ button {
 .main_entire .shopping_cart {
   padding: 0 60px 40px;
 }
+@media (max-width: 768px) {
+  .main_entire .shopping_cart {
+    padding: 0 24px 40px;
+  }
+}
 .main_entire .shopping_cart .empty-cart {
   padding: 40px 0;
   height: calc(100vh - 180px);
@@ -1890,11 +1900,21 @@ button {
   margin: 25px 0 50px;
   font-family: "Poppins", sans-serif;
 }
+@media (max-width: 576px) {
+  .main_entire .shopping_cart .filled-cart h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+}
 .main_entire .shopping_cart .filled-cart .ordered-products .tabel-header {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  margin-bottom: 1.5rem;
   border-bottom: 1px solid #ebeaea;
+}
+@media (max-width: 768px) {
+  .main_entire .shopping_cart .filled-cart .ordered-products .tabel-header {
+    display: none;
+  }
 }
 .main_entire .shopping_cart .filled-cart .ordered-products .tabel-header .table-coloumn {
   padding: 1.25rem 0.5rem;
@@ -1910,24 +1930,46 @@ button {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   border-bottom: 1px solid #ebeaea;
-  padding-bottom: 1.5rem;
+  padding: 1rem 0;
 }
-.main_entire .shopping_cart .filled-cart .ordered-products .product-row:last-child {
-  border-bottom: none;
+@media (max-width: 768px) {
+  .main_entire .shopping_cart .filled-cart .ordered-products .product-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .main_entire .shopping_cart .filled-cart .ordered-products .product-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .main_entire .shopping_cart .filled-cart .ordered-products .product-row .table-coloumn {
   padding: 0.5rem;
   display: flex;
   align-items: center;
+  gap: 2rem;
   justify-content: center;
 }
 .main_entire .shopping_cart .filled-cart .ordered-products .product-row .table-coloumn img {
   max-height: 100px;
 }
+.main_entire .shopping_cart .filled-cart .ordered-products .product-row .table-coloumn b {
+  display: none;
+}
+@media (max-width: 768px) {
+  .main_entire .shopping_cart .filled-cart .ordered-products .product-row .table-coloumn b {
+    display: block;
+  }
+}
 .main_entire .shopping_cart .filled-cart .ordered-products .product-row .table-coloumn span {
   font-size: 15px;
   font-weight: 600;
   color: #1b355e;
+  display: flex;
+}
+.main_entire .shopping_cart .filled-cart .ordered-products .product-row .table-coloumn button {
+  background: none;
+  outline: none;
+  border: none;
 }
 .main_entire .shopping_cart .filled-cart .ordered-products .product-row .table-coloumn button i {
   font-size: 18px;
@@ -1957,6 +1999,197 @@ button {
   color: #1b355e;
   align-items: center;
   justify-content: center;
+}
+.main_entire .shopping_cart .filled-cart .checkout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+@media (max-width: 576px) {
+  .main_entire .shopping_cart .filled-cart .checkout {
+    flex-direction: column;
+    padding-top: 2rem;
+    gap: 2rem;
+    height: 133px;
+  }
+}
+.main_entire .shopping_cart .filled-cart .checkout a {
+  color: #fff;
+  background: #1b355e;
+  padding: 8px 16px;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.main_entire .shopping_cart .filled-cart .checkout .total_sub {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 576px) {
+  .main_entire .shopping_cart .filled-cart .checkout .total_sub {
+    width: 100%;
+  }
+}
+.main_entire .shopping_cart .filled-cart .checkout .total_sub h6,
+.main_entire .shopping_cart .filled-cart .checkout .total_sub span {
+  color: #1b355e;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+.main_entire .Checkout {
+  padding: 0 60px 40px;
+}
+@media (max-width: 768px) {
+  .main_entire .Checkout {
+    padding: 0 24px 40px;
+  }
+}
+.main_entire .Checkout h3 {
+  text-align: center;
+  color: #1b355e;
+  font-weight: 400;
+  font-size: 40px;
+  margin: 25px 0 50px 0;
+  font-family: "Poppins", sans-serif;
+}
+.main_entire .Checkout .billing_container {
+  padding: 0;
+}
+.main_entire .Checkout .billing_container h4 {
+  color: #1b355e;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.main_entire .Checkout .billing_container form {
+  margin-bottom: 50px;
+}
+.main_entire .Checkout .billing_container form .field {
+  display: flex;
+  flex-direction: column;
+}
+.main_entire .Checkout .billing_container form .field label {
+  color: #1b355e;
+  font-weight: 500;
+  padding: 5px 0;
+}
+.main_entire .Checkout .billing_container form .field input {
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  font-size: 16px;
+  color: #1b355e;
+  font-weight: 500;
+  border: 1px solid #ebeaea;
+  background: none;
+  outline: none;
+  margin-bottom: 20px;
+}
+.main_entire .Checkout .billing_container form .field input::-moz-placeholder {
+  color: #888;
+  font-weight: 400;
+}
+.main_entire .Checkout .billing_container form .field input::placeholder {
+  color: #888;
+  font-weight: 400;
+}
+.main_entire .Checkout .billing_container form .order_details {
+  margin-top: 50px;
+}
+.main_entire .Checkout .billing_container form .order_details h4 {
+  color: #1b355e;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  font-family: "Poppins", sans-serif;
+}
+.main_entire .Checkout .billing_container form .order_details .head_order {
+  width: 100%;
+  border-bottom: 1px solid #ebeaea;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 100px 15px 0;
+}
+@media (max-width: 576px) {
+  .main_entire .Checkout .billing_container form .order_details .head_order {
+    padding-right: 50px;
+  }
+}
+.main_entire .Checkout .billing_container form .order_details .head_order span {
+  font-size: 14px;
+}
+.main_entire .Checkout .billing_container form .order_details .head_order b {
+  font-size: 16px;
+  color: #1b355e;
+  font-weight: 500;
+}
+.main_entire .Checkout .billing_container form .order_details .shiping {
+  padding: 15px 50px 15px 0;
+}
+@media (max-width: 576px) {
+  .main_entire .Checkout .billing_container form .order_details .shiping {
+    padding-right: 0;
+  }
+}
+.main_entire .Checkout .billing_container form .order_details .shiping .ship {
+  margin-top: 5px;
+}
+.main_entire .Checkout .billing_container form .order_details .shiping .ship input {
+  margin-right: 5px;
+  cursor: pointer;
+  accent-color: #1b355e;
+}
+.main_entire .Checkout .billing_container form .order_details .shiping .ship label {
+  cursor: pointer;
+}
+.main_entire .Checkout .billing_container form .order_details .term {
+  padding: 25px 0 40px 0;
+  margin-bottom: 0;
+}
+.main_entire .Checkout .billing_container form .payment {
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 1px solid #ebeaea;
+}
+.main_entire .Checkout .billing_container form .payment input {
+  margin-right: 5px;
+  cursor: pointer;
+  accent-color: #1b355e;
+}
+.main_entire .Checkout .billing_container form .payment label {
+  cursor: pointer;
+}
+.main_entire .Checkout .billing_container form button {
+  width: 155px;
+  background-color: #1b355e;
+  outline: none;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  height: 40px;
+  margin-left: 12px;
+}
+.main_entire .wishlist .filled-cart .ordered-products .tabel-header {
+  grid-template-columns: repeat(5, 1fr);
+}
+.main_entire .wishlist .filled-cart .ordered-products .product-row {
+  grid-template-columns: repeat(5, 1fr);
+}
+.main_entire .wishlist .filled-cart .ordered-products .product-row:last-child {
+  border-bottom: 0;
+}
+@media (max-width: 576px) {
+  .main_entire .Checkout .billing_container form .order_details .head_order {
+    padding-right: 50px;
+  }
+  .main_entire .Checkout .billing_container form .order_details .shiping {
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 992px) {
