@@ -2451,6 +2451,7 @@ button {
     @media (max-width: 768px) {
       padding: 0 24px;
     }
+
     .nav {
       width: 20% !important;
       @media (max-width: 768px) {
@@ -2541,6 +2542,26 @@ button {
       .text3 {
         line-height: 1.7em !important;
         padding-right: 50px;
+      }
+      @media (max-width: 576px) {
+        h2 {
+          font-size: 30px;
+        }
+        .text {
+          padding: 0;
+        }
+        .text3 {
+          padding: 0;
+        }
+        .text_ret {
+          padding: 0;
+        }
+        .text_ret2 {
+          padding: 0;
+        }
+        .Qestion {
+          padding: 0;
+        }
       }
     }
     .side-bar {

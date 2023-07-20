@@ -2531,6 +2531,26 @@ button {
   line-height: 1.7em !important;
   padding-right: 50px;
 }
+@media (max-width: 576px) {
+  .main_entire .faqs .tab-content h2 {
+    font-size: 30px;
+  }
+  .main_entire .faqs .tab-content .text {
+    padding: 0;
+  }
+  .main_entire .faqs .tab-content .text3 {
+    padding: 0;
+  }
+  .main_entire .faqs .tab-content .text_ret {
+    padding: 0;
+  }
+  .main_entire .faqs .tab-content .text_ret2 {
+    padding: 0;
+  }
+  .main_entire .faqs .tab-content .Qestion {
+    padding: 0;
+  }
+}
 .main_entire .faqs .side-bar .nav-link {
   background: none !important;
   text-align: start !important;
