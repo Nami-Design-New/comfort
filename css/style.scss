@@ -1690,7 +1690,8 @@ button {
               color: $white;
               font-size: 15px;
               font-weight: 400;
-              i,b{
+              i,
+              b {
                 font-weight: 400;
               }
             }
@@ -1820,7 +1821,7 @@ button {
   //*********Login*************//
   .Login {
     width: 100%;
-    padding:0 0 60px;
+    padding: 0 0 60px;
     h3 {
       color: $maincolor;
       text-align: center;
@@ -2101,13 +2102,16 @@ button {
             width: 100%;
             height: 60px;
             padding: 20px;
-            font-size: 16px;
+            font-size: 14px;
             color: $maincolor;
             font-weight: 500;
             border: 1px solid $border1;
             background: none;
             outline: none;
             margin-bottom: 20px;
+            @media (max-width: 576px) {
+              font-size: 12px;
+            }
             &::placeholder {
               color: $gray;
               font-weight: 400;
@@ -2186,6 +2190,236 @@ button {
           font-size: 16px;
           height: 40px;
           margin-left: 12px;
+        }
+      }
+    }
+  }
+  //***********profile section*****//
+  .profile {
+    padding: 0 60px 60px;
+    @media (max-width: 768px) {
+      padding: 0 24px;
+    }
+    h3 {
+      color: $maincolor;
+      font-weight: 400;
+      font-size: 40px;
+      margin: 25px 0 60px;
+      font-family: "Poppins", sans-serif;
+      @media (max-width: 576px) {
+        font-size: 32px;
+      }
+    }
+    .tab-content {
+      width: 77% !important;
+      @media (max-width: 768px) {
+        width: 100% !important;
+      }
+    }
+    .side-bar {
+      .nav-link {
+        background: none !important;
+        text-align: start !important;
+        border: 1px solid $border1;
+        border-bottom: none;
+        padding: 1rem 2rem !important;
+        color: $maincolor;
+        &.active {
+          background-color: #f5f5f5 !important;
+        }
+        &:last-child {
+          border-bottom: 1px solid $border1;
+        }
+        i {
+          margin-right: 4px;
+        }
+      }
+    }
+    .info-container {
+      h5 {
+        color: $maincolor;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+      }
+      p {
+        margin-bottom: 2.5rem;
+        color: $gray;
+      }
+      form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+        .form_field {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          margin: 15px 0;
+          label {
+            color: $maincolor;
+            font-weight: 500;
+            padding: 5px 0;
+          }
+          input {
+            height: 40px;
+            padding: 20px;
+            font-size: 16px;
+            color: $maincolor;
+            font-weight: 500;
+            border: 1px solid $gray2;
+            background: none;
+            outline: none;
+          }
+        }
+        .submit {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          padding: 10px 0;
+          button {
+            width: 120px;
+            height: 40px;
+            background-color: $maincolor;
+            color: $white;
+            font-size: 16px;
+            letter-spacing: 1px;
+            outline: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .oder-wrap {
+      border: 1px solid $border1;
+      .details {
+        padding: 8px 16px;
+        p {
+          margin: 0;
+          padding: 2px 6px;
+        }
+      }
+      .status {
+        color: $white;
+        padding: 2px 6px;
+        font-weight: 400;
+        &.wait {
+          background: #dfff00;
+        }
+        &.success {
+          background: #7fff00;
+        }
+        &.danger {
+          background: #ff0000;
+        }
+      }
+    }
+    .pro_card {
+      .inner_card {
+        border: 0;
+        padding: 0 !important;
+        .img_wraper {
+          position: relative;
+          background: #d8d6d6;
+          display: block;
+          img {
+            transform: scale(.85);
+            height: min(330px, 330px);
+            max-width: 100%;
+          }
+          .menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: none !important;
+            border: 1px solid transparent;
+            display: flex;
+            align-items: flex-end;
+            gap: 0;
+            span {
+              height: 0;
+              overflow: hidden;
+              width: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #dbd9d9;
+              font-size: 14px;
+              cursor: pointer;
+              a {
+                color: #000;
+              }
+              i {
+                font-size: 13px;
+                margin-right: 0px;
+                width: 0;
+                overflow: hidden;
+              }
+              &:hover {
+                i {
+                  width: 15px;
+                  margin-right: 2px;
+                  transition: 0.3s ease-in-out;
+                }
+              }
+              &:nth-child(1) {
+                border-right: 1px solid $border1;
+              }
+            }
+          }
+        }
+        .img_caption {
+          margin-top: 16px;
+        }
+        .add_cart {
+          overflow: hidden;
+          width: 100%;
+          height: 25px;
+          position: relative;
+          span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            font-weight: bold;
+            color: $maincolor;
+            font-size: 16px;
+          }
+          .link {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            opacity: 0;
+            cursor: pointer;
+            a {
+              color: $maincolor;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      &:hover {
+        .img_wraper .menu {
+          border-color: $border1;
+        }
+        .inner_card .img_wraper .menu span {
+          height: 36px;
+          border-top: 1px solid $border1;
+        }
+        .inner_card .add_cart span {
+          top: 100%;
+          opacity: 0;
+        }
+        .inner_card .add_cart .link {
+          top: 0;
+          opacity: 1;
         }
       }
     }
@@ -2612,7 +2846,6 @@ button {
         justify-content: center;
         flex-direction: column;
         padding: 0;
-        gap: 10px;
       }
       .right_sub {
         padding: 0;
@@ -2621,3 +2854,48 @@ button {
   }
 }
 //******** end footer ****************//
+
+//******** sm-navbar **************//
+.sm-navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: $background1;
+  z-index: 99;
+  display: none;
+  box-shadow: $mainshadow;
+  @media (max-width: 576px) {
+    display: block;
+  }
+  ul {
+    display: flex;
+    padding: 6px !important;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    li {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    a {
+      color: $maincolor;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      span {
+        font-weight: 600;
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .clear-sm {
+    display: none;
+  }
+}

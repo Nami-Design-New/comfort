@@ -12,6 +12,41 @@
 </head>
 
 <body>
+    <!-- responsive nav bar -->
+    <nav class="sm-navbar">
+        <ul>
+            <li>
+                <a href="login.html">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Account</span>
+                </a>
+            </li>
+            <li>
+                <a href="wishlist.html">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>wish list</span>
+                </a>
+            </li>
+            <li>
+                <a href="cart.html">
+                    <i class="fa-sharp fa-regular fa-cart-shopping"></i>
+                    <span>cart</span>
+                </a>
+            </li>
+            <li>
+                <a href="shop.html">
+                    <i class="fa-regular fa-grid-2"></i>
+                    <span>shop</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <i class="fa-sharp fa-regular fa-house"></i>
+                    <span>home</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
     <!-- Header & Navbar -->
     <header class="navigation">
         <!-- Top Bar Start-->
@@ -73,13 +108,13 @@
             </div>
             <div class="right_sup_nav ">
                 <ul>
-                    <li>
+                    <li class="clear-sm">
                         <a href="login.html">
                             <i class="far fa-user"></i>
                             <small>Account</small>
                         </a>
                     </li>
-                    <li>
+                    <li class="clear-sm">
                         <a href="wishlist.html">
                             <i class="far fa-heart"></i>
                             <small>Wishlist</small>
@@ -88,7 +123,7 @@
                             </span>
                         </a>
                     </li>
-                    <li id="cartOpen">
+                    <li class="clear-sm" id="cartOpen">
                         <span class="count">
                             0
                         </span>
@@ -162,45 +197,25 @@
                 <h4>Billing details</h4>
                 <form class="row">
                     <div class="field col-lg-6 col-12 pe-lg-4">
-                        <label for="firstName">First name *</label>
-                        <input name="firstName" type="text" id="firstName" />
-                    </div>
-                    <div class="field col-lg-6 col-12 ps-lg-4">
-                        <label for="LastName">Last name *</label>
-                        <input name="LastName" type="text" id="LastName" />
+                        <label for="firstName">First name*</label>
+                        <input name="name" type="text" id="firstName" placeholder="john" required />
                     </div>
                     <div class="field col-lg-6 col-12 pe-lg-4">
-                        <label for="companyName">Company name (optional)</label>
-                        <input name="companyName" type="text" id="companyName" />
-                    </div>
-                    <div class="field col-lg-6 col-12 ps-lg-4">
-                        <label for="country">Country / Region *</label>
-                        <input name="country" type="text" id="country" />
+                        <label for="lastName">Last name*</label>
+                        <input name="name" type="text" id="lastName" placeholder="doe" />
                     </div>
                     <div class="field col-lg-6 col-12 pe-lg-4">
-                        <label for="street">Street address</label>
-                        <input name="street" type="text" id="street" placeholder="House number and street name" />
-                    </div>
-                    <div class="field col-lg-6 col-12 ps-lg-4">
-                        <label for="apartment">Apartment</label>
-                        <input name="apartment" type="text" id="apartment"
-                            placeholder="Apartment, suite, unit, etc. (optional)" />
-                    </div>
-                    <div class="field col-lg-6 col-12 pe-lg-4">
-                        <label for="zip">Postcode / ZIP *</label>
-                        <input name="zip" type="text" id="zip" />
-                    </div>
-                    <div class="field col-lg-6 col-12 ps-lg-4">
-                        <label for="town">Town / City *</label>
-                        <input name="town" type="text" id="town" />
+                        <label for="email">Email address *</label>
+                        <input name="email" type="email" id="email" placeholder="example@gmail.com" required />
                     </div>
                     <div class="field col-lg-6 col-12 pe-lg-4">
                         <label for="phone">Phone *</label>
-                        <input name="phone" type="text" id="phone" />
+                        <input name="phone" type="text" id="phone" placeholder="+95 695 3885" />
                     </div>
-                    <div class="field col-lg-6 col-12 ps-lg-4">
-                        <label for="email">Email address *</label>
-                        <input name="email" type="text" id="email" />
+                    <div class="field col-12 pe-lg-4">
+                        <label for="street">Address*</label>
+                        <input name="street" type="text" id="street"
+                            placeholder="house no. - street name - city - governorate" />
                     </div>
                     <div class="order_details">
                         <h4>Your order</h4>
@@ -214,40 +229,11 @@
                             </span>
                             <span id="total-price">$1900</span>
                         </div>
-                        <div class="shiping head_order">
-                            <span>SHIPPING</span>
-                            <div>
-                                <div class="ship">
-                                    <input type="radio" value="flatRate" id="flatRate" name="shipping" />
-                                    <label for="flatRate">Flat rate</label>
-                                </div>
-                                <div class="ship">
-                                    <input type="radio" value="freeShipping" id="freeShipping" name="shipping" />
-                                    <label for="freeShipping">Free shipping</label>
-                                </div>
-                                <div class="ship">
-                                    <input type="radio" value="localPickup" id="localPickup" name="shipping" />
-                                    <label for="localPickup">Local pickup</label>
-                                </div>
-                            </div>
-                        </div>
                         <div class="head_order">
                             <span>TOTAL</span>
                             <b>
                                 $3600
                             </b>
-                        </div>
-                        <div class="payment">
-                            <input type="radio" value="directTransfer" id="directTransfer" name="payment_method" />
-                            <label for="directTransfer">DIRECT BANK TRANSFER</label>
-                        </div>
-                        <div class="payment">
-                            <input type="radio" value="checkPayment" id="checkPayment" name="payment_method" />
-                            <label for="checkPayment">CHECK PAYMENTS</label>
-                        </div>
-                        <div class="payment">
-                            <input type="radio" value="cachOnDelevery" id="cachOnDelevery" name="payment_method" />
-                            <label for="cachOnDelevery">CASH ON DELIVERY</label>
                         </div>
                         <p class="term">
                             Your personal data will be used to process your order, support
@@ -267,23 +253,17 @@
                 <h5>COMPANY</h5>
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="about.html">
                             <i class="fa-solid fa-arrow-right-long"></i> What we do
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="fa-solid fa-arrow-right-long"></i> Available
-                            Services
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
+                        <a href="contact.html">
                             <i class="fa-solid fa-arrow-right-long"></i> Careers
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="faq.html">
                             <i class="fa-solid fa-arrow-right-long"></i> FAQs
                         </a>
                     </li>
@@ -293,25 +273,25 @@
                 <h5>CUSTOMER SERVICE</h5>
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="contact.html">
                             <i class="fa-solid fa-arrow-right-long"></i> Help & Contact
                             Us
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="faq.html">
                             <i class="fa-solid fa-arrow-right-long"></i> Returns &
                             Refunds
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="faq.html">
                             <i class="fa-solid fa-arrow-right-long"></i> Delivery
                             Information
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="faq.html">
                             <i class="fa-solid fa-arrow-right-long"></i> Terms &
                             Conditions
                         </a>
@@ -347,22 +327,22 @@
                 <h5>PROFILE</h5>
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="login.html">
                             <i class="fa-solid fa-arrow-right-long"></i> My Account
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="checkout.html">
                             <i class="fa-solid fa-arrow-right-long"></i> Checkout
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="faq.html">
                             <i class="fa-solid fa-arrow-right-long"></i> Order Tracking
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="faq.html">
                             <i class="fa-solid fa-arrow-right-long"></i> Help & Support
                         </a>
                     </li>
@@ -374,7 +354,9 @@
                 <a href="index.html">
                     <img src="img/logo3.svg" alt="Logo" />
                 </a>
-                <p>© 2023 Comfort, All Rights Reserved</p>
+                <p>© 2023 <a href="nami-tec.com" style="color: #7fff00; display: inline-block; height: auto;">NAMI</a>,
+                    All
+                    Rights Reserved</p>
             </div>
             <div class="right_sub">
                 <i class="fab fa-paypal"></i>
