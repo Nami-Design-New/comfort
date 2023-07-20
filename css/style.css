@@ -1880,7 +1880,7 @@ button {
 }
 @media (max-width: 768px) {
   .main_entire .shopping_cart {
-    padding: 0 24px 40px;
+    padding: 0 12px 40px;
   }
 }
 .main_entire .shopping_cart .empty-cart {
