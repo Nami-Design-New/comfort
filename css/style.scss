@@ -1682,7 +1682,7 @@ button {
             }
           }
           .add_btn {
-            width: 120px;
+            width: 160px;
             height: 40px;
             background-color: $maincolor;
             color: $white;
@@ -1690,6 +1690,10 @@ button {
             a {
               color: $white;
               font-size: 15px;
+              font-weight: 400;
+              i,b{
+                font-weight: 400;
+              }
             }
           }
         }

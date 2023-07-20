@@ -1656,7 +1656,7 @@ button {
   justify-content: center;
 }
 .main_entire .product-details .pro-row .pro-info .add .add_btn {
-  width: 120px;
+  width: 160px;
   height: 40px;
   background-color: #1b355e;
   color: #fff;
@@ -1665,6 +1665,10 @@ button {
 .main_entire .product-details .pro-row .pro-info .add .add_btn a {
   color: #fff;
   font-size: 15px;
+  font-weight: 400;
+}
+.main_entire .product-details .pro-row .pro-info .add .add_btn a i, .main_entire .product-details .pro-row .pro-info .add .add_btn a b {
+  font-weight: 400;
 }
 .main_entire .product-details .pro-row .pro-info .favs span {
   color: #1b355e;
