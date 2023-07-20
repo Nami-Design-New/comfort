@@ -1,0 +1,636 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMFORT</title>
+    <link rel="icon" href="img/icon3.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- responsive nav bar -->
+    <nav class="sm-navbar">
+        <ul>
+            <li>
+                <a href="login.html">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Account</span>
+                </a>
+            </li>
+            <li>
+                <a href="wishlist.html">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>wish list</span>
+                </a>
+            </li>
+            <li>
+                <a href="cart.html">
+                    <i class="fa-sharp fa-regular fa-cart-shopping"></i>
+                    <span>cart</span>
+                </a>
+            </li>
+            <li>
+                <a href="shop.html">
+                    <i class="fa-regular fa-grid-2"></i>
+                    <span>shop</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <i class="fa-sharp fa-regular fa-house"></i>
+                    <span>home</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- small-card popup -->
+    <div class="pop-card">
+        <a href="product_details.html">
+            <img src="img/shop-45-img-1-600x600.jpg" alt="">
+        </a>
+        <div class="text">
+            <span>LORATUS FLOOR LAMP</span>
+            <a style="background: none !important;" href="categories.html">Furniture</a>
+        </div>
+        <div class="close">
+            <i class="fa-sharp fa-light fa-xmark"></i>
+        </div>
+    </div>
+    <!-- Header & Navbar -->
+    <header class="navigation">
+        <!-- Top Bar Start-->
+        <div class="nav_header">
+            <div class="left_head">
+                <img src="img/smStar.png" alt="" />
+                <span>10% discount for first order</span>
+            </div>
+            <div class="right_head">
+                <div class="social-lang">
+                    <a href="#">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <span>
+                        English
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- Nav -->
+        <nav>
+            <div class="left_sup_nav">
+                <a class="logolink" href="index.html">
+                    <img src="img/logo3.svg" alt="Logo" />
+                </a>
+                <ul class="nav_ul">
+                    <li>
+                        <a class="active" href="index.html">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li>
+                        <a href="categories.html">
+                            CATEGORIES
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html">
+                            SHOP
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right_sup_nav ">
+                <ul>
+                    <li class="clear-sm">
+                        <a href="login.html">
+                            <i class="far fa-user"></i>
+                            <small>Account</small>
+                        </a>
+                    </li>
+                    <li class="clear-sm">
+                        <a href="wishlist.html">
+                            <i class="far fa-heart"></i>
+                            <small>Wishlist</small>
+                            <span class="count">
+                                0
+                            </span>
+                        </a>
+                    </li>
+                    <li class="clear-sm" id="cartOpen">
+                        <span class="count">
+                            0
+                        </span>
+                        <ion-icon name="bag-outline"></ion-icon>
+                        <small>
+                            $0.00
+                        </small>
+                    </li>
+                    <li class="toggle_nav">
+                        <div class="toggler">
+                            <i class="fa-sharp fa-solid fa-bars"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mini_cart">
+                <div class="close">
+                    <i class="fa-light fa-x"></i>
+                </div>
+                <div class="cart_container">
+                    <div class="head">
+                        <h3>Shopping Cart</h3>
+                    </div>
+                    <!-- products container -->
+                    <!-- logic if cart empty "empty cart img" appears else the added products appears instead  -->
+                    <div class="products">
+                        <img src="img/cart.png" alt="">
+                        <!-- product appearance example -->
+                        <!-- <div class="product">
+                            <div class="pro_img">
+                                <img src="https://files.fm/thumb_show.php?i=72my8t2mq" alt="">
+                            </div>
+                            <div class="pro_detail">
+                                <h6>Poliframe tuffed accnet chair 29.1″W, jet black</h6>
+                                <p>count : <span>1</span></p>
+                                <p>258.99</p>
+                            </div>
+                            <div class="del_pro">
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="Total">
+                        <div class="total_inner">
+                            <h4>Total</h4>
+                            <span>$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="Route_links">
+                    <a href="cart.html" class="black_Link">
+                        <i class="far fa-shopping-cart"></i>
+                        <span> VIEW SHOPPING CART</span>
+                    </a>
+                    <a href="checkout.html" class="check">
+                        GO TO CHECKOUT
+                        <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main_entire">
+        <div class="go_back">
+            <a href="index.html">Home</a> / Faqs
+        </div>
+        <!-- faq-section -->
+        <section class="faqs">
+            <h6>CUSTOMER SUPPORT</h6>
+            <a class="support" href="mailto:support@example.com">support@example.com</a>
+            <div class="d-flex gap-5 mt-5 flex-lg-row flex-column">
+                <div class="nav flex-column side-bar" role="tablist">
+                    <!-- TAP -->
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#v-pills-faq" role="tab"
+                        aria-selected="true">
+                        <i class="fa-regular fa-arrow-up-right-from-square"></i> FAQ
+                    </button>
+                    <!-- TAP -->
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-terms" role="tab"
+                        aria-selected="false">
+                        <i class="fa-regular fa-arrow-up-right-from-square"></i> Terms & Conditions
+                    </button>
+                    <!-- TAP -->
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-delivery" role="tab"
+                        aria-selected="false">
+                        <i class="fa-regular fa-arrow-up-right-from-square"></i> Delivery Information
+                    </button>
+                    <!-- TAP -->
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-returns" role="tab"
+                        aria-selected="false">
+                        <i class="fa-regular fa-arrow-up-right-from-square"></i> Returns & Refunds
+                    </button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-order" role="tab"
+                        aria-selected="false">
+                        <i class="fa-regular fa-arrow-up-right-from-square"></i> Order Tracking
+                    </button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-careers" role="tab"
+                        aria-selected="false">
+                        <i class="fa-regular fa-arrow-up-right-from-square"></i> Careers
+                    </button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                    <!-- faq  -->
+                    <div class="tab-pane info-container fade show active" id="v-pills-faq" role="tabpanel">
+                        <h2>FAQ</h2>
+                        <div class="Qestion">
+                            <h3>1. Where can I buy store products?</h3>
+                            <p>
+                                Est velit et ex laboriosam dolor est inven tore quo numquam labore
+                                voluptas nihil molestiae sint delectus sint sequi volup tatem. Quia id
+                                omnis aliquid suscipit* recusandae similique. Vero natus sed animi
+                                reiciendis. Ipsum voluptate et non. Est velit et ex laboriosam dolor
+                                est inventore quo nquam. Labore voluptas nihil molestiae sint delectus
+                                sint sequi voluptatem. Quia id omnis aliquid suscipit recusandae
+                                similique. Vero natus sed animi reiciendis. Ips um voluptate et non.
+                                Est velit et ex
+                            </p>
+                        </div>
+                        <div class="Qestion">
+                            <h3>2. Do you provide furniture assembly services?</h3>
+                            <p>
+                                Est velit et ex laboriosam dolor est inven tore quo numquam labore
+                                voluptas nihil molestiae sint delectus sint sequi volup tatem. Quia id
+                                omnis aliquid suscipit* recusandae similique. Vero natus sed animi
+                                reiciendis. Ipsum voluptate et non.
+                            </p>
+                        </div>
+                        <div class="Qestion">
+                            <h3>3. Are your lamps dimmable?</h3>
+                            <p>
+                                Est velit et ex laboriosam dolor est inven tore quo numquam labore
+                                voluptas nihil molestiae sint delectus sint sequi volup tatem. Quia id
+                                omnis aliquid suscipit* recusandae similique. Vero natus sed
+                                <br />
+                                <br />
+                                Labore voluptas nihil molestiae sint delectus sint sequi voluptatem.
+                                <br />
+                                Quia id omnis aliquid suscipit recusandae similique.
+                                <br />
+                                Vero natus sed animi reiciendis. Ips um voluptate et non.
+                                <br />
+                                Est velit et ex laboriosam dolor est inventore quo nquam.
+                            </p>
+                        </div>
+                        <div class="Qestion">
+                            <h3>4. How do I cancel an order?</h3>
+                            <p>
+                                Est velit et ex laboriosam dolor est inven tore quo numquam labore
+                                voluptas nihil molestiae sint delectus sint sequi volup tatem. Quia id
+                                omnis aliquid suscipit* recusandae similique. Vero natus sed animi
+                                reiciendis. Ipsum voluptate et non.
+                                <br />
+                                <br />
+                                Labore voluptas nihil molestiae sint delectus sint sequi voluptatem.
+                                Quia id omnis aliquid suscipit recusandae similique. Vero natus sed
+                                animi reiciendis. Ips um voluptate et non.
+                                <br />
+                                <br />
+                                Est velit et ex laboriosam dolor est inven tore quo numquam labore
+                                voluptas nihil molestiae sint delectus sint sequi volup tatem. Quia id
+                                omnis aliquid suscipit* recusandae similique. Vero natus sed animi
+                                reiciendis. Ipsum voluptate et non. Est velit et ex laboriosam dolor
+                                est inventore quo nquam. Labore voluptas nihil molestiae sint delectus
+                                sint sequi voluptatem. Quia id omnis aliquid suscipit recusandae
+                            </p>
+                        </div>
+                        <div class="Qestion">
+                            <h3>5. Can I personally pick up my order?</h3>
+                            <p>
+                                Est velit et ex laboriosam dolor est inven tore quo numquam labore
+                                voluptas nihil molestiae sint delectus sint sequi volup tatem. Quia id
+                                omnis aliquid suscipit* recusandae similique. Vero natus sed animi
+                                reiciendis. Ipsum voluptate et non. Est velit et ex laboriosam dolor
+                                est inventore quo nquam. Labore voluptas nihil molestiae sint delectus
+                                sint sequi voluptatem.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Terms & Conditions -->
+                    <div class="tab-pane info-container fade show active" id="v-pills-terms" role="tabpanel">
+                        <h2>TERMS & CONDITIONS</h2>
+                        <div class="Qestion">
+                            <h3>General information</h3>
+                            <p>
+                                Est velit et ex laboriosam dolor est inven tore quo numquam labore
+                                voluptas nihil molestiae sint delectus sint sequi volup tatem. Quia id
+                                omnis aliquid suscipit* recusandae similique. Vero natus sed animi
+                                reiciendis. Ipsum voluptate et non. Est velit et ex laboriosam dolor
+                                est inventore quo nquam. Labore voluptas nihil molestiae sint sint
+                                sequi voluptatem. Quia is <span>aliquid suscipit</span>
+                            </p>
+                        </div>
+                        <ul>
+                            <li>
+                                Labore voluptas nihil molestiae sint delectus sint sequi voluptatem.
+                            </li>
+                            <li>Quia id omnis aliquid suscipit recusandae similique.</li>
+                            <li>Vero natus sed animi reiciendis. Ips um voluptate et non.</li>
+                            <li>Est velit et ex laboriosam dolor est inventore quo nquam.</li>
+                        </ul>
+                        <p class="text">
+                            Est velit et ex laboriosam dolor est inven tore quo numquam labore
+                            voluptas nihil molestiae sint delectus sint sequi volup tatem. Quia id
+                            omnis aliquid suscipit* recusandae similique. Vero natus sed animi
+                            reiciendis. Ipsum voluptate et non. Est velit et ex laboriosam dolor est
+                            inventore quo nquam. Labore voluptas nihil molestiae sint delectus sint
+                            sequi voluptatem. Quia id omnis aliquid nul suscipit recusandae
+                            similique. Vero natus sed animi reiciendis. Ips um voluptate et non. Est
+                            velit et ex laboriosam dolor est inventore quo nquam.Est velit et ex
+                            laboriosam dolor est inven tore quo numquam labore voluptas nihil
+                            molestiae sint delectus sint sequi volup tatem. Quia id omnis aliquid
+                            suscipit* recusandae similique. Vero natus sed animi reiciendis. Ipsum
+                            voluptate et non. Est velit et ex laboriosam dolor est inventore quo
+                            nquam. Labore voluptas nihil molestiae sint delectus sint sequi
+                            voluptatem. Quia id omnis aliquid suscipit recusandae similique. Vero
+                            natus sed animi reiciendis. Ips um voluptate et non. Est velit et ex
+                            laboriosam dolor est inventore quo nquam.Est velit et ex laboriosam
+                            dolor est inven tore quo numquam labore voluptas nihil molestiae sint
+                            delectus sint sequi volup tatem. Quia id omnis aliquid suscipit*
+                            recusandae similique. Vero natus sed animi reiciendis.
+                        </p>
+                        <div class="Qestion">
+                            <h3>Terms of payment</h3>
+                            <p>
+                                Est velit et ex laboriosam dolor est inven tore quo numquam labore
+                                voluptas nihil molestiae sint delectus sint sequi volup tatem. Quia id
+                                omnis aliquid suscipit* recusandae similique. Vero natus sed animi
+                                reiciendis. Ipsum voluptate et non.
+                                <br />
+                                <br />
+                                Est velit et ex laboriosam dolor est inventore quo nquam. Labore
+                                voluptas nihil molestiae sint delectus sint sequi voluptatem. Quia id
+                                omnis aliquid suscipit recusandae similique. Vero natus sed animi
+                                reiciendis. Ips um voluptate et non. Est velit et ex laboriosam dolor
+                                est inventore quo.
+                            </p>
+                        </div>
+                        <div class="Qestion">
+                            <h3>Methods of payment</h3>
+                            <p>
+                                Est velit et ex laboriosam dolor est inven tore quo numquam labore
+                                voluptas nihil molestiae sint dele ctus sint sequi volup tatem. Quia
+                                id omnis aliquid suscipit* recusandae similique. Vero natus sed animi
+                                reiciendis. Ipsum voluptate et non. Est velit et ex laboriosam dolor
+                                est inventore quo nquam. Labore voluptas nihil molestiae sint delectus
+                                sint sequi voluptatem. Quia id omnis aliquid suscipit
+                                <span>recusandae similique</span> . Vero natus sed animi reiciendis.
+                                Ips um voluptate et non. Est velit et ex laboriosam dolor est
+                                inventore quo nquam.Est velit et ex laboriosam dolor est inven tore
+                                quo numquam labore voluptas nihil molestiae sint delectus sint sequi
+                                volup tatem. Quia id omnis aliquid suscipit* recusandae similique.
+                                <br />
+                                <br />
+                                Vero natus sed animi reiciendis. Ipsum voluptate et non. Est velit et
+                                ex laboriosam dolor est inventore quo nquam. Labore voluptas nihil
+                                molestiae sint delectus sint sequi voluptatem. Quia id omnis aliquid
+                                suscipit recusandae similique. Vero natus sed animi reiciendis. Ips um
+                                voluptate et non. Est velit et ex
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Delivery Information -->
+                    <div class="tab-pane info-container fade show active" id="v-pills-delivery" role="tabpanel">
+                        <h2>DELIVERY INFORMATION</h2>
+                        <div class="Qestion">
+                            <h3>Delivery in US</h3>
+                            <p>
+                                Vero natus sed animi reiciendis. Ipsum voluptate et non. Est velit et
+                                ex laboriosam dolor est inventore quo nquam. Labore voluptas nihil
+                                molestiae sint delectus sint sequi voluptatem. Quia id omnis
+                                <span> aliquid suscipit recusandae similique</span>. Vero natus sed
+                                animi reiciendis. Ips um voluptate et non. Est velit et ex
+                            </p>
+                        </div>
+                        <ul>
+                            <li>
+                                Labore voluptas nihil molestiae sint delectus sint sequi voluptatem.
+                            </li>
+                            <li>Quia id omnis aliquid suscipit recusandae similique.</li>
+                            <li>Vero natus sed animi reiciendis. Ips um voluptate et non.</li>
+                            <li>Est velit et ex laboriosam dolor est inventore quo nquam.</li>
+                            <li>
+                                Labore voluptas nihil molestiae sint delectus sint sequi voluptatem.
+                            </li>
+                            <li>Quia id omnis aliquid suscipit recusandae similique.</li>
+                            <li>Vero natus sed animi reiciendis. Ips um voluptate et non.</li>
+                            <li>Est velit et ex laboriosam dolor est inventore quo nquam.</li>
+                        </ul>
+                    </div>
+                    <!-- Returns & Refunds -->
+                    <div class="tab-pane info-container fade show active" id="v-pills-returns" role="tabpanel">
+                        <h2>RETURNS & REFUNDS</h2>
+                        <p class="text_ret">
+                            You can request a free return of any product within 14 days from the
+                            delivery date. Contact our customer care at{" "}
+                            <a href="mailto:support@example.com">support@example.com</a> to receive
+                            the return form or see the Terms and Conditions of Sale section.
+                        </p>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                            ipsum dolor sit.
+                            <br />
+                            <br />
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                        </p>
+                    </div>
+                    <!-- Order Tracking -->
+                    <div class="tab-pane info-container fade show active" id="v-pills-order" role="tabpanel">
+                        <h2>ORDER TRACKING</h2>
+                        <p class="text_ret2">
+                            To track your order please enter your Order ID in the box below and
+                            press the<b>“Track order”</b> button. This was given to you on your
+                            receipt and in the confirmation email you should have received.
+                        </p>
+                    </div>
+                    <!-- Order Tracking -->
+                    <div class="tab-pane info-container fade show active" id="v-pills-order" role="tabpanel">
+                        <h2>CAREERS</h2>
+                        <p class="text_ret">
+                            Please send your CV with a description of your qualifications and
+                            competencies to <a href="mailto:jobs@qode.com">jobs@qode.com</a> .
+                            Please mark it “job application for – the area you are applying for“. We
+                            are looking forward to hearing from you.
+                        </p>
+                        <div class="Qestion">
+                            <h3 class="special">
+                                We look forward to receiving your application.{" "}
+                            </h3>
+                            <p class="text3">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam non
+                                umy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                                ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                                et justo duo dolores et ea.
+                            </p>
+                        </div>
+                        <div class="Qestion q2">
+                            <h3>Available positions</h3>
+                            <p>
+                                <span class="sp">Regional Sales Manager</span>
+                                <span class="sp">Digital Marketing Intern</span>
+                                <span class="sp">UX Specialist & Web Editor</span>
+                                <span class="sp">PR & Communication Manager</span>
+                                <span class="sp">Production worker</span>
+                                <span class="sp">Sales Support</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="row inner_footer">
+            <div class="col-lg-3 col-6">
+                <h5>COMPANY</h5>
+                <ul>
+                    <li>
+                        <a href="about.html">
+                            <i class="fa-solid fa-arrow-right-long"></i> What we do
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            <i class="fa-solid fa-arrow-right-long"></i> Careers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faq.html">
+                            <i class="fa-solid fa-arrow-right-long"></i> FAQs
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-6">
+                <h5>CUSTOMER SERVICE</h5>
+                <ul>
+                    <li>
+                        <a href="contact.html">
+                            <i class="fa-solid fa-arrow-right-long"></i> Help & Contact
+                            Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faq.html">
+                            <i class="fa-solid fa-arrow-right-long"></i> Returns &
+                            Refunds
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faq.html">
+                            <i class="fa-solid fa-arrow-right-long"></i> Delivery
+                            Information
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faq.html">
+                            <i class="fa-solid fa-arrow-right-long"></i> Terms &
+                            Conditions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-6">
+                <h5>SOCIAL MEDIA</h5>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-right-long"></i> Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-right-long"></i> Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-right-long"></i> Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-right-long"></i> Pinterest
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-6">
+                <h5>PROFILE</h5>
+                <ul>
+                    <li>
+                        <a href="login.html">
+                            <i class="fa-solid fa-arrow-right-long"></i> My Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="checkout.html">
+                            <i class="fa-solid fa-arrow-right-long"></i> Checkout
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faq.html">
+                            <i class="fa-solid fa-arrow-right-long"></i> Order Tracking
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faq.html">
+                            <i class="fa-solid fa-arrow-right-long"></i> Help & Support
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sub_footer">
+            <div class="left_sub">
+                <a href="index.html">
+                    <img src="img/logo3.svg" alt="Logo" />
+                </a>
+                <p>© 2023 <a href="nami-tec.com" style="color: #7fff00; display: inline-block; height: auto;">NAMI</a>,
+                    All
+                    Rights Reserved</p>
+            </div>
+            <div class="right_sub">
+                <i class="fab fa-paypal"></i>
+                <i class="fab fa-amazon-pay"></i>
+                <i class="fab fa-apple-pay"></i>
+                <i class="fab fa-cc-mastercard"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- Javascript -->
+    <script src="js/swiper.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

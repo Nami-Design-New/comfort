@@ -113,3 +113,4 @@ openCartBtn.addEventListener("click", () => {
 closeCartBtn.addEventListener("click", () => {
   cartmodel.classList.remove("active");
 });
+// annoying popup
