@@ -2183,6 +2183,16 @@ button {
 .main_entire .wishlist .filled-cart .ordered-products .product-row:last-child {
   border-bottom: 0;
 }
+@media (max-width: 768px) {
+  .main_entire .wishlist .filled-cart .ordered-products .product-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .main_entire .wishlist .filled-cart .ordered-products .product-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (max-width: 576px) {
   .main_entire .Checkout .billing_container form .order_details .head_order {
     padding-right: 50px;
