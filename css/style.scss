@@ -3249,13 +3249,14 @@ body .pop-card {
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
-    background-color: $border1;
+    background-color: #f1f3f2;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     top: -8px;
     right: -8px;
+    cursor: pointer;
     i {
       color: $maincolor;
     }
