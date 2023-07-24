@@ -2428,10 +2428,10 @@ button {
         padding: 2px 6px;
         font-weight: 400;
         &.wait {
-          background: #dfff00;
+          background: #ffc205;
         }
         &.success {
-          background: #7fff00;
+          background: #4db748;
         }
         &.danger {
           background: #ff0000;
@@ -3110,6 +3110,17 @@ button {
         margin: 0;
         padding: 12px 16px;
         color: $maincolor;
+        a {
+          color: #08a06a;
+          display: inline-block;
+          height: auto;
+          font-size: 18px;
+          margin: 0 2px;
+          img {
+            max-width: 25px;
+            margin: 0 2px;
+          }
+        }
       }
     }
     .right_sub {
@@ -3232,6 +3243,21 @@ body .pop-card {
     span {
       color: $maincolor;
       font-weight: 500;
+    }
+  }
+  .close {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: $border1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    i {
+      color: $maincolor;
     }
   }
 }

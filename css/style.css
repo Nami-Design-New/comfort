@@ -2421,10 +2421,10 @@ button {
   font-weight: 400;
 }
 .main_entire .profile .oder-wrap .status.wait {
-  background: #dfff00;
+  background: #ffc205;
 }
 .main_entire .profile .oder-wrap .status.success {
-  background: #7fff00;
+  background: #4db748;
 }
 .main_entire .profile .oder-wrap .status.danger {
   background: #ff0000;
@@ -3081,6 +3081,17 @@ button {
   padding: 12px 16px;
   color: #1b355e;
 }
+.footer .sub_footer .left_sub p a {
+  color: #08a06a;
+  display: inline-block;
+  height: auto;
+  font-size: 18px;
+  margin: 0 2px;
+}
+.footer .sub_footer .left_sub p a img {
+  max-width: 25px;
+  margin: 0 2px;
+}
 .footer .sub_footer .right_sub {
   display: flex;
   align-items: center;
@@ -3202,4 +3213,19 @@ body .pop-card .text a {
 body .pop-card .text span {
   color: #1b355e;
   font-weight: 500;
+}
+body .pop-card .close {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #ebeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+body .pop-card .close i {
+  color: #1b355e;
 }/*# sourceMappingURL=style.css.map */
