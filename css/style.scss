@@ -506,7 +506,7 @@ button {
     }
     nav {
       .left_sup_nav {
-        .categories-wrapper.show{
+        .categories-wrapper.show {
           width: 100%;
         }
       }
@@ -2611,7 +2611,7 @@ button {
     }
     .nav {
       width: 20% !important;
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         width: 100% !important;
       }
     }
@@ -2682,6 +2682,9 @@ button {
         font-size: 20px;
         color: $maincolor;
         font-weight: 400;
+        @media (max-width: 768px) {
+          padding: 0 !important;
+        }
         a {
           color: $maincolor;
           text-decoration: underline;
