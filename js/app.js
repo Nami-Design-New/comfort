@@ -1,6 +1,6 @@
 //navmenu
 let toggler = document.querySelector(".toggle_nav");
-let navMenu = document.querySelector(".nav_ul");
+let navMenu = document.querySelector(".categories-wrapper");
 toggler.addEventListener("click", () => {
   navMenu.classList.toggle("show");
   navMenu.classList.contains("show")
@@ -113,4 +113,16 @@ openCartBtn.addEventListener("click", () => {
 closeCartBtn.addEventListener("click", () => {
   cartmodel.classList.remove("active");
 });
-// annoying popup
+// products flash
+const animatedDiv = document.querySelector(".pop-card");
+function animateDiv() {
+  animatedDiv.style.left = "-130px";
+  setTimeout(() => {
+    animatedDiv.style.left = "8px";
+    setTimeout(() => {
+      animatedDiv.style.left = "-130px";
+      animateDiv();
+    }, 2500);
+  }, 2500);
+}
+animateDiv();
