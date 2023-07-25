@@ -3031,10 +3031,10 @@ button {
     }
     .product-details .pro-row .pro-img {
       .productSlider {
-        height: fit-content;
+        max-height: 69px;
       }
       .productSlider2 {
-        height: fit-content;
+        max-height: 305px;
       }
     }
   }

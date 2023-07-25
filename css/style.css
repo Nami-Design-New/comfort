@@ -3001,12 +3001,10 @@ button {
     grid-template-columns: repeat(2, 1fr);
   }
   .main_entire .product-details .pro-row .pro-img .productSlider {
-    height: -moz-fit-content;
-    height: fit-content;
+    max-height: 69px;
   }
   .main_entire .product-details .pro-row .pro-img .productSlider2 {
-    height: -moz-fit-content;
-    height: fit-content;
+    max-height: 305px;
   }
   .main_entire .product-details .pro-row .pro-info .suk {
     flex-direction: column;
