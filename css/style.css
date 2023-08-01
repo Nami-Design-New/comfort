@@ -2822,7 +2822,7 @@ button {
   }
   .main_entire .about .about_store .left_wrapper {
     width: 100%;
-    padding-right: 0;
+    padding-left: 0;
   }
   .main_entire .about .about_store .left_wrapper .career {
     margin-top: 20px;
