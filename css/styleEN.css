@@ -5,7 +5,6 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   transition: all 0.4s ease-in-out;
-  direction: rtl;
 }
 
 body {
@@ -262,7 +261,7 @@ button {
   cursor: pointer;
 }
 .navigation nav .right_sup_nav ul li i {
-  margin-left: 5px;
+  margin-right: 5px;
 }
 .navigation nav .right_sup_nav ul li a {
   color: #1b355e;
@@ -283,8 +282,8 @@ button {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: -2px;
-  right: -7px;
+  top: -3px;
+  left: -7px;
 }
 .navigation nav .right_sup_nav ul .toggle_nav {
   display: none;
@@ -307,14 +306,14 @@ button {
   background-color: #fff;
   position: fixed;
   top: 0;
-  left: -430px;
+  right: -430px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   z-index: 999999;
 }
 .navigation nav .mini_cart.active {
-  left: 0;
+  right: 0;
 }
 .navigation nav .mini_cart .close_cart-cc {
   width: 100%;
@@ -449,7 +448,7 @@ button {
 }
 .navigation nav .mini_cart .Route_links .black_Link span {
   margin-top: 3px;
-  margin-right: 8px;
+  margin-left: 8px;
   color: #fff;
 }
 .navigation nav .mini_cart .Route_links .check {
@@ -568,10 +567,6 @@ button {
   margin-top: 16px;
   font-size: 18px;
 }
-.main_entire .mainSlider .mainSliderContainer .swiper-slide .info a i {
-  margin-left: 0;
-  transform: scaleX(-1);
-}
 .main_entire .mainSlider .mainSliderContainer .swiper-slide .info .sliderTitle {
   color: #fff;
   max-width: 1000px;
@@ -665,11 +660,10 @@ button {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transform: scaleX(-1);
 }
 .main_entire .departments .cards .dcard .info {
   position: absolute;
-  right: 16px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -683,7 +677,6 @@ button {
 }
 .main_entire .departments .cards .dcard .info a i {
   font-size: 12px;
-  transform: scaleX(-1);
 }
 .main_entire .departments .cards .dcard:hover img {
   width: 105%;
@@ -714,11 +707,10 @@ button {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transform: scaleX(-1);
 }
 .main_entire .GetInspired .row .col-12 .info {
   position: absolute;
-  right: 12px;
+  left: 12px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -734,14 +726,12 @@ button {
 }
 .main_entire .GetInspired .row .col-12 .info a i {
   font-size: 14px;
-  transform: scaleX(-1);
 }
 .main_entire .GetInspired .row .col-12:hover img {
   transform: scale(1.05);
-  transform: scaleX(-1);
 }
 .main_entire .GetInspired .row .col-12:hover .info a i {
-  margin-right: 4px;
+  margin-left: 4px;
 }
 .main_entire .quality {
   width: 100%;
@@ -811,7 +801,7 @@ button {
 }
 .main_entire .trending .pro_card .hint {
   position: absolute;
-  right: 8px;
+  left: 8px;
   top: 8px;
   padding: 0 10px;
   height: 25px;
@@ -843,7 +833,7 @@ button {
   transition: 0.4s ease-in-out;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: 100%;
   height: 0;
   overflow: hidden;
@@ -859,7 +849,6 @@ button {
   cursor: pointer;
 }
 .main_entire .trending .pro_card .add_cart {
-  margin-top: 10px;
   overflow: hidden;
   width: 100%;
   height: 25px;
@@ -889,7 +878,7 @@ button {
 .main_entire .trending .pro_card .add_cart span {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   opacity: 1;
   font-weight: bold;
   color: #1b355e;
@@ -898,7 +887,7 @@ button {
 .main_entire .trending .pro_card .add_cart .link {
   position: absolute;
   top: 100%;
-  right: 0;
+  left: 0;
   opacity: 0;
   cursor: pointer;
 }
@@ -948,8 +937,8 @@ button {
   border: 1px solid #fff;
   width: min(100%, 550px);
   border-radius: 42px;
-  padding-right: 20px;
-  padding-left: 3px;
+  padding-left: 20px;
+  padding-right: 3px;
 }
 .main_entire .newsletter form input {
   width: 75%;
@@ -976,8 +965,7 @@ button {
   color: #1b355e;
 }
 .main_entire .newsletter form button i {
-  margin-right: 4px;
-  transform: scaleX(-1);
+  margin-left: 4px;
 }
 .main_entire .newsletter form button:hover {
   background: #ebeaea;
@@ -1029,7 +1017,7 @@ button {
 .main_entire .follow-us .swiper .swiper-button-next::after {
   font-size: 20px;
   position: absolute;
-  left: 45%;
+  left: 55%;
   top: 50%;
   transform: translate(-50%, -50%);
   color: #1b355e;
@@ -1045,7 +1033,7 @@ button {
 .main_entire .follow-us .swiper .swiper-button-prev::after {
   font-size: 20px;
   position: absolute;
-  left: 55%;
+  left: 45%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
@@ -1084,7 +1072,7 @@ button {
 }
 .main_entire .about .about_store .left_wrapper {
   width: 50%;
-  padding-left: 120px;
+  padding-right: 120px;
   padding-top: 40px;
   display: flex;
   flex-direction: column;
@@ -1238,7 +1226,7 @@ button {
 .main_entire .shop .open_filter {
   position: fixed;
   bottom: 65px;
-  right: 12px;
+  left: 12px;
   z-index: 200;
   background-color: #1b355e;
   color: #fff;
@@ -1330,7 +1318,7 @@ button {
 }
 .main_entire .shop main .pro_card .hint {
   position: absolute;
-  right: 16px;
+  left: 16px;
   top: 16px;
   padding: 0 10px;
   height: 25px;
@@ -1361,7 +1349,7 @@ button {
 .main_entire .shop main .pro_card .inner_card .img_wraper .menu {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -1432,7 +1420,7 @@ button {
 .main_entire .shop main .pro_card .inner_card .add_cart span {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   opacity: 1;
   font-weight: bold;
   color: #1b355e;
@@ -1441,7 +1429,7 @@ button {
 .main_entire .shop main .pro_card .inner_card .add_cart .link {
   position: absolute;
   top: 100%;
-  right: 0;
+  left: 0;
   opacity: 0;
   cursor: pointer;
 }
@@ -1496,7 +1484,7 @@ button {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   color: #1b355e;
-  padding-left: 100px;
+  padding-right: 100px;
 }
 .main_entire .contact .info_container .infos {
   display: flex;
@@ -1646,7 +1634,7 @@ button {
 .main_entire .product-details .pro-row .pro-img .swiperControl {
   position: absolute;
   bottom: 10px;
-  right: 10px;
+  left: 10px;
   padding: 20px;
   display: flex;
   gap: 24px;
@@ -1658,6 +1646,7 @@ button {
 }
 .main_entire .product-details .pro-row .pro-img .swiperControl .swiperBtns .swiper-button-next,
 .main_entire .product-details .pro-row .pro-img .swiperControl .swiperBtns .swiper-button-prev {
+  transform: scaleX(-1);
   position: relative;
   right: unset;
   left: unset;
@@ -1790,7 +1779,7 @@ button {
   height: 40px;
   background-color: #1b355e;
   color: #fff;
-  margin-right: 1.5rem;
+  margin-left: 1.5rem;
 }
 .main_entire .product-details .pro-row .pro-info .add .add_btn a {
   color: #fff;
@@ -1815,7 +1804,7 @@ button {
   font-size: 16px;
 }
 .main_entire .product-details .pro-row .pro-info .suk span {
-  margin-right: 40px;
+  margin-left: 40px;
   font-size: 16px;
 }
 .main_entire .categories {
@@ -1856,7 +1845,7 @@ button {
   position: absolute;
   content: "";
   top: 0;
-  right: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.25);
@@ -1865,7 +1854,7 @@ button {
   justify-content: flex-end;
   flex-direction: column;
   padding-bottom: 6%;
-  padding-right: 10%;
+  padding-left: 10%;
 }
 .main_entire .categories .category-cards .category-card .layer h5 {
   margin: 0;
@@ -1881,8 +1870,7 @@ button {
   opacity: 1;
 }
 .main_entire .categories .category-cards .category-card:hover h5 i {
-  margin-right: 4px;
-  transform: scaleX(-1);
+  margin-left: 4px;
 }
 .main_entire .categories .category-cards .swiper-button-prev,
 .main_entire .categories .category-cards .swiper-button-next {
@@ -1898,7 +1886,7 @@ button {
 .main_entire .categories .category-cards .swiper-button-next::after {
   font-size: 16px;
   position: absolute;
-  left: 45%;
+  left: 55%;
   top: 50%;
   transform: translate(-50%, -50%);
   color: #1b355e;
@@ -1914,7 +1902,7 @@ button {
 .main_entire .categories .category-cards .swiper-button-prev::after {
   font-size: 16px;
   position: absolute;
-  left: 55%;
+  left: 45%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
@@ -2007,7 +1995,7 @@ button {
   justify-content: center;
 }
 .main_entire .Login .link2 {
-  margin-right: 5px;
+  margin-left: 5px;
 }
 .main_entire .shopping_cart {
   padding: 0 60px 40px;
@@ -2254,7 +2242,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 0;
+  padding: 15px 100px 15px 0;
 }
 @media (max-width: 576px) {
   .main_entire .Checkout .billing_container form .order_details .head_order {
@@ -2313,7 +2301,7 @@ button {
   letter-spacing: 0.5px;
   font-size: 16px;
   height: 40px;
-  margin-right: 12px;
+  margin-left: 12px;
 }
 .main_entire .profile {
   padding: 0 60px 60px;
@@ -2358,7 +2346,7 @@ button {
   border-bottom: 1px solid #ebeaea;
 }
 .main_entire .profile .side-bar .nav-link i {
-  margin-left: 4px;
+  margin-right: 4px;
 }
 .main_entire .profile .info-container h5 {
   color: #1b355e;
@@ -2446,7 +2434,7 @@ button {
 }
 .main_entire .profile .pro_card .hint {
   position: absolute;
-  right: 16px;
+  left: 16px;
   top: 16px;
   padding: 0 10px;
   height: 25px;
@@ -2477,7 +2465,7 @@ button {
 .main_entire .profile .pro_card .inner_card .img_wraper .menu {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -2548,7 +2536,7 @@ button {
 .main_entire .profile .pro_card .inner_card .add_cart span {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   opacity: 1;
   font-weight: bold;
   color: #1b355e;
@@ -2557,7 +2545,7 @@ button {
 .main_entire .profile .pro_card .inner_card .add_cart .link {
   position: absolute;
   top: 100%;
-  right: 0;
+  left: 0;
   opacity: 0;
   cursor: pointer;
 }
@@ -2644,7 +2632,7 @@ button {
   font-family: "Poppins", sans-serif;
 }
 .main_entire .faqs .tab-content .Qestion {
-  padding-left: 100px;
+  padding-right: 100px;
 }
 .main_entire .faqs .tab-content .Qestion .special {
   color: #1b355e;
@@ -2677,11 +2665,11 @@ button {
   margin-top: 5px;
 }
 .main_entire .faqs .tab-content .text {
-  padding-left: 100px;
+  padding-right: 100px;
   line-height: 1.5;
 }
 .main_entire .faqs .tab-content .text_ret {
-  padding-left: 100px;
+  padding-right: 100px;
   font-size: 20px;
   color: #1b355e;
   font-weight: 400;
@@ -2696,7 +2684,7 @@ button {
   text-decoration: underline;
 }
 .main_entire .faqs .tab-content .text_ret2 {
-  padding-left: 350px;
+  padding-right: 350px;
   font-size: 20px;
   color: #1b355e;
   font-weight: 400;
@@ -2706,7 +2694,7 @@ button {
 }
 .main_entire .faqs .tab-content .text3 {
   line-height: 1.7em !important;
-  padding-left: 50px;
+  padding-right: 50px;
 }
 @media (max-width: 576px) {
   .main_entire .faqs .tab-content h2 {
@@ -3041,7 +3029,7 @@ button {
   font-weight: 500;
   font-size: 17px;
   margin-bottom: 24px;
-  padding-right: 50px;
+  padding-left: 50px;
 }
 .footer .inner_footer ul {
   margin-top: 25px;
@@ -3049,7 +3037,7 @@ button {
 }
 .footer .inner_footer ul li {
   margin: 10px 0;
-  padding-right: 50px;
+  padding-left: 50px;
 }
 .footer .inner_footer ul li a {
   font-family: "Poppins", sans-serif;
@@ -3060,7 +3048,6 @@ button {
   color: #787878;
   width: 0;
   overflow: hidden;
-  transform: scaleX(-1);
 }
 .footer .inner_footer ul li a:hover i {
   width: 15px;
@@ -3076,7 +3063,7 @@ button {
 }
 .footer .sub_footer .left_sub {
   display: flex;
-  padding-right: 20px;
+  padding-left: 20px;
   align-items: center;
   justify-content: center;
 }
@@ -3240,4 +3227,4 @@ body .pop-card .close {
 }
 body .pop-card .close i {
   color: #1b355e;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=styleEN.css.map */

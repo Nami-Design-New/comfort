@@ -16,7 +16,6 @@ $mainTransation: 0.4s ease-in-out;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   transition: all $mainTransation;
-  direction: rtl;
 }
 body {
   background-color: $background1 !important;
@@ -257,7 +256,7 @@ button {
           font-size: 16px;
           cursor: pointer;
           i {
-            margin-left: 5px;
+            margin-right: 5px;
           }
           a {
             color: $maincolor;
@@ -278,8 +277,8 @@ button {
             align-items: center;
             justify-content: center;
             position: absolute;
-            top: -2px;
-            right: -7px;
+            top: -3px;
+            left: -7px;
           }
         }
         .toggle_nav {
@@ -305,13 +304,13 @@ button {
       background-color: $background1;
       position: fixed;
       top: 0;
-      left: -430px;
+      right: -430px;
       padding: 20px;
       display: flex;
       flex-direction: column;
       z-index: 999999;
       &.active {
-        left: 0;
+        right: 0;
       }
       .close_cart-cc {
         width: 100%;
@@ -442,7 +441,7 @@ button {
           justify-content: center;
           span {
             margin-top: 3px;
-            margin-right: 8px;
+            margin-left: 8px;
             color: $white;
           }
         }
@@ -576,10 +575,6 @@ button {
             font-family: "Poppins", sans-serif;
             margin-top: 16px;
             font-size: 18px;
-            i {
-              margin-left: 0;
-              transform: scaleX(-1);
-            }
           }
           .sliderTitle {
             color: $white;
@@ -676,11 +671,10 @@ button {
         img {
           width: 100%;
           object-fit: cover;
-          transform: scaleX(-1);
         }
         .info {
           position: absolute;
-          right: 16px;
+          left: 16px;
           top: 50%;
           transform: translateY(-50%);
           h3 {
@@ -692,7 +686,6 @@ button {
             color: $maincolor;
             i {
               font-size: 12px;
-              transform: scaleX(-1);
             }
           }
         }
@@ -727,11 +720,10 @@ button {
         img {
           width: 100%;
           object-fit: cover;
-          transform: scaleX(-1);
         }
         .info {
           position: absolute;
-          right: 12px;
+          left: 12px;
           top: 50%;
           transform: translateY(-50%);
           p {
@@ -745,17 +737,15 @@ button {
             font-size: 16px;
             i {
               font-size: 14px;
-              transform: scaleX(-1);
             }
           }
         }
         &:hover {
           img {
             transform: scale(1.05);
-            transform: scaleX(-1);
           }
           .info a i {
-            margin-right: 4px;
+            margin-left: 4px;
           }
         }
       }
@@ -832,7 +822,7 @@ button {
       position: relative;
       .hint {
         position: absolute;
-        right: 8px;
+        left: 8px;
         top: 8px;
         padding: 0 10px;
         height: 25px;
@@ -863,7 +853,7 @@ button {
           transition: $mainTransation;
           position: absolute;
           top: 0;
-          right: 0;
+          left: 0;
           width: 100%;
           height: 0;
           overflow: hidden;
@@ -880,7 +870,6 @@ button {
         }
       }
       .add_cart {
-        margin-top: 10px;
         .price {
           width: 100%;
           height: 24px;
@@ -909,7 +898,7 @@ button {
         span {
           position: absolute;
           top: 0;
-          right: 0;
+          left: 0;
           opacity: 1;
           font-weight: bold;
           color: $maincolor;
@@ -918,7 +907,7 @@ button {
         .link {
           position: absolute;
           top: 100%;
-          right: 0;
+          left: 0;
           opacity: 0;
           cursor: pointer;
           a {
@@ -974,8 +963,8 @@ button {
       border: 1px solid $white;
       width: min(100%, 550px);
       border-radius: 42px;
-      padding-right: 20px;
-      padding-left: 3px;
+      padding-left: 20px;
+      padding-right: 3px;
       input {
         width: 75%;
         background: none;
@@ -996,8 +985,7 @@ button {
         background: $background1;
         color: $maincolor;
         i {
-          margin-right: 4px;
-          transform: scaleX(-1);
+          margin-left: 4px;
         }
         &:hover {
           background: $border1;
@@ -1048,7 +1036,7 @@ button {
         &::after {
           font-size: 20px;
           position: absolute;
-          left: 45%;
+          left: 55%;
           top: 50%;
           transform: translate(-50%, -50%);
           color: $maincolor;
@@ -1064,7 +1052,7 @@ button {
         &::after {
           font-size: 20px;
           position: absolute;
-          left:55%;
+          left: 45%;
           top: 50%;
           transform: translate(-50%, -50%);
         }
@@ -1107,7 +1095,7 @@ button {
       }
       .left_wrapper {
         width: 50%;
-        padding-left: 120px;
+        padding-right: 120px;
         padding-top: 40px;
         display: flex;
         flex-direction: column;
@@ -1264,7 +1252,7 @@ button {
     .open_filter {
       position: fixed;
       bottom: 65px;
-      right: 12px;
+      left: 12px;
       z-index: 200;
       background-color: $maincolor;
       color: $white;
@@ -1356,7 +1344,7 @@ button {
         position: relative;
         .hint {
           position: absolute;
-          right: 16px;
+          left: 16px;
           top: 16px;
           padding: 0 10px;
           height: 25px;
@@ -1385,7 +1373,7 @@ button {
             .menu {
               position: absolute;
               top: 0;
-              right: 0;
+              left: 0;
               width: 100%;
               height: 100%;
               overflow: hidden;
@@ -1458,7 +1446,7 @@ button {
             span {
               position: absolute;
               top: 0;
-              right: 0;
+              left: 0;
               opacity: 1;
               font-weight: bold;
               color: $maincolor;
@@ -1467,7 +1455,7 @@ button {
             .link {
               position: absolute;
               top: 100%;
-              right: 0;
+              left: 0;
               opacity: 0;
               cursor: pointer;
               a {
@@ -1528,7 +1516,7 @@ button {
         font-family: "Poppins", sans-serif;
         font-size: 18px;
         color: $maincolor;
-        padding-left: 100px;
+        padding-right: 100px;
       }
       .infos {
         display: flex;
@@ -1676,7 +1664,7 @@ button {
         .swiperControl {
           position: absolute;
           bottom: 10px;
-          right: 10px;
+          left: 10px;
           padding: 20px;
           display: flex;
           gap: 24px;
@@ -1686,6 +1674,7 @@ button {
             gap: 8px;
             .swiper-button-next,
             .swiper-button-prev {
+              transform: scaleX(-1);
               position: relative;
               right: unset;
               left: unset;
@@ -1816,7 +1805,7 @@ button {
             height: 40px;
             background-color: $maincolor;
             color: $white;
-            margin-right: 1.5rem;
+            margin-left: 1.5rem;
             a {
               color: $white;
               font-size: 15px;
@@ -1841,7 +1830,7 @@ button {
             font-size: 16px;
           }
           span {
-            margin-right: 40px;
+            margin-left: 40px;
             font-size: 16px;
           }
         }
@@ -1884,7 +1873,7 @@ button {
           position: absolute;
           content: "";
           top: 0;
-          right: 0;
+          left: 0;
           width: 100%;
           height: 100%;
           background-color: rgba(0, 0, 0, 0.25);
@@ -1893,7 +1882,7 @@ button {
           justify-content: flex-end;
           flex-direction: column;
           padding-bottom: 6%;
-          padding-right: 10%;
+          padding-left: 10%;
           h5 {
             margin: 0;
             color: $white;
@@ -1910,8 +1899,7 @@ button {
             opacity: 1;
           }
           h5 i {
-            margin-right: 4px;
-            transform: scaleX(-1);
+            margin-left: 4px;
           }
         }
       }
@@ -1927,7 +1915,7 @@ button {
         &::after {
           font-size: 16px;
           position: absolute;
-          left: 45%;
+          left: 55%;
           top: 50%;
           transform: translate(-50%, -50%);
           color: $maincolor;
@@ -1943,7 +1931,7 @@ button {
         &::after {
           font-size: 16px;
           position: absolute;
-          left: 55%;
+          left: 45%;
           top: 50%;
           transform: translate(-50%, -50%);
         }
@@ -2039,7 +2027,7 @@ button {
       }
     }
     .link2 {
-      margin-right: 5px;
+      margin-left: 5px;
     }
   }
   //*********shoping cart*******//
@@ -2268,7 +2256,7 @@ button {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 15px 0;
+            padding: 15px 100px 15px 0;
             span {
               font-size: 14px;
             }
@@ -2321,7 +2309,7 @@ button {
           letter-spacing: 0.5px;
           font-size: 16px;
           height: 40px;
-          margin-right: 12px;
+          margin-left: 12px;
         }
       }
     }
@@ -2363,7 +2351,7 @@ button {
           border-bottom: 1px solid $border1;
         }
         i {
-          margin-left: 4px;
+          margin-right: 4px;
         }
       }
     }
@@ -2454,7 +2442,7 @@ button {
       position: relative;
       .hint {
         position: absolute;
-        right: 16px;
+        left: 16px;
         top: 16px;
         padding: 0 10px;
         height: 25px;
@@ -2483,7 +2471,7 @@ button {
           .menu {
             position: absolute;
             top: 0;
-            right: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             overflow: hidden;
@@ -2556,7 +2544,7 @@ button {
           span {
             position: absolute;
             top: 0;
-            right: 0;
+            left: 0;
             opacity: 1;
             font-weight: bold;
             color: $maincolor;
@@ -2565,7 +2553,7 @@ button {
           .link {
             position: absolute;
             top: 100%;
-            right: 0;
+            left: 0;
             opacity: 0;
             cursor: pointer;
             a {
@@ -2653,7 +2641,7 @@ button {
         font-family: "Poppins", sans-serif;
       }
       .Qestion {
-        padding-left: 100px;
+        padding-right: 100px;
         .special {
           color: $maincolor;
           font-size: 20px;
@@ -2686,11 +2674,11 @@ button {
         }
       }
       .text {
-        padding-left: 100px;
+        padding-right: 100px;
         line-height: 1.5;
       }
       .text_ret {
-        padding-left: 100px;
+        padding-right: 100px;
         font-size: 20px;
         color: $maincolor;
         font-weight: 400;
@@ -2703,7 +2691,7 @@ button {
         }
       }
       .text_ret2 {
-        padding-left: 350px;
+        padding-right: 350px;
         font-size: 20px;
         color: $maincolor;
         font-weight: 400;
@@ -2713,7 +2701,7 @@ button {
       }
       .text3 {
         line-height: 1.7em !important;
-        padding-left: 50px;
+        padding-right: 50px;
       }
       @media (max-width: 576px) {
         h2 {
@@ -3074,14 +3062,14 @@ button {
       font-weight: 500;
       font-size: 17px;
       margin-bottom: 24px;
-      padding-right: 50px;
+      padding-left: 50px;
     }
     ul {
       margin-top: 25px;
       padding: 0;
       li {
         margin: 10px 0;
-        padding-right: 50px;
+        padding-left: 50px;
         a {
           font-family: "Poppins", sans-serif;
           color: $maincolor;
@@ -3090,7 +3078,6 @@ button {
             color: $gray2;
             width: 0;
             overflow: hidden;
-            transform: scaleX(-1);
           }
           &:hover i {
             width: 15px;
@@ -3109,7 +3096,7 @@ button {
     text-align: start;
     .left_sub {
       display: flex;
-      padding-right: 20px;
+      padding-left: 20px;
       align-items: center;
       justify-content: center;
       a {

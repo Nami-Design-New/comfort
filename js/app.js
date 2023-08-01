@@ -105,7 +105,7 @@ for (var i = 0; i < navLinks.length; i++) {
 }
 //cart
 let openCartBtn = document.getElementById("cartOpen");
-let closeCartBtn = document.querySelector(".close");
+let closeCartBtn = document.querySelector(".close_cart-cc");
 let cartmodel = document.querySelector(".mini_cart");
 openCartBtn.addEventListener("click", () => {
   cartmodel.classList.add("active");
