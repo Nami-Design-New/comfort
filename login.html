@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COMFORT</title>
     <link rel="icon" href="img/icon3.svg">
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleEN.css">
 </head>
 
 <body>
+    <div class="layer"></div>
     <!-- responsive nav bar -->
     <nav class="sm-navbar">
         <ul>
@@ -47,6 +48,39 @@
             </li>
         </ul>
     </nav>
+    <!-- small-card popup -->
+    <div class="pop-card">
+        <a href="product_details.html">
+            <img src="img/shop-45-img-1-600x600.jpg" alt="">
+        </a>
+        <div class="text">
+            <span>LORATUS FLOOR LAMP</span>
+            <a style="background: none !important;" href="categories.html">Furniture</a>
+        </div>
+        <div class="close">
+            <i class="fa-sharp fa-light fa-xmark"></i>
+        </div>
+    </div>
+    <!-- search container -->
+    <div class="search-container">
+        <div class="inner-contianer">
+            <form action="" class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 d-flex justify-content-end">
+                        <a href="javascript: void(0)" class="closeSearch">
+                            <i class="fa-light fa-xmark"></i>
+                        </a>
+                    </div>
+                    <div class="input-field col-8">
+                        <div class="form">
+                            <input type="text" id="search" name="search" placeholder="SEARCH">
+                            <button type="submit"><i class="fa-light fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
     <!-- Header & Navbar -->
     <header class="navigation">
         <!-- Top Bar Start-->
@@ -286,6 +320,12 @@
             </div>
             <div class="right_sup_nav ">
                 <ul>
+                    <li class="clear-sm" id="searchOpen">
+                        <a href="javascript: void(0)">
+                            <i class="fa-light fa-magnifying-glass"></i>
+                            <small>Search</small>
+                        </a>
+                    </li>
                     <li class="clear-sm">
                         <a href="login.html">
                             <i class="far fa-user"></i>

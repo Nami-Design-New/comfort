@@ -126,3 +126,15 @@ function animateDiv() {
   }, 2500);
 }
 animateDiv();
+let searchOpen = document.getElementById("searchOpen");
+let searchContainer = document.querySelector(".search-container");
+let layer = document.querySelector(".layer");
+let closeSearch = document.querySelector(".closeSearch");
+searchOpen.addEventListener("click", () => {
+  searchContainer.classList.add("show");
+  layer.classList.add("show");
+});
+closeSearch.addEventListener("click", () => {
+  searchContainer.classList.remove("show");
+  layer.classList.remove("show");
+});

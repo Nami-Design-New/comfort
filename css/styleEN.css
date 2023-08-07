@@ -37,6 +37,8 @@ p {
 
 ::-webkit-scrollbar {
   width: 4px;
+  -webkit-transition: none !important;
+  transition: none !important;
 }
 
 ::-webkit-scrollbar-track {
@@ -3182,6 +3184,20 @@ button {
     display: none;
   }
 }
+body .layer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5019607843), rgba(0, 0, 0, 0.5019607843));
+  z-index: 9999999;
+  opacity: 0;
+  transition-delay: 0.4s;
+}
+body .layer.show {
+  opacity: 1;
+}
 body .pop-card {
   width: 120px;
   background: #fff;
@@ -3227,4 +3243,83 @@ body .pop-card .close {
 }
 body .pop-card .close i {
   color: #1b355e;
+}
+
+.search-container {
+  position: fixed;
+  top: -50vh;
+  width: 100%;
+  height: 50vh;
+  left: 0;
+  z-index: 999999999999;
+}
+.search-container.show {
+  top: 0;
+}
+.search-container .inner-contianer {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+.search-container .inner-contianer .closeSearch {
+  height: 70px;
+  width: 70px;
+  background: none;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-container .inner-contianer .closeSearch i {
+  color: #000;
+  font-size: 30px;
+}
+.search-container .inner-contianer .input-field {
+  height: calc(50vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-container .inner-contianer .input-field .form {
+  border-bottom: 1px solid #ccc;
+  height: 70px;
+  display: flex;
+  width: 100%;
+}
+.search-container .inner-contianer .input-field input {
+  width: calc(100% - 70px);
+  height: 70px;
+  border: none;
+  outline: none;
+  font-size: 32px;
+  font-weight: bold;
+  background: none;
+}
+.search-container .inner-contianer .input-field input::-moz-placeholder {
+  color: #ccc;
+}
+.search-container .inner-contianer .input-field input::placeholder {
+  color: #ccc;
+}
+.search-container .inner-contianer .input-field input:focus::-moz-placeholder {
+  color: #000;
+}
+.search-container .inner-contianer .input-field input:focus::placeholder {
+  color: #000;
+}
+.search-container .inner-contianer .input-field button {
+  height: 70px;
+  width: 70px;
+  background: none;
+  outline: none;
+  border: none;
+  color: #ccc;
+  transition: 0.2s ease-in-out;
+}
+.search-container .inner-contianer .input-field button i {
+  font-size: 32px;
+}
+.search-container .inner-contianer .input-field button:hover {
+  color: #000;
 }/*# sourceMappingURL=styleEN.css.map */
