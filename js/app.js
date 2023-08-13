@@ -114,13 +114,16 @@ closeCartBtn.addEventListener("click", () => {
   cartmodel.classList.remove("active");
 });
 // products flash
-const animatedDiv = document.querySelector(".pop-card");
+const productFlashCards = document.querySelectorAll(".pop-card");
 function animateDiv() {
-  animatedDiv.style.left = "-130px";
+  productFlashCards.forEach(proCard => {
+    proCard.style.left = "-130px";
+  });
+  let randomIndex = Math.floor(Math.random() * productFlashCards.length);
   setTimeout(() => {
-    animatedDiv.style.left = "8px";
+    productFlashCards[randomIndex].style.left = "8px";
     setTimeout(() => {
-      animatedDiv.style.left = "-130px";
+      productFlashCards[randomIndex].style.left = "-130px";
       animateDiv();
     }, 2500);
   }, 2500);

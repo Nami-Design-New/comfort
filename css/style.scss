@@ -3250,7 +3250,7 @@ body {
   .pop-card {
     width: 120px;
     background: $background1;
-    box-shadow: $mainshadow;
+    box-shadow: rgba(0, 0, 0, 0.05) 1.95px 1.95px 2.6px;
     position: fixed;
     bottom: 8px;
     z-index: 100;
