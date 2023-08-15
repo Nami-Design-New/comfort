@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import 'https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700&display=swap';
+@import url("https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   transition: all 0.4s ease-in-out;
   direction: rtl;
 }
@@ -11,7 +12,7 @@
 body {
   background-color: #fff !important;
   overflow-x: hidden !important;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 
 a {
@@ -33,7 +34,7 @@ h6,
 p {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -212,7 +213,7 @@ button {
   font-weight: 600;
   font-size: 16px;
   color: #1b355e;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .navigation nav .left_sup_nav .categories-wrapper .accordion .accordion-item {
   border: 1px solid #ebeaea;
@@ -345,7 +346,7 @@ button {
   color: #1b355e;
   font-size: 30px;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .navigation nav .mini_cart .cart_container .products {
   width: 100%;
@@ -421,7 +422,7 @@ button {
 }
 .navigation nav .mini_cart .cart_container .Total .total_inner h4 {
   color: #1b355e;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   font-size: 20px;
 }
 .navigation nav .mini_cart .cart_container .Total .total_inner span {
@@ -557,16 +558,16 @@ button {
 .main_entire .mainSlider .mainSliderContainer .swiper-slide .info h1 {
   text-align: center;
   font-size: 36px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .main_entire .mainSlider .mainSliderContainer .swiper-slide .info h4 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
 .main_entire .mainSlider .mainSliderContainer .swiper-slide .info a {
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   margin-top: 16px;
   font-size: 18px;
 }
@@ -676,7 +677,7 @@ button {
   transform: translateY(-50%);
 }
 .main_entire .departments .cards .dcard .info h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   font-size: 28px;
   color: #1b355e;
 }
@@ -697,7 +698,7 @@ button {
   padding: 40px 60px;
 }
 .main_entire .GetInspired h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   text-align: center;
   font-size: 32px;
   margin-bottom: 32px;
@@ -767,7 +768,7 @@ button {
 .main_entire .quality .quality-cards .qcard h4,
 .main_entire .quality .quality-cards .qcard p {
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   text-align: center;
 }
 .main_entire .quality .quality-cards .qcard h4 {
@@ -789,10 +790,8 @@ button {
   align-items: center;
   justify-content: center;
 }
-.main_entire .quality .quality-cards .qcard .icon ion-icon,
-.main_entire .quality .quality-cards .qcard .icon i {
-  font-size: 28px;
-  color: #fff;
+.main_entire .quality .quality-cards .qcard .icon img {
+  max-height: 32px;
 }
 .main_entire .trending {
   padding: 60px;
@@ -801,10 +800,10 @@ button {
   font-weight: 500;
   color: #1b355e;
   font-size: 40px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .main_entire .trending .col-12 p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   color: #787878;
   font-size: 18px;
 }
@@ -935,7 +934,7 @@ button {
   text-align: center;
   color: #fff;
   font-size: 28px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .main_entire .newsletter p {
   font-size: 16px;
@@ -1003,7 +1002,7 @@ button {
 .main_entire .follow-us .head h3 {
   text-align: center;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   line-height: 1.2;
 }
 .main_entire .follow-us .swiper {
@@ -1014,11 +1013,16 @@ button {
 .main_entire .follow-us .swiper .swiper-slide {
   height: 270px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 .main_entire .follow-us .swiper .swiper-slide img {
+  aspect-ratio: 1.5/1;
   width: 100%;
   -o-object-fit: cover !important;
      object-fit: cover !important;
+  -o-object-position: center;
+     object-position: center;
 }
 .main_entire .follow-us .swiper .swiper-button-prev,
 .main_entire .follow-us .swiper .swiper-button-next {
@@ -1094,23 +1098,23 @@ button {
 .main_entire .about .about_store .left_wrapper .ab_head h1 {
   color: #1b355e;
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .main_entire .about .about_store .left_wrapper .ab_head p {
   font-size: 16px;
   line-height: 28px;
   margin-top: 26px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .main_entire .about .about_store .left_wrapper .text p {
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .main_entire .about .about_store .left_wrapper .career {
-  margin-top: 20px;
   display: contents;
 }
 .main_entire .about .about_store .left_wrapper .career a {
+  margin-top: 20px;
   width: -moz-fit-content;
   width: fit-content;
   color: #1b355e;
@@ -1150,7 +1154,7 @@ button {
   font-size: 32px;
   line-height: 1.3;
   color: #1b355e;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   font-weight: 500;
 }
 .main_entire .about .new .left_news p {
@@ -1161,7 +1165,7 @@ button {
 }
 .main_entire .about .new .right_news {
   width: 50%;
-  padding: 4% 6%;
+  padding: 2% 4%;
 }
 .main_entire .about .new .right_news .swiper {
   display: flex;
@@ -1181,7 +1185,7 @@ button {
   font-size: 20px;
   color: #1b355e;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .main_entire .about .new .right_news .swiper .client .review {
   width: 100%;
@@ -1192,7 +1196,7 @@ button {
   color: #1b355e;
   font-style: italic;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .main_entire .about .new .right_news .swiper .client .client_img {
   width: 30%;
@@ -1273,7 +1277,7 @@ button {
   font-size: 20px;
 }
 .main_entire .shop aside h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   color: #1b355e;
   font-size: 32px;
   font-weight: 400;
@@ -1284,7 +1288,7 @@ button {
   font-weight: 600;
   font-size: 16px;
   color: #1b355e;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .main_entire .shop aside .accordion .accordion-item {
   border: 1px solid #ebeaea;
@@ -1321,7 +1325,7 @@ button {
   width: 75%;
 }
 .main_entire .shop main h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   color: #1b355e;
   font-size: 32px;
   font-weight: 400;
@@ -1491,11 +1495,11 @@ button {
 .main_entire .contact .info_container h2 {
   font-size: 32px;
   color: #1b355e;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   margin-bottom: 22px;
 }
 .main_entire .contact .info_container p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   font-size: 18px;
   color: #1b355e;
   padding-left: 100px;
@@ -1542,7 +1546,7 @@ button {
   margin-top: 48px;
 }
 .main_entire .contact .info_container .follow h5 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   color: #1b355e;
   font-size: 20px;
 }
@@ -1740,25 +1744,41 @@ button {
   height: 420px;
 }
 .main_entire .product-details .pro-row .pro-info {
-  padding: 0 60px;
+  padding: 0 30px;
 }
 .main_entire .product-details .pro-row .pro-info h2 {
   width: 100%;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 22px;
   color: #1b355e;
   line-height: 1.5;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 2rem;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  margin-bottom: 1rem;
 }
 .main_entire .product-details .pro-row .pro-info .price {
-  font-size: 26px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 600;
   color: #1b355e;
+}
+.main_entire .product-details .pro-row .pro-info .title {
+  margin-bottom: 8px;
+  color: #1b355e;
+}
+.main_entire .product-details .pro-row .pro-info .text {
+  color: #888;
+}
+.main_entire .product-details .pro-row .pro-info .table {
+  max-width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.main_entire .product-details .pro-row .pro-info .table th,
+.main_entire .product-details .pro-row .pro-info .table td {
+  padding: 12px;
 }
 .main_entire .product-details .pro-row .pro-info .add {
   width: 100%;
-  padding: 3rem 0;
+  padding: 2rem 0;
   display: flex;
   align-items: center;
 }
@@ -1827,7 +1847,7 @@ button {
   width: 100%;
   font-size: 20px;
   color: #1b355e;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   margin: 50px 0 16px;
   font-weight: bold;
 }
@@ -1873,7 +1893,7 @@ button {
   margin: 0;
   color: #fff;
   font-size: 18px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   font-weight: 400;
 }
 .main_entire .categories .category-cards .category-card .layer h5 i {
@@ -1930,7 +1950,7 @@ button {
   font-weight: 400;
   font-size: 40px;
   margin: 25px 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .main_entire .Login .form_wrap {
   width: 100%;
@@ -2035,7 +2055,7 @@ button {
   font-weight: 400;
   font-size: 40px;
   margin: 25px 0 50px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 @media (max-width: 576px) {
   .main_entire .shopping_cart .filled-cart h3 {
@@ -2175,7 +2195,7 @@ button {
 .main_entire .shopping_cart .filled-cart .checkout .total_sub span {
   color: #1b355e;
   font-size: 18px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .main_entire .Checkout {
   padding: 0 60px 40px;
@@ -2191,7 +2211,7 @@ button {
   font-weight: 400;
   font-size: 40px;
   margin: 25px 0 50px 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .main_entire .Checkout .billing_container {
   padding: 0;
@@ -2201,7 +2221,7 @@ button {
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 30px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .main_entire .Checkout .billing_container form {
   margin-bottom: 50px;
@@ -2248,7 +2268,7 @@ button {
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 25px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .main_entire .Checkout .billing_container form .order_details .head_order {
   width: 100%;
@@ -2330,7 +2350,7 @@ button {
   font-weight: 400;
   font-size: 40px;
   margin: 25px 0 60px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 @media (max-width: 576px) {
   .main_entire .profile h3 {
@@ -2365,7 +2385,7 @@ button {
 .main_entire .profile .info-container h5 {
   color: #1b355e;
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .main_entire .profile .info-container p {
   margin-bottom: 2.5rem;
@@ -2622,7 +2642,7 @@ button {
   font-weight: 400;
   font-size: 20px;
   margin: 25px 0 8px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .main_entire .faqs .support {
   margin-bottom: 16px;
@@ -2643,7 +2663,7 @@ button {
   font-weight: 400;
   color: #1b355e;
   font-size: 40px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .main_entire .faqs .tab-content .Qestion {
   padding-left: 100px;
@@ -2668,7 +2688,7 @@ button {
 .main_entire .faqs .tab-content h3 {
   color: #1b355e;
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .main_entire .faqs .tab-content ul {
   list-style: disc !important;
@@ -3038,7 +3058,7 @@ button {
   border-bottom: 1px solid #ebeaea;
 }
 .footer .inner_footer h5 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   color: #1b355e;
   font-weight: 500;
   font-size: 17px;
@@ -3054,7 +3074,7 @@ button {
   padding-right: 50px;
 }
 .footer .inner_footer ul li a {
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   color: #1b355e;
 }
 .footer .inner_footer ul li a i {

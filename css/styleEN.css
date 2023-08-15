@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -781,10 +782,8 @@ button {
   align-items: center;
   justify-content: center;
 }
-.main_entire .quality .quality-cards .qcard .icon ion-icon,
-.main_entire .quality .quality-cards .qcard .icon i {
-  font-size: 28px;
-  color: #fff;
+.main_entire .quality .quality-cards .qcard .icon img {
+  max-height: 32px;
 }
 .main_entire .trending {
   padding: 60px;
@@ -1004,11 +1003,16 @@ button {
 .main_entire .follow-us .swiper .swiper-slide {
   height: 270px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 .main_entire .follow-us .swiper .swiper-slide img {
+  aspect-ratio: 1.5/1;
   width: 100%;
   -o-object-fit: cover !important;
      object-fit: cover !important;
+  -o-object-position: center;
+     object-position: center;
 }
 .main_entire .follow-us .swiper .swiper-button-prev,
 .main_entire .follow-us .swiper .swiper-button-next {
@@ -1097,10 +1101,10 @@ button {
   font-family: "Poppins", sans-serif;
 }
 .main_entire .about .about_store .left_wrapper .career {
-  margin-top: 20px;
   display: contents;
 }
 .main_entire .about .about_store .left_wrapper .career a {
+  margin-top: 20px;
   width: -moz-fit-content;
   width: fit-content;
   color: #1b355e;
@@ -1151,7 +1155,7 @@ button {
 }
 .main_entire .about .new .right_news {
   width: 50%;
-  padding: 4% 6%;
+  padding: 2% 4%;
 }
 .main_entire .about .new .right_news .swiper {
   display: flex;
@@ -1198,7 +1202,7 @@ button {
 .main_entire .about .new .right_news .swiper .swiper-pagination-bullets.swiper-pagination-horizontal,
 .main_entire .about .new .right_news .swiper .swiper-pagination-custom,
 .main_entire .about .new .right_news .swiper .swiper-pagination-fraction {
-  bottom: -2px !important;
+  bottom: 4px !important;
 }
 .main_entire .about .new .right_news .swiper .swiper-pagination-bullet {
   width: 4px;
@@ -1731,25 +1735,41 @@ button {
   height: 420px;
 }
 .main_entire .product-details .pro-row .pro-info {
-  padding: 0 60px;
+  padding: 0 30px;
 }
 .main_entire .product-details .pro-row .pro-info h2 {
   width: 100%;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 22px;
   color: #1b355e;
   line-height: 1.5;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .main_entire .product-details .pro-row .pro-info .price {
-  font-size: 26px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 600;
   color: #1b355e;
+}
+.main_entire .product-details .pro-row .pro-info .title {
+  margin-bottom: 8px;
+  color: #1b355e;
+}
+.main_entire .product-details .pro-row .pro-info .text {
+  color: #888;
+}
+.main_entire .product-details .pro-row .pro-info .table {
+  max-width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.main_entire .product-details .pro-row .pro-info .table th,
+.main_entire .product-details .pro-row .pro-info .table td {
+  padding: 12px;
 }
 .main_entire .product-details .pro-row .pro-info .add {
   width: 100%;
-  padding: 3rem 0;
+  padding: 2rem 0;
   display: flex;
   align-items: center;
 }
