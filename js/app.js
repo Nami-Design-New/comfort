@@ -115,20 +115,39 @@ closeCartBtn.addEventListener("click", () => {
 });
 // products flash
 const productFlashCards = document.querySelectorAll(".pop-card");
+let animationFlag = true;
 function animateDiv() {
+  if (!animationFlag) {
+    return;
+  }
   productFlashCards.forEach(proCard => {
     proCard.style.left = "-130px";
   });
   let randomIndex = Math.floor(Math.random() * productFlashCards.length);
   setTimeout(() => {
+    if (!animationFlag) {
+      return;
+    }
     productFlashCards[randomIndex].style.left = "8px";
     setTimeout(() => {
+      if (!animationFlag) {
+        return;
+      }
       productFlashCards[randomIndex].style.left = "-130px";
       animateDiv();
-    }, 2500);
-  }, 2500);
+    }, 4000);
+  }, 8000);
 }
 animateDiv();
+let stopAnimation = document.querySelectorAll(".stop_animate");
+stopAnimation.forEach(btn => {
+  btn.addEventListener("click", () => {
+    animationFlag = false;
+    productFlashCards.forEach(proCard => {
+      proCard.style.left = "-130px";
+    });
+  });
+});
 let searchOpen = document.getElementById("searchOpen");
 let searchContainer = document.querySelector(".search-container");
 let layer = document.querySelector(".layer");

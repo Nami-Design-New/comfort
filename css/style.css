@@ -3262,7 +3262,7 @@ body .pop-card .text span {
   color: #1b355e;
   font-weight: 500;
 }
-body .pop-card .close {
+body .pop-card .stop_animate {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
@@ -3275,7 +3275,7 @@ body .pop-card .close {
   right: -8px;
   cursor: pointer;
 }
-body .pop-card .close i {
+body .pop-card .stop_animate i {
   color: #1b355e;
 }
 
