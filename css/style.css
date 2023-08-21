@@ -3502,4 +3502,14 @@ body .whatsapp-link img {
 }
 .search-container .inner-contianer .input-field button:hover {
   color: #000;
+}
+
+.fancybox__container {
+  z-index: 1999;
+}
+
+.fancybox__track,
+.fancybox__content,
+.carousel__track {
+  direction: ltr !important;
 }/*# sourceMappingURL=style.css.map */
