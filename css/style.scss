@@ -64,7 +64,7 @@ button {
   border: none;
 }
 .preloader {
-  background-color: $white;
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -75,16 +75,16 @@ button {
   justify-content: center;
   align-items: center;
   .preloaderImg {
-    min-width: 100px;
-    min-height: 100px;
-    mask-image: url("../img/icon3.svg");
+    width: 100px;
+    height: 100px;
+    mask-image: url("../img/fav.png");
     mask-size: contain;
     mask-position: center;
     mask-repeat: no-repeat;
     position: relative;
     @media screen and (max-width: 1024px) {
-      min-width: 80px;
-      min-height: 80px;
+      width: 80px;
+      height: 80px;
     }
     &::after {
       content: "";
@@ -106,8 +106,9 @@ button {
       content: "";
       display: block;
       width: 100px;
-      height: 100%;
-      background-image: url("../img/icon3.svg");
+      height: 100px;
+      object-fit: contain;
+      background-image: url("../img/fav.png");
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;

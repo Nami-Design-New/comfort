@@ -68,7 +68,7 @@ button {
 }
 
 .preloader {
-  background-color: #fff;
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -80,10 +80,10 @@ button {
   align-items: center;
 }
 .preloader .preloaderImg {
-  min-width: 100px;
-  min-height: 100px;
-  -webkit-mask-image: url("../img/icon3.svg");
-          mask-image: url("../img/icon3.svg");
+  width: 100px;
+  height: 100px;
+  -webkit-mask-image: url("../img/fav.png");
+          mask-image: url("../img/fav.png");
   -webkit-mask-size: contain;
           mask-size: contain;
   -webkit-mask-position: center;
@@ -94,8 +94,8 @@ button {
 }
 @media screen and (max-width: 1024px) {
   .preloader .preloaderImg {
-    min-width: 80px;
-    min-height: 80px;
+    width: 80px;
+    height: 80px;
   }
 }
 .preloader .preloaderImg::after {
@@ -120,8 +120,10 @@ button {
   content: "";
   display: block;
   width: 100px;
-  height: 100%;
-  background-image: url("../img/icon3.svg");
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-image: url("../img/fav.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
