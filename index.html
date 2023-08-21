@@ -12,6 +12,10 @@
 </head>
 
 <body>
+    <!-- ================ loader ================= -->
+    <div class="preloader">
+        <div class="preloaderImg"></div>
+    </div>
     <div class="layer"></div>
     <!-- responsive nav bar -->
     <nav class="sm-navbar">
@@ -527,13 +531,15 @@
         <section class="departments">
             <div class="cards">
                 <div class="dcard" ">
-                    <img src=" img/ctegory1.webp" alt="d1">
+                    <div class="under_lay"></div>
+                    <img src="img/slide4.webp" alt="d1">
                     <div class="info">
                         <h3>Sleep</h3>
                         <a href="#">SHOP NOW <i class="fas fa-long-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="dcard">
+                    <div class="under_lay"></div>
                     <img src="img/ctegory2.webp" alt="d2">
                     <div class="info">
                         <h3>Live</h3>
@@ -541,6 +547,7 @@
                     </div>
                 </div>
                 <div class="dcard">
+                    <div class="under_lay"></div>
                     <img src="img/ctegory3.webp" alt="d3">
                     <div class="info">
                         <h3>Move</h3>
@@ -556,18 +563,14 @@
                 <div class="col-lg-6 col-12">
                     <img src="img/indoor.webp" alt="">
                     <div class="info">
-                        <p>shoop our <br>
-                            indoor <br>
-                            looks.</p>
+                        <p>shoop our indoor looks.</p>
                         <a href="#">Explore <i class="fas fa-long-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">
                     <img src="img/outdoor.webp" alt="">
                     <div class="info">
-                        <p>shoop our <br>
-                            outdoor <br>
-                            looks.</p>
+                        <p>shoop our outdoor looks.</p>
                         <a href="#">Explore <i class="fas fa-long-arrow-right"></i></a>
                     </div>
                 </div>
@@ -580,24 +583,32 @@
                     <div class="icon">
                         <img src="img/users.svg" alt="users">
                     </div>
-                    <h4>ROUND THE CLOCK SUPPORT</h4>
-                    <p>We're available for you 7 days a week. Have a question? Just snooze us and we'll be there for you
-                        in seconds.</p>
+                    <div class="text d-flex flex-column justify-content-center align-items-center">
+                        <h4>ROUND THE CLOCK SUPPORT</h4>
+                        <p>We're available for you 7 days a week. Have a question? Just snooze us and we'll be there for
+                            you
+                            in seconds.</p>
+                    </div>
                 </div>
                 <div class="qcard">
                     <div class="icon">
                         <img src="img/star.svg" alt="star">
                     </div>
-                    <h4>HIGH-GRADE FABRICS</h4>
-                    <p>Sourcing the best cover and filling materials for a premium comfort experience.</p>
+                    <div class="text d-flex flex-column justify-content-center align-items-center">
+                        <h4>HIGH-GRADE FABRICS</h4>
+                        <p>Sourcing the best cover and filling materials for a premium comfort experience.</p>
+                    </div>
                 </div>
                 <div class="qcard">
                     <div class="icon">
                         <img src="img/free-trail.svg" alt="free-trail">
                     </div>
-                    <h4>RISK-FREE TRIAL</h4>
-                    <p>We give you 30-days to try it and make up your mind. Don't like it? We take it back and give you
-                        a full refund. No questions asked!</p>
+                    <div class="text d-flex flex-column justify-content-center align-items-center">
+                        <h4>RISK-FREE TRIAL</h4>
+                        <p>We give you 30-days to try it and make up your mind. Don't like it? We take it back and give
+                            you
+                            a full refund. No questions asked!</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1099,9 +1110,15 @@
     <!-- Javascript -->
     <script src="js/swiper.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/jq.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".preloader").delay(1200).fadeOut(300);
+        });
+    </script>
 </body>
 
 </html>
