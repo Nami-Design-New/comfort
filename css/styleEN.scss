@@ -842,13 +842,17 @@ button {
         border: 1px solid $border1;
         display: flex;
         flex-direction: column;
+        @media (max-width: 576px) {
+          padding: 32px 8px 12px !important;
+        }
       }
       .img_wraper {
         position: relative;
         img {
-          transform: scale(.9);
-          height: min(300px, 300px);
+          transform: scale(0.9);
           max-width: 100%;
+          object-fit: contain;
+          aspect-ratio: 1/1.15;
           mix-blend-mode: multiply;
         }
         .menu {
@@ -1373,8 +1377,9 @@ button {
             display: block;
             img {
               transform: scale(.85);
-              height: min(330px, 330px);
-              max-width: 100%;
+              aspect-ratio: 1/1.15;
+              width: 100%;
+              object-fit: contain;
             }
             .menu {
               position: absolute;
@@ -1661,7 +1666,8 @@ button {
       }
       .pro-img {
         padding: 0 16px;
-        .swiper-slide img {
+        .swiper-slide img,
+        video {
           display: block;
           width: 100%;
           height: 100%;
@@ -2486,8 +2492,9 @@ button {
           background: #d8d6d6;
           display: block;
           img {
-            transform: scale(.85);
-            height: min(330px, 330px);
+            transform: scale(0.85);
+            object-fit: contain;
+            aspect-ratio: 1/1.15;
             max-width: 100%;
           }
           .menu {
@@ -2977,7 +2984,7 @@ button {
       }
     }
     .trending {
-      padding: 48px;
+      padding: 48px 28px;
       .col-12 {
         h2 {
           font-size: 34px;
@@ -3244,11 +3251,11 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     background-image: linear-gradient(#00000080, #00000080);
     z-index: -1;
     opacity: 0;
-    transition-delay: .4s;
+    transition: none;
     &.show {
       opacity: 1;
       z-index: 9999999;
