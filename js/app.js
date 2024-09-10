@@ -15,16 +15,16 @@ var mainSlider = new Swiper(".mainSliderContainer", {
   speed: 500,
   autoplay: {
     delay: 8000,
-    disableOnInteraction: false
+    disableOnInteraction: false,
   },
   pagination: {
     el: ".mainSliderPagination",
-    clickable: true
+    clickable: true,
   },
   navigation: {
     nextEl: ".mainSliderNext",
-    prevEl: ".mainSliderPrev"
-  }
+    prevEl: ".mainSliderPrev",
+  },
 });
 //products slider
 let swiper = new Swiper(".mySwiper", {
@@ -34,23 +34,23 @@ let swiper = new Swiper(".mySwiper", {
   loop: true,
   autoplay: {
     delay: 2000,
-    disableOnInteraction: false
+    disableOnInteraction: false,
   },
   navigation: {
     nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     992: {
-      slidesPerView: 4
+      slidesPerView: 4,
     },
     768: {
-      slidesPerView: 2
+      slidesPerView: 2,
     },
     350: {
-      slidesPerView: 1
-    }
-  }
+      slidesPerView: 1,
+    },
+  },
 });
 //about swiper
 let aboutSwiper = new Swiper(".aboutSwiper", {
@@ -61,8 +61,8 @@ let aboutSwiper = new Swiper(".aboutSwiper", {
   loop: true,
   pagination: {
     el: ".aboutSwiperPagination",
-    clickable: true
-  }
+    clickable: true,
+  },
 });
 //products slider
 let categorySlider = new Swiper(".category-cards", {
@@ -72,19 +72,19 @@ let categorySlider = new Swiper(".category-cards", {
   loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     992: {
-      slidesPerView: 6
+      slidesPerView: 6,
     },
     768: {
-      slidesPerView: 4
+      slidesPerView: 4,
     },
     350: {
-      slidesPerView: 2
-    }
-  }
+      slidesPerView: 2,
+    },
+  },
 });
 //paths
 const { pathname } = window.location;
@@ -120,7 +120,7 @@ function animateDiv() {
   if (!animationFlag) {
     return;
   }
-  productFlashCards.forEach(proCard => {
+  productFlashCards.forEach((proCard) => {
     proCard.style.left = "-130px";
   });
   let randomIndex = Math.floor(Math.random() * productFlashCards.length);
@@ -140,10 +140,10 @@ function animateDiv() {
 }
 animateDiv();
 let stopAnimation = document.querySelectorAll(".stop_animate");
-stopAnimation.forEach(btn => {
+stopAnimation.forEach((btn) => {
   btn.addEventListener("click", () => {
     animationFlag = false;
-    productFlashCards.forEach(proCard => {
+    productFlashCards.forEach((proCard) => {
       proCard.style.left = "-130px";
     });
   });
@@ -160,3 +160,46 @@ closeSearch.addEventListener("click", () => {
   searchContainer.classList.remove("show");
   layer.classList.remove("show");
 });
+////////////////////////
+////////////////////////
+///////////////////////
+
+// sidebar  Cart -->
+function openSidebar() {
+  document.getElementById("sidebar").style.width = "350px";
+}
+
+function closeSidebar() {
+  document.getElementById("sidebar").style.width = "0";
+}
+
+////////////////////////
+////////////////////////
+///////////////////////
+//counter
+// var num;
+// $(".button-count:first-child").click(function () {
+//   num = parseInt($("input:text").val());
+//   if (num > 1) {
+//     $("input:text").val(num - 1);
+//   }
+//   if (num == 2) {
+//     $(".button-count:first-child").prop("disabled", true);
+//   }
+//   if (num == 10) {
+//     $(".button-count:last-child").prop("disabled", false);
+//   }
+// });
+
+// $(".button-count:last-child").click(function () {
+//   num = parseInt($("input:text").val());
+//   if (num < 10) {
+//     $("input:text").val(num + 1);
+//   }
+//   if (num > 0) {
+//     $(".button-count:first-child").prop("disabled", false);
+//   }
+//   if (num == 9) {
+//     $(".button-count:last-child").prop("disabled", true);
+//   }
+// });

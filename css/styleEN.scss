@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap");
 $maincolor: #1b355e;
 $gray: #888;
 $gray2: #787878;
@@ -134,7 +134,7 @@ button {
   background-color: $background1;
   z-index: 999;
   .nav_header {
-    padding: 0 60px;
+    padding: 0 15px;
     height: 50px;
     width: 100%;
     display: flex;
@@ -201,13 +201,12 @@ button {
   }
   nav {
     position: relative;
-    padding: 0 60px;
+    padding: 0 15px;
     height: 80px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid $border1;
     .left_sup_nav {
       gap: 48px;
       display: flex;
@@ -231,24 +230,25 @@ button {
           font-size: 16px;
           text-transform: uppercase;
           position: relative;
-          &::after {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            content: "";
-            height: 1px;
-            background-color: $maincolor;
-            width: 0;
-          }
-          &.active::after {
-            width: 100%;
-            transition: $mainTransation;
-          }
-          &:hover::after {
-            width: 100%;
-            transition: $mainTransation;
-          }
+
+          // &::after {
+          //   position: absolute;
+          //   bottom: 0;
+          //   left: 50%;
+          //   transform: translateX(-50%);
+          //   content: "";
+          //   height: 1px;
+          //   background-color: $maincolor;
+          //   width: 0;
+          // }
+          // &.active::after {
+          //   width: 100%;
+          //   transition: $mainTransation;
+          // }
+          // &:hover::after {
+          //   width: 100%;
+          //   transition: $mainTransation;
+          // }
         }
       }
       .categories-wrapper {
@@ -312,7 +312,7 @@ button {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 44px;
+        gap: 18px !important;
         li {
           position: relative;
           color: $maincolor;
@@ -380,7 +380,7 @@ button {
         height: 30px;
         display: flex;
         align-items: center;
-        padding: 0 .5rem;
+        padding: 0 0.5rem;
         i {
           font-size: 20px;
           color: $maincolor;
@@ -738,7 +738,7 @@ button {
           height: 100%;
           top: 0;
           left: 0;
-          background: linear-gradient(to right ,#ebedee90, #ebedee10);
+          background: linear-gradient(to right, #ebedee90, #ebedee10);
         }
         img {
           width: 100%;
@@ -914,6 +914,7 @@ button {
           font-size: 14px;
         }
       }
+
       .inner_card {
         padding: 32px 28px !important;
         border: 1px solid $border1;
@@ -942,16 +943,44 @@ button {
           overflow: hidden;
           background-color: rgba(204, 204, 204, 0.5);
           display: flex;
-          gap: 20px;
+          flex-direction: column;
+          gap: 10px;
           justify-content: center;
           align-items: center;
           span i {
+            background-color: #fff;
+            padding: 4px 20px;
+            border-radius: 15px;
             font-size: 20px;
             color: $maincolor;
+            transition: $mainTransation;
             cursor: pointer;
+            &:hover {
+              background-color: #1b355e;
+              color: #fff;
+            }
+          }
+          .btn {
+            background-color: #fff;
+            padding: 4px 20px;
+            border-radius: 15px;
+            font-size: 20px;
+            color: $maincolor;
+            transition: $mainTransation;
+            &:hover {
+              background-color: #1b355e;
+              color: #fff;
+            }
+          }
+          .heart {
+            position: absolute;
+            top: 10px;
+            left: 4px;
+            border-radius: 50%;
           }
         }
       }
+
       .add_cart {
         .price {
           width: 100%;
@@ -1453,7 +1482,7 @@ button {
             background: #f5f5f5;
             display: block;
             img {
-              transform: scale(.85);
+              transform: scale(0.85);
               aspect-ratio: 1/1.15;
               width: 100%;
               object-fit: contain;
@@ -1879,7 +1908,10 @@ button {
           width: 100%;
           padding: 2rem 0;
           display: flex;
-          align-items: center;
+          align-items: flex-start;
+          justify-content: flex-start;
+          flex-direction: column;
+          gap: 10px;
           .count {
             width: 100px;
             height: 40px;
@@ -1910,7 +1942,6 @@ button {
             height: 40px;
             background-color: $maincolor;
             color: $white;
-            margin-left: 1.5rem;
             a {
               color: $white;
               font-size: 15px;
@@ -2173,7 +2204,7 @@ button {
             display: none;
           }
           .table-coloumn {
-            padding: 1.25rem .5rem;
+            padding: 1.25rem 0.5rem;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -2195,7 +2226,7 @@ button {
             grid-template-columns: repeat(2, 1fr);
           }
           .table-coloumn {
-            padding: .5rem;
+            padding: 0.5rem;
             display: flex;
             align-items: center;
             gap: 2rem;
@@ -2302,7 +2333,7 @@ button {
       font-weight: 400;
       font-size: 40px;
       margin: 25px 0 50px 0;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
     }
     .billing_container {
       padding: 0;
@@ -2311,7 +2342,7 @@ button {
         font-size: 24px;
         font-weight: 400;
         margin-bottom: 30px;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
       }
       form {
         margin-bottom: 50px;
@@ -2834,7 +2865,6 @@ button {
       .nav-link {
         background: none !important;
         text-align: start !important;
-        border: 1px solid $border1;
         border-bottom: none;
         padding: 1rem 2rem !important;
         color: $maincolor;
@@ -2849,7 +2879,6 @@ button {
           background-color: #f5f5f5 !important;
         }
         &:last-child {
-          border-bottom: 1px solid $border1;
         }
         i {
           margin-right: 4px;
@@ -3355,7 +3384,7 @@ body {
     position: fixed;
     bottom: 8px;
     z-index: 100;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     a {
       background: #f1f3f2;
       display: block;
@@ -3488,7 +3517,7 @@ body {
         i {
           font-size: 32px;
         }
-        transition: .2s ease-in-out;
+        transition: 0.2s ease-in-out;
         &:hover {
           color: #000;
         }
@@ -3496,3 +3525,306 @@ body {
     }
   }
 }
+
+////////////////////////////////
+/// start 3aBoDa style ///////////
+/// ///////////////////////////
+
+.Line {
+  width: 100%;
+  height: 1px;
+  background-color: #ebeaea;
+  margin: 28px;
+  position: relative;
+  span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 0 16px;
+    color: #1b355e;
+    white-space: nowrap;
+  }
+}
+
+.Login_with {
+  margin-top: 16px;
+  background: none;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 48px;
+  border: 1px solid #ebeaea;
+  color: #1b355e;
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.cart_img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  img {
+    width: 50% !important;
+  }
+}
+
+.cart_caption {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .cart_title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1b355e;
+  }
+}
+
+.count_cart {
+  width: 65px;
+  height: 30px;
+  background-color: $maincolor;
+  color: $white;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  justify-content: center;
+  margin-bottom: 10px;
+  .minus,
+  .plus {
+    background-color: inherit;
+    color: $white;
+  }
+}
+
+.add_btn_cart {
+  background-color: #1b355e;
+  border-radius: 5px;
+  padding: 8px;
+  b {
+    color: #fff !important;
+  }
+  i {
+    color: #fff !important;
+  }
+}
+
+//Button Cards
+
+#button-7 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 40px;
+  width: 150px;
+  background-color: #fff;
+  color: #000;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 25px;
+}
+
+#button-7 a {
+  position: relative;
+  left: 0;
+  transition: all 0.35s ease-Out;
+}
+
+#dub-arrow {
+  width: 100%;
+  height: 100%;
+  background: #1b355e;
+  border: 1px solid #1b355e;
+  left: -200px;
+  position: absolute;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s ease-Out;
+  bottom: 0;
+}
+
+#button-7 i {
+  width: 25px;
+  height: auto;
+  color: #fff;
+}
+
+#button-7:hover #dub-arrow {
+  left: 0;
+}
+
+#button-7:hover a {
+  left: 150px;
+}
+
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 2.2em;
+  }
+}
+
+.View_Details {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1b355e;
+  margin-top: 25px;
+  &:hover {
+    color: red;
+  }
+}
+
+//Sidebar Style
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: scroll;
+  transition: 0.5s;
+  z-index: 1000;
+  padding: 10px 5px;
+
+  .close-btn {
+    background-color: #fff;
+    padding: 4px 10px;
+    color: #1b355e;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+  }
+
+  .sidebar-content {
+    padding: 5px;
+  }
+}
+
+//sidebar-products_details
+.slide_Detils {
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: sticky;
+  top: 5px;
+  height: 50vh;
+  overflow: scroll;
+
+  .pro-row_Detils {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    .pro-img {
+      img {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 2/1;
+      }
+    }
+  }
+  .pro-info {
+    h2 {
+      font-size: 12px;
+    }
+  }
+}
+.Buttons_Edit_delete {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  button {
+    background-color: #fff;
+    img {
+      width: 20px;
+    }
+  }
+}
+
+.Other_details {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .SubToltal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    p {
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+  .View_Cart {
+    background-color: #eee;
+    color: #000;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 2.5px;
+    &:hover {
+      background-color: #1b355e;
+      color: #fff;
+    }
+  }
+}
+
+// Product Counter
+.product-count {
+  margin: 5px 0px;
+}
+
+.product-count a {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
+
+.button-count {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-color: #1b355e;
+  color: white;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+.button-count:active {
+  background-color: #1b355e;
+}
+
+.number-product {
+  display: inline-block;
+  width: 46px;
+  height: 28px;
+  font-size: 24px;
+  border: 1px solid silver;
+  text-align: center;
+}
+
+:disabled {
+  background-color: silver;
+}
+
+/// Navbar Drop dowens   Style
