@@ -57,6 +57,7 @@
         </li>
       </ul>
     </nav>
+
     <!-- small-card popup -->
     <div class="pop-card">
       <a href="product_details.html">
@@ -118,51 +119,6 @@
       </div>
     </div>
 
-    <!-- search container -->
-    <div class="search-container">
-      <div class="inner-contianer">
-        <form action="" class="container">
-          <div class="row justify-content-center">
-            <div class="col-12 d-flex justify-content-end">
-              <a href="javascript: void(0)" class="closeSearch">
-                <i class="fa-light fa-xmark"></i>
-              </a>
-            </div>
-
-            <div class="input-field col-lg-4 col-4">
-              <div class="form" style="border-bottom: none">
-                <select
-                  class="form-select mt-2"
-                  style="border-radius: 25px"
-                  aria-label="Default select example"
-                >
-                  <option selected>All Category</option>
-                  <option value="1">Chairs</option>
-                  <option value="2">Baskets</option>
-                  <option value="3">Bean Bags</option>
-
-                  <option value="4">comeforter</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="input-field col-lg-8 col-8">
-              <div class="form">
-                <input
-                  type="text"
-                  id="search"
-                  name="search"
-                  placeholder="SEARCH"
-                />
-                <button type="submit">
-                  <i class="fa-light fa-magnifying-glass"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
     <!-- Header & Navbar -->
     <header class="navigation">
       <!-- Top Bar Start-->
@@ -448,11 +404,14 @@
 
         <div class="right_sup_nav">
           <ul>
-            <li id="searchOpen">
-              <a href="javascript: void(0)">
-                <i class="fa-light fa-magnifying-glass"></i>
-              </a>
-            </li>
+            <button
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <i class="fa-light fa-magnifying-glass"></i>
+            </button>
 
             <li class="clear-sm">
               <a href="login.html">
@@ -465,11 +424,12 @@
               <ion-icon name="bag-outline"></ion-icon>
             </li>
 
-            <li class="clear-sm">
-              <a class="results" onclick="openSidebar()">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span class="count"> 0 </span>
-              </a>
+            <li class="clear-sm" id="cartOpenProduct">
+              <span class="count"> 0 </span>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </li>
+
+            <!-- <li class="clear-sm">
 
               <div id="sidebar" class="sidebar">
                 <button class="close-btn" onclick="closeSidebar()">x</button>
@@ -480,7 +440,6 @@
                     <div class="pro-row_Detils">
                       <div class="pro-img">
                         <img src="img/dslide2.webp" alt="" />
-                        <!-- thumb slider -->
                       </div>
 
                       <div class="pro-info">
@@ -520,7 +479,7 @@
                     <div class="pro-row_Detils">
                       <div class="pro-img">
                         <img src="img/dslide2.webp" alt="" />
-                        <!-- thumb slider -->
+                         thumb slider 
                       </div>
 
                       <div class="pro-info">
@@ -557,6 +516,7 @@
                       </div>
                     </div>
                   </section>
+
                   <div class="Other_details">
                     <div class="SubToltal">
                       <p>Subtotal</p>
@@ -585,7 +545,7 @@
                   </div>
                 </div>
               </div>
-            </li>
+            </li> -->
 
             <li class="toggle_nav">
               <div class="toggler">
@@ -594,9 +554,9 @@
             </li>
           </ul>
         </div>
+
         <div class="mini_cart">
           <div class="close_cart-cc">
-            
             <i class="fa-light fa-x"></i>
           </div>
           <div class="cart_container">
@@ -607,20 +567,6 @@
             <!-- logic if cart empty "empty cart img" appears else the added products appears instead  -->
             <div class="products">
               <img src="img/cart.png" alt="" />
-              <!-- product appearance example -->
-              <!-- <div class="product">
-                            <div class="pro_img">
-                                <img src="https://files.fm/thumb_show.php?i=72my8t2mq" alt="">
-                            </div>
-                            <div class="pro_detail">
-                                <h6>Poliframe tuffed accnet chair 29.1″W, jet black</h6>
-                                <p>count : <span>1</span></p>
-                                <p>258.99</p>
-                            </div>
-                            <div class="del_pro">
-                                <i class="fa-solid fa-trash"></i>
-                            </div>
-                        </div> -->
             </div>
             <div class="Total">
               <div class="total_inner">
@@ -640,8 +586,197 @@
             </a>
           </div>
         </div>
+
+        <!--sidebar Cart-->
+
+        <div class="mini_cartProduct">
+          <div class="close_cart-ccProduct">
+            <i class="fa-light fa-x"></i>
+          </div>
+
+          <div class="cart_container">
+            <li class="clear-sm">
+              <section class="product-details container slide_Detils">
+                <div class="pro-row_Detils">
+                  <div class="pro-img">
+                    <img src="img/dslide2.webp" alt="" />
+                  </div>
+
+                  <div class="pro-info">
+                    <h2>
+                      HYGGER SOFT CUSHION ARMCHAIR, GREY COTTON & PLYWOOD LEGS
+                    </h2>
+                    <span class="price">$450.99</span>
+
+                    <div class="suk">
+                      <span>Category: Chars</span>
+                    </div>
+                    <div class="product-count">
+                      <button class="button-count no-active" disabled>-</button>
+                      <input
+                        type="text"
+                        readonly
+                        class="number-product"
+                        value="1"
+                      />
+                      <button class="button-count">+</button>
+                    </div>
+
+                    <div class="Buttons_Edit_delete">
+                      <button>
+                        <img src="img/edit.svg" alt="" />
+                      </button>
+                      <button>
+                        <img src="img/delete-20.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pro-row_Detils">
+                  <div class="pro-img">
+                    <img src="img/dslide2.webp" alt="" />
+                    thumb slider
+                  </div>
+
+                  <div class="pro-info">
+                    <h2>
+                      HYGGER SOFT CUSHION ARMCHAIR, GREY COTTON & PLYWOOD LEGS
+                    </h2>
+                    <span class="price">$450.99</span>
+
+                    <div class="suk">
+                      <span>Category: Chars</span>
+                    </div>
+                    <div class="product-count">
+                      <button class="button-count no-active" disabled>-</button>
+                      <input
+                        type="text"
+                        readonly
+                        class="number-product"
+                        value="1"
+                      />
+                      <button class="button-count">+</button>
+                    </div>
+
+                    <div class="Buttons_Edit_delete">
+                      <button>
+                        <img src="img/edit.svg" alt="" />
+                      </button>
+                      <button>
+                        <img src="img/delete-20.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <div class="Other_details">
+                <div class="SubToltal">
+                  <p>Subtotal</p>
+                  <p>LE 40 ,360.00</p>
+                </div>
+                <a hre4f="cart.html" class="View_Cart"> View Cart </a>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    i agree with the terms and conditions.
+                  </label>
+                </div>
+
+                <p>
+                  All charges are billed in EGP. While the content of your cart
+                  is currently displayed in , the checkout will use EGP at the
+                  most current exchange rate.
+                </p>
+                <a href="checkout.html" class="View_Cart"> Checkout </a>
+              </div>
+            </li>
+
+            <div class="head">
+              <h3>Shopping Cart</h3>
+            </div>
+            <!-- products container -->
+            <div class="Total">
+              <div class="total_inner">
+                <h4>Total</h4>
+                <span>$0.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
+    <!--modal _search-->
+    <div
+      class="modal fade modal-xl"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Search</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="search_inputs">
+              <form action="" class="container">
+                <div class="row justify-content-center">
+                  <div class="input-field col-lg-4 col-4">
+                    <div class="form" style="border-bottom: none">
+                      <select
+                        class="form-select mt-2"
+                        style="border-radius: 25px"
+                        aria-label="Default select example"
+                      >
+                        <option selected>All Category</option>
+                        <option value="1">Chairs</option>
+                        <option value="2">Baskets</option>
+                        <option value="3">Bean Bags</option>
+
+                        <option value="4">comeforter</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="input-field col-lg-8 col-8">
+                    <div class="form">
+                      <input
+                        type="text"
+                        id="search"
+                        name="search"
+                        placeholder="SEARCH"
+                      />
+                      <button type="submit">
+                        <i class="fa-light fa-magnifying-glass"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <hr />
+            <div class="Card_search"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <main class="main_entire">
       <!-- Main slider hero -->
@@ -1444,8 +1579,14 @@
                   <b class="newprice">$399.99</b>
                   <p class="oldprice">$590.99</p>
                 </div>
+
                 <div class="link">
-                  <a href="#">
+                  <a
+                    type="button"
+                    class="btn_cart mb-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdropCart"
+                  >
                     <i class="far fa-shopping-cart"></i>
                     <b>Add to cart</b>
                   </a>
@@ -1471,6 +1612,381 @@
 
                 <input type="radio" name="color" id="teal" />
                 <label for="teal"><span class="teal"></span></label>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade modal-lg"
+                id="staticBackdropCart"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5
+                        class="modal-title text-center"
+                        id="staticBackdropLabel"
+                      >
+                        YOU MAY ALSO LIKE
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+
+                    <div class="modal-body">
+                      <div class="row">
+                        <!-- product_card  -->
+                        <div class="col-lg-3 col-6 p-0 pro_card">
+                          <div class="hint">
+                            <span
+                              ><i class="fa-sharp fa-solid fa-tag"></i>
+                              10%</span
+                            >
+                          </div>
+
+                          <div class="inner_card">
+                            <div class="img_wraper">
+                              <img src="img/sof1.png" alt="product" />
+                              <div class="menu">
+                                <div class="heart">
+                                  <i class="fa-regular fa-heart"></i>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="img_caption">
+                              <p>
+                                LORATUS FLOOR LAMP WITH LED LIGHT BULB, SOLID
+                                ASH & ACRYLIC
+                              </p>
+                            </div>
+
+                            <div class="add_cart">
+                              <div class="price">
+                                <b class="newprice">$399.99</b>
+                                <p class="oldprice">$590.99</p>
+                              </div>
+
+                              <div class="link">
+                                <a
+                                  type="button"
+                                  class="btn_cart mb-2"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#staticBackdrop2"
+                                >
+                                  <i class="far fa-shopping-cart"></i>
+                                  <b>Add to cart</b>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="choose_color">
+                              <input
+                                type="radio"
+                                name="color"
+                                id="red"
+                                value="red"
+                              />
+
+                              <label for="red"><span class="red"></span></label>
+
+                              <input type="radio" name="color" id="green" />
+                              <label for="green"
+                                ><span class="green"></span
+                              ></label>
+
+                              <input type="radio" name="color" id="yellow" />
+                              <label for="yellow"
+                                ><span class="yellow"></span
+                              ></label>
+
+                              <input type="radio" name="color" id="olive" />
+                              <label for="olive"
+                                ><span class="olive"></span
+                              ></label>
+
+                              <input type="radio" name="color" id="orange" />
+                              <label for="orange"
+                                ><span class="orange"></span
+                              ></label>
+
+                              <input type="radio" name="color" id="teal" />
+                              <label for="teal"
+                                ><span class="teal"></span
+                              ></label>
+                            </div>
+
+                            <!-- Modal -->
+                            <div
+                              class="modal fade modal-lg"
+                              id="staticBackdrop"
+                              data-bs-backdrop="static"
+                              data-bs-keyboard="false"
+                              tabindex="-1"
+                              aria-labelledby="staticBackdropLabel"
+                              aria-hidden="true"
+                            >
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5
+                                      class="modal-title text-center"
+                                      id="staticBackdropLabel"
+                                    >
+                                      YOU MAY ALSO LIKE
+                                    </h5>
+                                    <button
+                                      type="button"
+                                      class="btn-close"
+                                      data-bs-dismiss="modal"
+                                      aria-label="Close"
+                                    ></button>
+                                  </div>
+
+                                  <div class="modal-body"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-6 p-0 pro_card">
+                          <div class="hint">
+                            <span
+                              ><i class="fa-sharp fa-solid fa-tag"></i>
+                              10%</span
+                            >
+                          </div>
+
+                          <div class="inner_card">
+                            <div class="img_wraper">
+                              <img src="img/sof1.png" alt="product" />
+                              <div class="menu">
+                                <div class="heart">
+                                  <i class="fa-regular fa-heart"></i>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="img_caption">
+                              <p>
+                                LORATUS FLOOR LAMP WITH LED LIGHT BULB, SOLID
+                                ASH & ACRYLIC
+                              </p>
+                            </div>
+
+                            <div class="add_cart">
+                              <div class="price">
+                                <b class="newprice">$399.99</b>
+                                <p class="oldprice">$590.99</p>
+                              </div>
+
+                              <div class="link">
+                                <a
+                                  type="button"
+                                  class="btn_cart mb-2"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#staticBackdrop2"
+                                >
+                                  <i class="far fa-shopping-cart"></i>
+                                  <b>Add to cart</b>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="choose_color">
+                              <input
+                                type="radio"
+                                name="color"
+                                id="red"
+                                value="red"
+                              />
+
+                              <label for="red"><span class="red"></span></label>
+
+                              <input type="radio" name="color" id="green" />
+                              <label for="green"
+                                ><span class="green"></span
+                              ></label>
+
+                              <input type="radio" name="color" id="yellow" />
+                              <label for="yellow"
+                                ><span class="yellow"></span
+                              ></label>
+
+                              <input type="radio" name="color" id="olive" />
+                              <label for="olive"
+                                ><span class="olive"></span
+                              ></label>
+
+                              <input type="radio" name="color" id="orange" />
+                              <label for="orange"
+                                ><span class="orange"></span
+                              ></label>
+
+                              <input type="radio" name="color" id="teal" />
+                              <label for="teal"
+                                ><span class="teal"></span
+                              ></label>
+                            </div>
+
+                            <!-- Modal -->
+                            <div
+                              class="modal fade modal-lg"
+                              id="staticBackdrop"
+                              data-bs-backdrop="static"
+                              data-bs-keyboard="false"
+                              tabindex="-1"
+                              aria-labelledby="staticBackdropLabel"
+                              aria-hidden="true"
+                            >
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5
+                                      class="modal-title text-center"
+                                      id="staticBackdropLabel"
+                                    >
+                                      YOU MAY ALSO LIKE
+                                    </h5>
+                                    <button
+                                      type="button"
+                                      class="btn-close"
+                                      data-bs-dismiss="modal"
+                                      aria-label="Close"
+                                    ></button>
+                                  </div>
+
+                                  <div class="modal-body"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-6 p-0 pro_card">
+                          <div class="hint">
+                            <span
+                              ><i class="fa-sharp fa-solid fa-tag"></i>
+                              10%</span
+                            >
+                          </div>
+
+                          <div class="inner_card">
+                            <div class="img_wraper">
+                              <img src="img/sof1.png" alt="product" />
+                              <div class="menu">
+                                <div class="heart">
+                                  <i class="fa-regular fa-heart"></i>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="img_caption">
+                              <p>
+                                LORATUS FLOOR LAMP WITH LED LIGHT BULB, SOLID
+                                ASH & ACRYLIC
+                              </p>
+                            </div>
+
+                            <div class="add_cart">
+                              <div class="price">
+                                <b class="newprice">$399.99</b>
+                                <p class="oldprice">$590.99</p>
+                              </div>
+
+                              <div class="link">
+                                <a
+                                  type="button"
+                                  class="btn_cart mb-2"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#staticBackdrop2"
+                                >
+                                  <i class="far fa-shopping-cart"></i>
+                                  <b>Add to cart</b>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="choose_color">
+                              <input
+                                type="radio"
+                                name="color"
+                                id="red"
+                                value="red"
+                              />
+
+                              <label for="red"><span class="red"></span></label>
+
+                              <input type="radio" name="color" id="green" />
+                              <label for="green"
+                                ><span class="green"></span
+                              ></label>
+
+                              <input type="radio" name="color" id="yellow" />
+                              <label for="yellow"
+                                ><span class="yellow"></span
+                              ></label>
+
+                              <input type="radio" name="color" id="olive" />
+                              <label for="olive"
+                                ><span class="olive"></span
+                              ></label>
+
+                              <input type="radio" name="color" id="orange" />
+                              <label for="orange"
+                                ><span class="orange"></span
+                              ></label>
+
+                              <input type="radio" name="color" id="teal" />
+                              <label for="teal"
+                                ><span class="teal"></span
+                              ></label>
+                            </div>
+
+                            <!-- Modal -->
+                            <div
+                              class="modal fade modal-lg"
+                              id="staticBackdrop"
+                              data-bs-backdrop="static"
+                              data-bs-keyboard="false"
+                              tabindex="-1"
+                              aria-labelledby="staticBackdropLabel"
+                              aria-hidden="true"
+                            >
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5
+                                      class="modal-title text-center"
+                                      id="staticBackdropLabel"
+                                    >
+                                      YOU MAY ALSO LIKE
+                                    </h5>
+                                    <button
+                                      type="button"
+                                      class="btn-close"
+                                      data-bs-dismiss="modal"
+                                      aria-label="Close"
+                                    ></button>
+                                  </div>
+
+                                  <div class="modal-body"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1576,7 +2092,7 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="row inner_footer">
-        <div class="col-lg-3 col-6">
+        <div class="col-lg-2 col-6">
           <h5>COMPANY</h5>
           <ul>
             <li>
@@ -1596,7 +2112,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-lg-3 col-6">
+        <div class="col-lg-2 col-6">
           <h5>CUSTOMER SERVICE</h5>
           <ul>
             <li>
@@ -1622,7 +2138,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-lg-3 col-6">
+        <div class="col-lg-2 col-6">
           <h5>SOCIAL MEDIA</h5>
           <ul>
             <li>
@@ -1647,7 +2163,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-lg-3 col-6">
+        <div class="col-lg-2 col-6">
           <h5>PROFILE</h5>
           <ul>
             <li>
@@ -1671,6 +2187,27 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="col-lg-2 col-6">
+          <h5 style="padding: 0">Newsletter SIGNUP</h5>
+          <div class="newsletter">
+            <a>
+              Subscribe To Our Newsletter To Get 5% off your first purchase
+            </a>
+            <a class="news_footer">
+              <form action="">
+                <input
+                  type="email"
+                  required
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                />
+                <button>subscribe</button>
+              </form>
+            </a>
+          </div>
         </div>
       </div>
       <div class="sub_footer">
@@ -1699,6 +2236,7 @@
         <img src="img/whatsappbrand.svg" alt="whatsapp" />
       </a>
     </div>
+
     <!-- Javascript -->
     <script src="js/swiper.js"></script>
     <script src="js/app.js"></script>
@@ -1709,10 +2247,12 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
+
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
@@ -1723,6 +2263,7 @@
         $(".preloader").delay(1200).fadeOut(300);
       });
     </script>
+
     <script>
       var num;
       $(".button-count:first-child").click(function () {

@@ -52,6 +52,7 @@ let swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
 //about swiper
 let aboutSwiper = new Swiper(".aboutSwiper", {
   spaceBetween: 50,
@@ -67,7 +68,7 @@ let aboutSwiper = new Swiper(".aboutSwiper", {
 //products slider
 let categorySlider = new Swiper(".category-cards", {
   spaceBetween: 12,
-  slidesPerView: 5,
+  slidesPerView: 1,
   grabCursor: true,
   loop: true,
   navigation: {
@@ -76,18 +77,20 @@ let categorySlider = new Swiper(".category-cards", {
   },
   breakpoints: {
     992: {
-      slidesPerView: 6,
+      slidesPerView: 1,
     },
     768: {
-      slidesPerView: 4,
+      slidesPerView: 1,
     },
     350: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
   },
 });
+
 //paths
 const { pathname } = window.location;
+
 let navLinks = document.querySelectorAll(".nav_ul li a");
 for (var i = 0; i < navLinks.length; i++) {
   navLinks[i].classList.remove("active");
@@ -103,7 +106,9 @@ for (var i = 0; i < navLinks.length; i++) {
     navLinks[0].classList.add("active");
   }
 }
+
 //cart
+
 let openCartBtn = document.getElementById("cartOpen");
 let closeCartBtn = document.querySelector(".close_cart-cc");
 let cartmodel = document.querySelector(".mini_cart");
@@ -113,6 +118,23 @@ openCartBtn.addEventListener("click", () => {
 closeCartBtn.addEventListener("click", () => {
   cartmodel.classList.remove("active");
 });
+
+//Products Cart
+let openCartBtnProduct = document.getElementById("cartOpenProduct");
+let closeCartBtnProduct = document.querySelector(".close_cart-ccProduct");
+let cartmodelProduct = document.querySelector(".mini_cartProduct");
+
+console.log(openCartBtnProduct); // Should not be null
+console.log(closeCartBtnProduct); // Should not be null
+console.log(cartmodelProduct); // Should not be null
+
+openCartBtnProduct.addEventListener("click", () => {
+  cartmodelProduct.classList.add("active");
+});
+closeCartBtnProduct.addEventListener("click", () => {
+  cartmodelProduct.classList.remove("active");
+});
+
 // products flash
 const productFlashCards = document.querySelectorAll(".pop-card");
 let animationFlag = true;
@@ -152,7 +174,7 @@ let searchOpen = document.getElementById("searchOpen");
 let searchContainer = document.querySelector(".search-container");
 let layer = document.querySelector(".layer");
 let closeSearch = document.querySelector(".closeSearch");
-searchOpen.addEventListener("click", () => {
+searchOpen.addEventListener("click", function () {
   searchContainer.classList.add("show");
   layer.classList.add("show");
 });
@@ -164,14 +186,14 @@ closeSearch.addEventListener("click", () => {
 ////////////////////////
 ///////////////////////
 
-// sidebar  Cart -->
-function openSidebar() {
-  document.getElementById("sidebar").style.width = "350px";
-}
+// // sidebar  Cart -->
+// function openSidebar() {
+//   document.getElementById("sidebar").style.width = "350px";
+// }
 
-function closeSidebar() {
-  document.getElementById("sidebar").style.width = "0";
-}
+// function closeSidebar() {
+//   document.getElementById("sidebar").style.width = "0";
+// }
 
 ////////////////////////
 ////////////////////////
@@ -203,3 +225,13 @@ function closeSidebar() {
 //     $(".button-count:last-child").prop("disabled", true);
 //   }
 // });
+
+// //switch button
+// function movePill(a) {
+//   let pill = document.querySelector(".backgroundPill");
+//   if (a.value == "left") {
+//     pill.style.left = "5px";
+//   } else {
+//     pill.style.left = "47%";
+//   }
+// }
