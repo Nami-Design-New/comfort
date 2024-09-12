@@ -537,7 +537,7 @@ button {
       width: 430px;
       transition: 0.5s ease-in-out;
       overflow: hidden;
-      height: 100vh;
+      height: 100dvh;
       background-color: $background1;
       position: fixed;
       top: 0;
@@ -546,6 +546,8 @@ button {
       display: flex;
       flex-direction: column;
       z-index: 999999;
+      overflow: scroll;
+      overflow-x: hidden;
       &.active {
         right: 0;
       }
@@ -1058,7 +1060,9 @@ button {
   }
   //********trending products*******//
   .trending {
-    padding: 60px;
+    padding: 20px;
+    width: 100%;
+
     .col-12 {
       h2 {
         font-weight: 500;
@@ -1116,7 +1120,7 @@ button {
           width: 100%;
           height: 0;
           overflow: hidden;
-          background-color: rgba(204, 204, 204, 0.5);
+          // background-color: rgba(204, 204, 204, 0.5);
           display: flex;
           flex-direction: column;
           gap: 10px;
@@ -1936,6 +1940,7 @@ button {
     }
   }
   //*********product-details***//
+
   .product-details {
     padding: 60px 0;
     max-width: 1260px;
@@ -3728,10 +3733,11 @@ body {
   background: none;
   outline: none;
   border: none;
-  width: 100%;
-  height: 48px;
   border: 1px solid #ebeaea;
   color: #1b355e;
+  padding: 15px 30px;
+  border-radius: 6px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   img {
     width: 24px;
     height: 24px;
@@ -3868,6 +3874,7 @@ body {
   right: 0;
   background-color: #fff;
   overflow-x: scroll;
+
   transition: 0.5s;
   z-index: 1000;
   padding: 10px 5px;
@@ -3889,7 +3896,7 @@ body {
 //sidebar-products_details
 .slide_Detils {
   margin-top: 20px;
-  padding: 10px;
+  padding: 3px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -3897,19 +3904,19 @@ body {
   top: 5px;
   height: 50vh;
   overflow: scroll;
-
+  overflow-x: hidden;
   .pro-row_Detils {
     display: flex;
-    flex-direction: column;
     gap: 8px;
-    padding: 10px;
+    padding: 12px 0px;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     .pro-img {
+      width: 70%;
       img {
         width: 100%;
         object-fit: cover;
-        aspect-ratio: 2/1;
+        aspect-ratio: 1/1;
       }
     }
   }
@@ -3960,11 +3967,36 @@ body {
       color: #fff;
     }
   }
+  .Sympl {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    border: 1px solid #eee;
+    padding: 5px;
+    .Sympl_img {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h3 {
+        color: #ff395a;
+        font-size: 15px;
+      }
+    }
+    h2 {
+      font-size: 14px;
+    }
+  }
 }
 
 // Product Counter
 .product-count {
   margin: 5px 0px;
+  border: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 50px;
 }
 
 .product-count a {
@@ -3977,16 +4009,15 @@ body {
   display: inline-block;
   width: 28px;
   height: 28px;
-  background-color: #1b355e;
-  color: white;
+  color: #000;
   font-size: 22px;
   line-height: 30px;
   text-align: center;
   border: none;
   outline: none;
+  background-color: #fff;
 }
 .button-count:active {
-  background-color: #1b355e;
 }
 
 .number-product {
@@ -3994,12 +4025,12 @@ body {
   width: 46px;
   height: 28px;
   font-size: 24px;
-  border: 1px solid silver;
+  border: 1px solid #fff;
   text-align: center;
 }
 
 :disabled {
-  background-color: silver;
+  background-color: #fff;
 }
 
 .btn_add_cart {
@@ -4337,4 +4368,27 @@ body {
   }
 }
 
-//swiper with img
+// view list
+.card-horizontal .card-body {
+  padding: 1.5rem 1.5rem 1.5rem 0;
+}
+
+.pull-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-group {
+  .btn {
+    border: 1px solid #000;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 4px 10px;
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}

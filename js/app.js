@@ -235,3 +235,5 @@ closeSearch.addEventListener("click", () => {
 //     pill.style.left = "47%";
 //   }
 // }
+
+///
