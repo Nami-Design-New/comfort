@@ -2817,6 +2817,9 @@ button {
 .main_entire .profile .pro_card .inner_card .img_caption {
   margin-top: 16px;
 }
+.main_entire .profile .pro_card .inner_card .img_caption p {
+  white-space: pre;
+}
 .main_entire .profile .pro_card .inner_card .add_cart {
   overflow: hidden;
   width: 100%;
